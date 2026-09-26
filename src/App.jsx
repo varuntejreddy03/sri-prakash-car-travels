@@ -98,7 +98,15 @@ export default function App() {
               element={<TempleToursPage onOpenBooking={handleOpenBooking} />} 
             />
             <Route 
+              path="/kakinada-temple-tours" 
+              element={<TempleToursPage onOpenBooking={handleOpenBooking} />} 
+            />
+            <Route 
               path="/temple-tours/:packageId" 
+              element={<TempleTourDetailPage onOpenBooking={handleOpenBooking} />} 
+            />
+            <Route 
+              path="/kakinada-temple-tours/:packageId" 
               element={<TempleTourDetailPage onOpenBooking={handleOpenBooking} />} 
             />
 
@@ -108,11 +116,19 @@ export default function App() {
               element={<HolidayPackagesPage onOpenBooking={handleOpenBooking} />} 
             />
             <Route 
+              path="/tour-packages" 
+              element={<HolidayPackagesPage onOpenBooking={handleOpenBooking} />} 
+            />
+            <Route 
               path="/packages" 
               element={<HolidayPackagesPage onOpenBooking={handleOpenBooking} />} 
             />
             <Route 
               path="/holiday-packages/:packageId" 
+              element={<HolidayDetailPage onOpenBooking={handleOpenBooking} />} 
+            />
+            <Route 
+              path="/tour-packages/:packageId" 
               element={<HolidayDetailPage onOpenBooking={handleOpenBooking} />} 
             />
             <Route 
@@ -130,7 +146,15 @@ export default function App() {
               element={<AboutPage onOpenBooking={handleOpenBooking} />} 
             />
             <Route 
+              path="/about-us" 
+              element={<AboutPage onOpenBooking={handleOpenBooking} />} 
+            />
+            <Route 
               path="/contact" 
+              element={<ContactPage />} 
+            />
+            <Route 
+              path="/contact-us" 
               element={<ContactPage />} 
             />
 

@@ -6,10 +6,10 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filterTabs = [
-    { id: 'all', label: 'All Fleet' },
+    { id: 'all', label: 'All Vehicles' },
     { id: 'sedan', label: 'Sedans (4+1)' },
-    { id: 'suv', label: 'Luxury MPV & SUVs' },
-    { id: 'group', label: 'Group Vans & Luxury Buses' },
+    { id: 'suv', label: 'SUV & MPV (6+1 / 7+1)' },
+    { id: 'group', label: 'Tempo Traveller & Bus' },
   ];
 
   const filteredFleet = activeFilter === 'all'
@@ -20,14 +20,16 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
     <section id="fleet" className="py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
-        {/* Section Header matching reference in pinterest-bulk-4 */}
+        {/* Section Header matching competitor */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <span className="ref-section-tag">Our Fleet</span>
+            <span className="ref-section-tag">Our Premium Vehicles</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-              Choose the perfect car <br />
-              <span className="text-[#FF5B00]">for your trip</span>
+              Well-Maintained <span className="text-[#FF5B00]">Car Travels Fleet</span> in Kakinada
             </h2>
+            <p className="text-sm sm:text-base text-slate-500 font-jakarta mt-3 max-w-2xl">
+              Choose from modern sedans, spacious MPVs, luxury SUVs, and tempo travellers for all group sizes.
+            </p>
           </div>
 
           <div className="flex items-center gap-3 flex-wrap">

@@ -58,18 +58,18 @@ export default function AirportTransfersSection({ onOpenBooking }) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <span className="ref-section-tag">24/7 Airport Transfers</span>
+            <span className="ref-section-tag">24/7 Airport Cab Service</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-              Punctual <span className="text-[#FF5B00]">Airport Taxi</span> Service
+              Punctual <span className="text-[#FF5B00]">Airport Pickup & Drop</span> Kakinada
             </h2>
-            <p className="text-sm text-slate-600 font-jakarta mt-2 max-w-xl">
-              Doorstep pickup in Kakinada and dedicated drops for Rajahmundry & Vizag airports with live flight tracking.
+            <p className="text-sm text-slate-600 font-jakarta mt-2 max-w-2xl">
+              Never miss a flight again! Sri Prakash Car Travels provides round-the-clock Airport Taxi Kakinada services with guaranteed on-time door-step pickup, zero flight delay anxiety, and fixed transparent fares.
             </p>
           </div>
 
           <Link
             to="/airport-taxi"
-            className="ref-btn-primary group self-start md:self-auto"
+            className="ref-btn-primary group self-start md:self-auto shrink-0"
           >
             <span>View All Airports</span>
             <span className="ref-circle-arrow">
@@ -144,6 +144,55 @@ export default function AirportTransfersSection({ onOpenBooking }) {
 
             </div>
           ))}
+        </div>
+
+        {/* Why Pre-Book Airport Cab Box matching competitor */}
+        <div className="mt-12 bg-gradient-to-r from-[#0F141E] to-[#1E293B] text-white rounded-3xl p-8 border border-white/10 shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
+              <div className="inline-flex items-center gap-2 text-xs font-bold text-[#FF5B00] uppercase tracking-wider">
+                <Clock className="w-4 h-4" />
+                <span>Punctuality Guaranteed</span>
+              </div>
+              <h3 className="font-outfit font-extrabold text-2xl sm:text-3xl text-white">
+                Why Pre-Book Your Airport Cab With Sri Prakash Travels?
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="text-xs text-slate-300">
+                    <strong className="text-white block font-outfit mb-0.5">Live Flight Tracking</strong>
+                    Pickup times automatically adjusted for delayed arrivals.
+                  </div>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="text-xs text-slate-300">
+                    <strong className="text-white block font-outfit mb-0.5">Luggage Assistance</strong>
+                    Chauffeur assists with heavy bags at your doorstep and terminal.
+                  </div>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="text-xs text-slate-300">
+                    <strong className="text-white block font-outfit mb-0.5">Fixed All-Inclusive Fares</strong>
+                    Zero surge pricing, zero hidden costs, transparent tolls.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-4 flex flex-col justify-center items-start lg:items-end">
+              <a
+                href="tel:+919848903025"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-extrabold text-sm bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-lg shadow-[#FF5B00]/30 transition-all"
+              >
+                <span>Call Airport Taxi Helpline</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <span className="text-[11px] text-slate-400 mt-2">Available 24 Hours / 7 Days</span>
+            </div>
+          </div>
         </div>
 
       </div>

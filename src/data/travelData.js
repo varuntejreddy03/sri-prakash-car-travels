@@ -141,60 +141,76 @@ export const fleetData = [
 
 export const servicesData = [
   {
-    id: "airport-taxi",
-    icon: "Plane",
-    title: "Airport Taxi Service",
-    shortDesc: "Punctual 24/7 doorstep pickup and drop for Rajahmundry (RJA), Visakhapatnam (VTZ), Vijayawada (VGA) & Hyderabad (HYD).",
-    features: ["Flight Delay Tracking", "Fixed Transparent Rates", "Doorstep Luggage Help", "Guaranteed On-Time"],
-    popularDestinations: ["Rajahmundry Airport (1.5 Hrs)", "Vizag Airport (3.5 Hrs)", "Vijayawada Airport (4.5 Hrs)"]
-  },
-  {
-    id: "outstation-cabs",
-    icon: "Compass",
-    title: "Outstation Cabs (One Way & Round)",
-    shortDesc: "Reliable outstation car hire across Andhra Pradesh, Telangana, Tamil Nadu & Karnataka with verified highway drivers.",
-    features: ["One-Way Drop Option", "Zero Night Surge", "Clean AC Cars", "Flexible Stops"],
-    popularDestinations: ["Kakinada to Vijayawada", "Kakinada to Hyderabad", "Kakinada to Tirupati", "Kakinada to Bangalore"]
-  },
-  {
-    id: "temple-tours",
-    icon: "Landmark",
-    title: "Temple Tour Pilgrimage Packages",
-    shortDesc: "Spiritual temple packages to Annavaram, Pancharamalu, Draksharamam, Pithapuram, Bhadrachalam, Tirupati & Srisailam.",
-    features: ["Temple Timings Expertise", "Custom Puja Itineraries", "Senior Citizen Friendly", "Same Day & Multi-Day"],
-    popularDestinations: ["Annavaram Satyanarayana", "Draksharamam & Samarlakota", "Pithapuram Sripada Srivallabha"]
-  },
-  {
     id: "local-city-taxi",
     icon: "MapPin",
-    title: "Local City Taxi & Hourly Rentals",
-    shortDesc: "Fast and convenient car rental within Kakinada city for business meetings, shopping, port visits, hospitals & railway stations.",
+    title: "Local Taxi Service Kakinada",
+    shortDesc: "Fast, comfortable, and affordable local cab booking in Kakinada for city commutes, shopping, business meetings, and railway station transfers.",
     features: ["4hr/40km & 8hr/80km Packages", "Uniformed Local Drivers", "Quick 15-Min Arrival", "Clean Interiors"],
     popularDestinations: ["Kakinada Town & Port", "Kakinada Railway Station", "Apollo / Local Hospitals", "Local Shopping"]
   },
   {
+    id: "airport-taxi",
+    icon: "Plane",
+    title: "Airport Taxi Kakinada",
+    shortDesc: "24/7 dedicated Airport Pickup & Drop cab service to Rajahmundry Airport (RJA), Vizag Airport (VTZ), Vijayawada (VGA), and Hyderabad (HYD).",
+    features: ["Flight Delay Tracking", "Fixed Transparent Rates", "Doorstep Luggage Help", "Guaranteed On-Time"],
+    popularDestinations: ["Rajahmundry Airport (1.5 Hrs)", "Vizag Airport (3.5 Hrs)", "Vijayawada Airport (4.5 Hrs)", "Hyderabad Airport"]
+  },
+  {
+    id: "outstation-cabs",
+    icon: "Compass",
+    title: "Outstation Cab Kakinada",
+    shortDesc: "Hassle-free Outstation Taxi booking from Kakinada to Vizag, Vijayawada, Hyderabad, Chennai, Bangalore, Tirupati, and all major South India towns.",
+    features: ["One-Way & Round Trip", "Zero Night Surge", "Clean AC Cars", "Flexible Stops"],
+    popularDestinations: ["Kakinada to Vijayawada", "Kakinada to Hyderabad", "Kakinada to Tirupati", "Kakinada to Bangalore"]
+  },
+  {
+    id: "one-way-taxi",
+    icon: "Route",
+    title: "One Way Taxi Service",
+    shortDesc: "Pay only for one-way distance with our budget One Way Cab Kakinada packages to Vijayawada, Vizag, Hyderabad, and Tirupati.",
+    features: ["Pay Only For 1 Way", "No Return Toll Burden", "Instant Cab Confirmation", "Doorstep Pickup & Drop"],
+    popularDestinations: ["Kakinada to Vizag One Way", "Kakinada to Vijayawada One Way", "Kakinada to Hyderabad Drop"]
+  },
+  {
+    id: "temple-tours",
+    icon: "Landmark",
+    title: "Temple Pilgrimage Packages",
+    shortDesc: "Spiritual temple tour cabs to Annavaram, Draksharamam, Pithapuram, Samarlakota, Srisailam, Tirupati Balaji, & Sabarimala with custom timing.",
+    features: ["Temple Timings Expertise", "Custom Puja Itineraries", "Senior Citizen Friendly", "Same Day & Multi-Day"],
+    popularDestinations: ["Annavaram Satyanarayana", "Draksharamam & Samarlakota", "Pithapuram Sripada Srivallabha", "Tirupati & Srisailam"]
+  },
+  {
     id: "holiday-packages",
     icon: "Palmtree",
-    title: "Scenic Holiday & Weekend Tours",
-    shortDesc: "Handcrafted tourist packages to Araku Valley, Lambasingi fog hills, Maredumilli waterfalls, and Papikondalu cruise.",
+    title: "Holiday Tour Packages",
+    shortDesc: "Scenic tourist taxi packages to Araku Valley, Lambasingi, Maredumilli, Papikondalu, Konaseema backwaters, and Vizag beaches.",
     features: ["Hill-Station Expert Drivers", "Photo-Spot Guidance", "Family-Safe Journeys", "Resort Drop & Pickup"],
     popularDestinations: ["Lambasingi & Vanajangi", "Maredumilli & Mothugudem", "Araku Valley & Borra Caves", "Konaseema Dindi"]
   },
   {
     id: "corporate-travel",
     icon: "Briefcase",
-    title: "Corporate & Industrial Car Hire",
-    shortDesc: "Premium executive car rental solutions for business executives, delegates, port visits, industrial plants & IT firms in Kakinada.",
+    title: "Corporate Taxi Service",
+    shortDesc: "Professional executive car hiring and employee transportation in Kakinada for corporate clients, IT companies, & industrial visits.",
     features: ["GST Invoice Billing", "Pristine Luxury Sedans/SUVs", "Professional Chauffeurs", "Monthly Rental Contracts"],
     popularDestinations: ["Kakinada Deep Water Port", "Coromandel / NFCL Plants", "District Collectorate", "Industrial Corridors"]
   },
   {
     id: "wedding-events",
     icon: "Heart",
-    title: "Wedding & Event Luxury Convoy",
-    shortDesc: "Luxury bridal cars and fleet convoys for marriages, reception entries, guest airport transfers, and family functions.",
+    title: "Wedding Car Booking",
+    shortDesc: "Luxury wedding cars and marriage taxi services for bride/groom entries, guest transfers, and family event travel in Kakinada.",
     features: ["Decorated Luxury Cars", "Coordinated Fleet Convoys", "Innova Crysta & Urbania Vans", "Large AC Buses for Guests"],
     popularDestinations: ["Marriage Function Halls", "Convention Centres", "Door-to-door Guest Shuttles"]
+  },
+  {
+    id: "daily-monthly-cabs",
+    icon: "CalendarCheck",
+    title: "Daily & Monthly Cab Booking",
+    shortDesc: "Flexible long-term cab booking plans with dedicated drivers for business executives, doctors, and families residing in Kakinada.",
+    features: ["Dedicated Chauffeur", "Cost-Effective Monthly Packages", "Priority Fleet Backup", "Full Maintenance Included"],
+    popularDestinations: ["Daily Office Commutes", "Medical & Hospital Runs", "Long-Term Project Support"]
   },
   {
     id: "group-travel",
@@ -209,69 +225,69 @@ export const servicesData = [
 export const templePackagesData = [
   {
     id: "annavaram",
-    title: "Kakinada to Annavaram Temple Taxi",
+    title: "Kakinada to Annavaram Taxi",
     subtitle: "Sri Veera Venkata Satyanarayana Swamy Temple",
     distance: "~50 km (1 Hr)",
-    duration: "Same Day Return / 4-6 Hours",
-    description: "Sacred darshan at Ratnagiri hills, holy bath in Pampa river, Vratham rituals, and serene hill views. Punctual doorstep pickup and drop in Kakinada.",
+    duration: "1 Day Trip",
+    description: "Darshan of Sri Veera Venkata Satyanarayana Swamy at Ratnagiri Hill, holy bath in Pampa river, Vratham rituals, and serene hill views. Punctual doorstep pickup and drop in Kakinada.",
     itinerary: ["Pickup from Kakinada residence/hotel", "Drive via NH16 to Annavaram hill top", "Time for Darshan & Satyanarayana Vratham", "Visit Pampa river view & return drop"],
     recommendedCar: "Swift Dzire / Ertiga / Innova Crysta",
-    tag: "Most Popular Daily Trip"
+    tag: "1 Day Trip"
   },
   {
     id: "pancharamalu",
-    title: "Pancharama Kshetra Pilgrimage Tour",
+    title: "Pancharamalu & Draksharamam",
     subtitle: "5 Sacred Shiva Kshetras of Godavari",
     distance: "Custom Circuit (200-350 km)",
-    duration: "1 or 2 Days Package",
-    description: "Divine circuit visiting Draksharamam (Bhimeswara Swamy), Samarlakota (Kumara Rama), Palakollu (Ksheera Rama), Bhimavaram (Soma Rama), and Amaravathi (Ama Rama).",
+    duration: "1-2 Days Trip",
+    description: "Sacred pilgrimage covering 5 Lord Shiva Kshetras: Draksharamam (Bhimeswara Swamy & Manikyamba Shakti Peetham), Samarlakota (Kumara Rama), Palakollu, Bhimavaram, and Amaravathi.",
     itinerary: ["Draksharamam Bhimeswara Swamy & Manikyamba Shakti Peetham", "Samarlakota Kumara Rama Temple", "Palakollu & Bhimavaram Kshetras", "Optional Amaravathi extension"],
     recommendedCar: "Innova Crysta / Ertiga / Tempo Traveller",
-    tag: "Sacred Spiritual Circuit"
+    tag: "1-2 Days Trip"
   },
   {
     id: "pithapuram",
-    title: "Pithapuram Sripada Srivallabha Kshetra",
+    title: "Pithapuram Sripada Srivallabha",
     subtitle: "Dattatreya Avatar & Puruhutika Shakti Peetham",
     distance: "~18 km (30 Mins)",
-    duration: "Half Day / 3-4 Hours",
-    description: "Visit Sri Pada Srivallabha Mahasamsthanam (first avatar of Lord Dattatreya in Kali Yuga), Kukkuteswara Swamy temple, and sacred Pada Gaya Sarovaram.",
+    duration: "Half Day / 1 Day",
+    description: "Visit Sripada Srivallabha Mahasamsthanam (first avatar of Lord Dattatreya in Kali Yuga), Kukkuteswara Swamy temple, and sacred Pada Gaya Sarovaram.",
     itinerary: ["Quick pickup from Kakinada", "Sripada Srivallabha Mahasamsthanam Darshan", "Pada Gaya holy bath & Kukkuteswara Temple", "Safe return to Kakinada"],
     recommendedCar: "Dzire / Etios / Carens",
-    tag: "Quick Darshan"
+    tag: "Half Day / 1 Day"
   },
   {
     id: "konaseema-temples",
-    title: "Konaseema Divya Temples Circuit",
-    subtitle: "Ainavilli, Ryali, Vadapalli & Mandapalli",
+    title: "Ainavilli, Ryali & Vadapalli Tour",
+    subtitle: "Ainavilli, Ryali, Vadapalli & Ravulapalem",
     distance: "~120 km Circuit",
-    duration: "Full Day (8-10 Hours)",
-    description: "Scenic lush Godavari coconut groves road trip covering Siddhi Vinayaka at Ainavilli, rare Jaganmohini Kesava Swamy at Ryali, and Vadapalli Venkateswara Swamy.",
+    duration: "1 Day Tour",
+    description: "Divine Konaseema circuit: Siddhi Vinayaka at Ainavilli, rare Jaganmohini Kesava Swamy at Ryali, and Vadapalli Sri Venkateswara Swamy amidst lush coconut groves.",
     itinerary: ["Ainavilli Vigneswara Temple", "Mukteswaram ferry & Godavari river views", "Ryali Jaganmohini Kesava Swamy", "Vadapalli Lord Venkateswara & return"],
     recommendedCar: "Ertiga / Innova Crysta / Dzire",
-    tag: "Scenic & Divine"
+    tag: "1 Day Tour"
   },
   {
     id: "bhadrachalam",
-    title: "Kakinada to Bhadrachalam Temple Tour",
+    title: "Kakinada to Bhadrachalam Tour",
     subtitle: "Sri Sita Ramachandra Swamy Temple",
     distance: "~220 km (5 Hrs)",
-    duration: "1 or 2 Days Package",
-    description: "Holy pilgrimage to Lord Rama's celestial abode on the banks of Godavari, holy bath, temple darshan, and visit to historic Parnasala.",
+    duration: "1-2 Days Trip",
+    description: "Pilgrimage to Sri Sita Ramachandra Swamy Temple on the banks of Godavari, holy river bath, temple darshan, and visit to historic Parnasala.",
     itinerary: ["Early morning start from Kakinada", "Scenic drive via Rajahmundry & Rampachodavaram", "Bhadrachalam Temple Darshan & Parnasala", "Overnight stay or same day return"],
     recommendedCar: "Toyota Innova Crysta / Force Urbania",
-    tag: "High Demand Weekend"
+    tag: "1-2 Days Trip"
   },
   {
     id: "srisailam-tirupati",
-    title: "Grand Pilgrimage: Tirupati & Srisailam",
+    title: "Kakinada to Srisailam & Tirupati",
     subtitle: "Lord Venkateswara & Mallikarjuna Jyotirlinga",
     distance: "~540+ km",
-    duration: "3 to 4 Days Package",
-    description: "Comprehensive pilgrimage tour to Tirumala Balaji, Padmavathi Ammavari Temple, Kanipakam, and Mallikarjuna Jyotirlinga at Srisailam hills.",
+    duration: "3-4 Days Trip",
+    description: "Grand pilgrimage tour to Lord Mallikarjuna Swamy Jyotirlinga at Srisailam and Lord Venkateswara Swamy Balaji at Tirumala Tirupati with Kanipakam darshan.",
     itinerary: ["Customized pickup and itinerary planning", "Dedicated chauffeur with extensive Ghat road experience", "Assistance with accommodation route stops", "Safe and punctual round trip drop"],
     recommendedCar: "Innova Crysta / Force Urbania / Tempo Traveller",
-    tag: "Grand Pilgrimage"
+    tag: "3-4 Days Trip"
   }
 ];
 
@@ -282,44 +298,53 @@ export const holidayPackagesData = [
     location: "Kashmir of Andhra Pradesh",
     duration: "2 Days / 1 Night",
     highlights: ["Vanajangi Cloud Sunrise Peak", "Lambasingi Sub-Zero Winter Fog", "Kothapalli Waterfalls", "Coffee & Pepper Plantations"],
-    description: "Experience misty winter mornings, cloud walking at Vanajangi hills, apple & strawberry farms, and campfire nights with our hill-expert chauffeurs.",
+    description: "Experience Kashmir of Andhra, cloud sunrise views at Vanajangi hills, Kothapalli waterfalls, apple & strawberry farms, and campfire nights with our hill-expert chauffeurs.",
     car: "Kia Carens / Innova Crysta / Ertiga"
   },
   {
     id: "maredumilli",
-    title: "Maredumilli & Mothugudem Waterfalls",
+    title: "Maredumilli & Mothugudem",
     location: "Dense Eastern Ghats Eco-Tourism",
-    duration: "1 or 2 Days",
+    duration: "1-2 Days",
     highlights: ["Jalatarangini & Amruthadhara Falls", "Authentic Bamboo Chicken", "Mothugudem Polluru Waterfalls", "Jungle Eco-Resorts"],
-    description: "Deep virgin forests, crystal clean streams, and tribal heritage. Perfect weekend escape for nature lovers and families from Kakinada.",
+    description: "Dense eco-forests, waterfalls, famous bamboo chicken, crystal clean streams, and serene nature resorts. Perfect weekend escape for families from Kakinada.",
     car: "Innova Crysta / Force Urbania / Dzire"
   },
   {
     id: "araku-vizag",
-    title: "Vizag Sightseeing & Araku Valley",
+    title: "Vizag City & Araku Valley",
     location: "Beaches & Coffee Hills",
-    duration: "2 to 3 Days",
+    duration: "2-3 Days",
     highlights: ["Borra Caves & Chaparai Rapids", "Coffee Museum & Padmapuram Gardens", "RK Beach & Submarine Museum", "Kailasagiri Hilltop"],
-    description: "The complete coastal and hill-station holiday package combining the City of Destiny (Vizag) and the coffee aroma hills of Araku.",
+    description: "RK Beach, Submarine Museum, Kailasagiri, Borra Caves, & Chaparai water cascade. The complete coastal and hill-station holiday package.",
     car: "Kia Carens / Toyota Innova Crysta"
   },
   {
     id: "konaseema-dindi",
-    title: "Konaseema Backwaters & Coringa",
+    title: "Konaseema & Dindi Backwaters",
     location: "Godavari Backwaters & Mangroves",
-    duration: "1 or 2 Days",
+    duration: "1-2 Days",
     highlights: ["Dindi Houseboats on Godavari", "Coringa Mangrove Sanctuary Walk", "Hope Island Boat Point", "Coconut Country Roadscapes"],
-    description: "Tranquil green waterways, fresh seafood delicacies, and India's second largest mangrove forest right at Kakinada's doorstep.",
+    description: "Coconut country tour, Dindi houseboats, Coringa Mangrove Sanctuary, and Hope Island boat point with fresh seafood delicacies.",
     car: "Swift Dzire / Toyota Etios / Ertiga"
   },
   {
     id: "papikondalu",
-    title: "Papikondalu Godavari River Cruise",
+    title: "Papikondalu Godavari Cruise",
     location: "Gorge Cruise & Nature Huts",
-    duration: "1 or 2 Days",
+    duration: "1-2 Days",
     highlights: ["Purushothapatanam Boat Point Transfer", "Breathtaking Godavari Hill Gorges", "Perantapalli Ashram", "Kolluru Night Bamboo Huts"],
-    description: "Door-to-door express taxi transfer to the Papikondalu boat launching point with seamless coordination for round trip return.",
+    description: "Breathtaking Godavari gorge boat cruise, Kolluru night stay huts & Perantapalli Ashram with express cab and boat point transfer.",
     car: "Innova Crysta / Force Urbania / Tempo Traveller"
+  },
+  {
+    id: "hyderabad-ramoji",
+    title: "Hyderabad & Ramoji Film City",
+    location: "Heritage & Entertainment Capital",
+    duration: "3-4 Days",
+    highlights: ["Full day Ramoji Film City Tour", "Charminar & Laad Bazaar", "Golconda Fort Sound & Light", "Salar Jung Museum & Birla Mandir"],
+    description: "Full day Ramoji Film City tour, Charminar, Golconda Fort, Salar Jung Museum & shopping with dedicated round trip outstation SUV cab.",
+    car: "Toyota Innova Crysta / Kia Carens / Urbania"
   }
 ];
 

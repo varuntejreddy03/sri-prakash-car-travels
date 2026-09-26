@@ -17,12 +17,12 @@ export default function Navbar({ onOpenBooking }) {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Cars', path: '/cars' },
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Airport Taxi', path: '/airport-taxi' },
+    { name: 'About Us', path: '/about' },
+    { name: 'Cab Services', path: '/services' },
     { name: 'Temple Tours', path: '/temple-tours' },
-    { name: 'Packages', path: '/holiday-packages' },
+    { name: 'Tour Packages', path: '/holiday-packages' },
+    { name: 'Airport Taxi', path: '/airport-taxi' },
+    { name: 'Our Fleet', path: '/cars' },
     { name: 'Contact', path: '/contact' },
   ];
 

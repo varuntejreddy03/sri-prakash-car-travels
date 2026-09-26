@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import { servicesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
-import { Plane, Compass, Landmark, MapPin, Palmtree, Briefcase, Heart, Users, ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
+import { Plane, Compass, Landmark, MapPin, Palmtree, Briefcase, Heart, Users, Route, CalendarCheck, ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
 
 const iconMap = {
   Plane: Plane,
@@ -13,6 +13,8 @@ const iconMap = {
   Briefcase: Briefcase,
   Heart: Heart,
   Users: Users,
+  Route: Route,
+  CalendarCheck: CalendarCheck
 };
 
 export default function ServicesPage({ onOpenBooking }) {
