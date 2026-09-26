@@ -30,11 +30,11 @@ export default function AboutSection({ onOpenBooking }) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
               {/* 15+ Years Excellence Badge */}
-              <div className="absolute bottom-6 left-6 bg-[#FF5B00] text-white p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-3">
-                <div className="text-3xl sm:text-4xl font-extrabold font-outfit leading-none">
+              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#FF5B00] text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3">
+                <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none">
                   15+
                 </div>
-                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider leading-tight">
+                <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight">
                   Years <br />Excellence
                 </div>
               </div>

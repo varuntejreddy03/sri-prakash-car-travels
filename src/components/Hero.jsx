@@ -46,18 +46,18 @@ Please share immediate fare quote and confirm cab availability.`;
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold font-outfit text-white tracking-tight leading-[1.12]">
+            <h1 className="text-3xl sm:text-5xl xl:text-6xl font-extrabold font-outfit text-white tracking-tight leading-[1.14]">
               Best <span className="text-[#FF5B00]">Car Travels</span> & <br />
               Taxi Service in Kakinada
             </h1>
 
             {/* Subtext */}
-            <p className="text-base sm:text-lg text-slate-300 font-jakarta max-w-xl leading-relaxed">
+            <p className="text-sm sm:text-lg text-slate-300 font-jakarta max-w-xl leading-relaxed">
               Enjoy premium, comfortable, and affordable travel with <strong>Sri Prakash Car Travels</strong>. We offer 24/7 Airport Taxi Service, Local Cab Bookings, One Way & Round Trip Outstation Cabs, Temple Packages, and Corporate Travel in Kakinada & across India.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-1">
+            <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 href={`tel:+91${businessInfo.phone}`}
                 className="ref-btn-primary group !bg-[#FF5B00] hover:!bg-[#e04f00]"
@@ -73,7 +73,7 @@ Please share immediate fare quote and confirm cab availability.`;
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all group"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all group"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400 fill-emerald-400" />
                 <span>Quick WhatsApp Booking</span>
@@ -81,7 +81,7 @@ Please share immediate fare quote and confirm cab availability.`;
             </div>
 
             {/* 4 Stats Cards */}
-            <div className="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="pt-6 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
               <div className="bg-white/5 rounded-2xl p-3 border border-white/5 text-center sm:text-left">
                 <div className="text-2xl font-extrabold font-outfit text-white">10,000+</div>
                 <div className="text-xs text-slate-400 font-medium mt-0.5">Happy Customers</div>
@@ -107,7 +107,7 @@ Please share immediate fare quote and confirm cab availability.`;
 
           {/* Right Column: Instant Cab Booking Kakinada Widget */}
           <div className="lg:col-span-5 relative" id="booking-form">
-            <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141B28] p-6 sm:p-7">
+            <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141B28] p-4 sm:p-7">
               
               <div className="mb-5 pb-4 border-b border-white/10">
                 <span className="text-[11px] font-bold tracking-widest text-[#FF5B00] uppercase block">

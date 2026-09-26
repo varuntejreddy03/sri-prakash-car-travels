@@ -38,15 +38,15 @@ Please confirm driver assignment and fixed rate.`;
         onClick={onClose}
       />
 
-      <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl z-10 overflow-hidden border border-slate-200 my-8">
+      <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl z-10 overflow-hidden border border-slate-200 my-auto max-h-[92vh] flex flex-col">
         
         {/* Header */}
-        <div className="bg-[#0B0F17] p-6 text-white flex items-center justify-between">
+        <div className="bg-[#0B0F17] p-5 sm:p-6 text-white flex items-center justify-between shrink-0">
           <div>
             <span className="text-xs text-[#FF5B00] font-bold uppercase tracking-wider block">
               24/7 Cab Booking
             </span>
-            <h3 className="font-outfit font-extrabold text-xl text-white mt-0.5">
+            <h3 className="font-outfit font-extrabold text-lg sm:text-xl text-white mt-0.5">
               Book Your Ride in Kakinada
             </h3>
           </div>
@@ -59,7 +59,7 @@ Please confirm driver assignment and fixed rate.`;
         </div>
 
         {/* Form Body */}
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 font-jakarta text-slate-800">
+        <form onSubmit={handleSubmit} className="p-5 sm:p-6 space-y-4 font-jakarta text-slate-800 overflow-y-auto flex-1">
           <div>
             <label className="block text-xs font-bold text-slate-700 mb-1">
               Service Type

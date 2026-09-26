@@ -31,13 +31,13 @@ export default function Navbar({ onOpenBooking }) {
       {/* Top Contact Strip */}
       <div className="bg-[#0B0F17] text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-white/5">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 sm:gap-6">
             <a 
               href={`tel:+91${businessInfo.phone}`} 
               className="flex items-center gap-1.5 hover:text-[#FF5B00] transition-colors font-medium text-white"
             >
               <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
-              <span>24/7 Helpline: <strong>+91 {businessInfo.phone}</strong></span>
+              <span className="text-[11px] sm:text-xs">24/7 Helpline: <strong>+91 {businessInfo.phone}</strong></span>
             </a>
             <span className="hidden md:flex items-center gap-1.5 text-slate-400">
               <MapPin className="w-3.5 h-3.5 text-[#FF5B00]" />
@@ -45,30 +45,30 @@ export default function Navbar({ onOpenBooking }) {
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <a 
               href={businessInfo.facebook} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-slate-400 hover:text-[#FF5B00] transition-colors"
+              className="hidden sm:inline text-slate-400 hover:text-[#FF5B00] transition-colors"
             >
               Facebook
             </a>
-            <span className="text-slate-600">|</span>
+            <span className="hidden sm:inline text-slate-600">|</span>
             <a 
               href={businessInfo.instagram} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-slate-400 hover:text-[#FF5B00] transition-colors"
+              className="hidden sm:inline text-slate-400 hover:text-[#FF5B00] transition-colors"
             >
               Instagram
             </a>
-            <span className="text-slate-600">|</span>
+            <span className="hidden sm:inline text-slate-600">|</span>
             <a 
               href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1"
+              className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 text-[11px] sm:text-xs"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp Chat</span>
@@ -80,8 +80,8 @@ export default function Navbar({ onOpenBooking }) {
       {/* Main Header matching Rentor reference */}
       <header className={`sticky top-0 z-50 transition-all duration-200 ${
         isScrolled 
-          ? 'bg-[#0B0F17]/95 backdrop-blur-md shadow-2xl py-2.5 border-b border-white/10' 
-          : 'bg-[#0B0F17] py-3.5 border-b border-white/5'
+          ? 'bg-[#0B0F17]/95 backdrop-blur-md shadow-2xl py-2 border-b border-white/10' 
+          : 'bg-[#0B0F17] py-2.5 sm:py-3.5 border-b border-white/5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           
@@ -90,7 +90,7 @@ export default function Navbar({ onOpenBooking }) {
             <img 
               src="/images/logo-transparent-cv.png" 
               alt="Sri Prakash Car Travels" 
-              className="h-14 sm:h-18 md:h-20 w-auto object-contain drop-shadow-xl group-hover:scale-105 transition-all duration-200"
+              className="h-12 sm:h-16 md:h-20 w-auto object-contain drop-shadow-xl group-hover:scale-105 transition-all duration-200"
             />
           </Link>
 
@@ -127,7 +127,7 @@ export default function Navbar({ onOpenBooking }) {
               onClick={onOpenBooking}
               className="ref-btn-primary group"
             >
-              <span>Book Now</span>
+              <span>Book Cab Now</span>
               <span className="ref-circle-arrow">
                 <ArrowRight className="w-3 h-3 text-white" />
               </span>
@@ -138,7 +138,7 @@ export default function Navbar({ onOpenBooking }) {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation"
-            className="lg:hidden p-2 rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors"
+            className="lg:hidden p-2.5 rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -167,14 +167,14 @@ export default function Navbar({ onOpenBooking }) {
                 </button>
               </div>
 
-              <div className="flex flex-col py-6 space-y-1">
+              <div className="flex flex-col py-4 space-y-1">
                 {navLinks.map((link) => (
                   <NavLink
                     key={link.name}
                     to={link.path}
                     onClick={() => setMobileMenuOpen(false)}
                     className={({ isActive }) =>
-                      `px-4 py-3 rounded-xl font-semibold transition-colors text-base ${
+                      `px-4 py-2.5 rounded-xl font-semibold transition-colors text-sm ${
                         isActive 
                           ? 'bg-[#FF5B00]/15 text-[#FF5B00] font-bold border border-[#FF5B00]/30' 
                           : 'text-slate-300 hover:text-white hover:bg-white/5'
@@ -187,10 +187,21 @@ export default function Navbar({ onOpenBooking }) {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-slate-100 space-y-3">
+            <div className="pt-4 border-t border-white/10 space-y-2.5">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenBooking();
+                }}
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-lg shadow-[#FF5B00]/30 transition-all"
+              >
+                <span>Book Cab Online</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+
               <a
                 href={`tel:+91${businessInfo.phone}`}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-full font-bold text-sm bg-slate-900 text-white"
+                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold text-xs bg-white/10 text-white hover:bg-white/20 transition-all"
               >
                 <Phone className="w-4 h-4 text-[#FF5B00]" />
                 <span>Call Helpline (+91 {businessInfo.phone})</span>
@@ -200,7 +211,7 @@ export default function Navbar({ onOpenBooking }) {
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-full font-bold text-sm bg-[#25D366] text-white"
+                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold text-xs bg-[#25D366] text-white hover:bg-emerald-600 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp Booking</span>

@@ -14,7 +14,7 @@ export default function VehicleModal({ vehicle, onClose }) {
       />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-2xl bg-[#0F1626] border border-white/15 rounded-3xl overflow-hidden shadow-2xl z-10 my-8">
+      <div className="relative w-full max-w-2xl bg-[#0F1626] border border-white/15 rounded-3xl overflow-hidden shadow-2xl z-10 my-auto max-h-[92vh] flex flex-col">
         
         {/* Modal Header & Close Button */}
         <button
@@ -25,7 +25,7 @@ export default function VehicleModal({ vehicle, onClose }) {
         </button>
 
         {/* Vehicle Image */}
-        <div className="relative aspect-[16/9] w-full bg-[#070A10] overflow-hidden">
+        <div className="relative aspect-[16/9] w-full bg-[#070A10] overflow-hidden shrink-0">
           <img
             src={vehicle.image}
             alt={vehicle.name}
@@ -37,7 +37,7 @@ export default function VehicleModal({ vehicle, onClose }) {
             <span className="badge-orange-pill text-xs mb-1">
               {vehicle.tag}
             </span>
-            <h3 className="font-outfit font-black text-2xl sm:text-3xl text-white">
+            <h3 className="font-outfit font-black text-xl sm:text-3xl text-white">
               {vehicle.name}
             </h3>
             <p className="text-xs font-mono font-bold text-amber-400 mt-0.5">
@@ -47,7 +47,7 @@ export default function VehicleModal({ vehicle, onClose }) {
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-8 space-y-6">
+        <div className="p-5 sm:p-8 space-y-6 overflow-y-auto flex-1">
           
           {/* Key Specs Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

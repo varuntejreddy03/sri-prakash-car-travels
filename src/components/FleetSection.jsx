@@ -34,12 +34,12 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
 
           <div className="flex items-center gap-3 flex-wrap">
             {/* Category Filter Pills */}
-            <div className="flex items-center gap-1.5 bg-white p-1 rounded-full border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-1.5 bg-white p-1 rounded-2xl sm:rounded-full border border-slate-200 shadow-sm overflow-x-auto max-w-full">
               {filterTabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveFilter(tab.id)}
-                  className={`px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
+                  className={`px-3 py-1.5 sm:px-3.5 rounded-xl sm:rounded-full text-[11px] sm:text-xs font-bold transition-all whitespace-nowrap shrink-0 ${
                     activeFilter === tab.id
                       ? 'bg-[#FF5B00] text-white shadow-md shadow-[#FF5B00]/30'
                       : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
