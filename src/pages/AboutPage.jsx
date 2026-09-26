@@ -53,13 +53,24 @@ export default function AboutPage({ onOpenBooking }) {
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[16/11] bg-slate-900">
+            <div className="lg:col-span-6 relative">
+              <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[16/11] bg-slate-900 relative group">
                 <img
-                  src="/images/about-kakinada.jpeg"
-                  alt="Sri Prakash Car Travels Fleet and Team"
-                  className="w-full h-full object-cover"
+                  src="/images/kia-carens.jpg"
+                  alt="Sri Prakash Car Travels Fleet and Chauffeurs"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                {/* 15+ Years Excellence Badge */}
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#FF5B00] text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3">
+                  <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none">
+                    15+
+                  </div>
+                  <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight">
+                    Years <br />Excellence
+                  </div>
+                </div>
               </div>
             </div>
           </div>
