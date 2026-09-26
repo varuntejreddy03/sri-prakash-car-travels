@@ -11,6 +11,7 @@ const airportDataMap = {
     officialName: "Rajahmundry Airport (Madhurapudi - RJA)",
     distance: "~65 km",
     travelTime: "~1 Hour 30 Minutes",
+    image: "/images/airport-rajahmundry.jpg",
     highway: "Samarlakota - Rajanagaram - NH16 Expressway",
     flightsCovered: "IndiGo & domestic flights to Hyderabad, Bengaluru, Tirupati, Chennai",
     overview: "Rajahmundry Airport is the primary domestic gateway for Kakinada and East Godavari. We provide dedicated door-to-terminal pickup and arrival drops with guaranteed flight tracking so you never experience flight delay panic.",
@@ -25,6 +26,7 @@ const airportDataMap = {
     officialName: "Visakhapatnam International Airport (VTZ)",
     distance: "~155 km",
     travelTime: "~3 Hours 30 Minutes",
+    image: "/images/airport-vizag.jpg",
     highway: "NH16 Express 4-Lane Highway via Annavaram & Tuni",
     flightsCovered: "International flights (Dubai, Singapore, Bangkok) & pan-India metro connections",
     overview: "Visakhapatnam Airport is the premier international airport of Andhra Pradesh. Our highway-experienced chauffeurs provide smooth, comfortable long-distance transfers with spacious luggage boot space for international travel bags.",
@@ -39,6 +41,7 @@ const airportDataMap = {
     officialName: "Vijayawada Airport (Gannavaram - VGA)",
     distance: "~210 km",
     travelTime: "~4 Hours 30 Minutes",
+    image: "/images/airport-vijayawada.jpg",
     highway: "Via Ravulapalem, Tanuku, Tadepalligudem & Eluru Bypass",
     flightsCovered: "Direct flights to Delhi, Mumbai, Bengaluru, Hyderabad, Dubai & Gulf",
     overview: "Reliable airport transfers to Gannavaram Airport. Perfect for business executives, Gulf travelers, and families connecting to international destinations.",
@@ -53,6 +56,7 @@ const airportDataMap = {
     officialName: "Rajiv Gandhi International Airport (Shamshabad - HYD)",
     distance: "~490 km",
     travelTime: "~9 to 10 Hours",
+    image: "/images/airport-hyderabad.jpg",
     highway: "Kakinada → Vijayawada Expressway → Suryapet → Hyderabad ORR",
     flightsCovered: "Direct global flights to USA, UK, Europe, Middle East & Australia",
     overview: "Overnight luxury sleeper-style outstation taxi for international family groups with heavy baggage. Driven by two seasoned highway chauffeurs with utmost safety.",
@@ -114,6 +118,27 @@ Please confirm pickup timing and fixed fare.`;
             {/* Left Content */}
             <div className="lg:col-span-8 space-y-10">
               
+              {/* Airport Terminal Hero Photo */}
+              <div className="relative h-64 sm:h-80 w-full rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <img
+                  src={data.image}
+                  alt={data.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="px-4 py-1.5 rounded-full text-sm font-mono font-extrabold bg-[#FF5B00] text-white shadow-lg">
+                    {data.code} Airport Taxi
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
+                  <div>
+                    <h3 className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{data.officialName}</h3>
+                    <p className="text-xs text-slate-200 mt-0.5">{data.distance} from Kakinada • {data.travelTime}</p>
+                  </div>
+                </div>
+              </div>
+
               <div>
                 <span className="ref-section-tag">{data.officialName}</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mt-2">

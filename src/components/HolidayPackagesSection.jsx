@@ -29,17 +29,31 @@ export default function HolidayPackagesSection() {
           {holidayPackagesData.map((pkg) => (
             <div
               key={pkg.id}
-              className="rounded-3xl bg-[#111827] border border-white/10 p-7 flex flex-col justify-between hover:border-emerald-400/40 transition-all duration-300 group shadow-xl hover:shadow-2xl hover:shadow-black/60"
+              className="rounded-3xl bg-[#111827] border border-white/10 p-5 sm:p-6 flex flex-col justify-between hover:border-emerald-400/40 transition-all duration-300 group shadow-xl hover:shadow-2xl hover:shadow-black/60"
             >
               <div>
-                <div className="flex items-center justify-between gap-2 mb-3">
-                  <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-400/10 text-emerald-400 border border-emerald-400/20">
-                    {pkg.location}
-                  </span>
-                  <span className="text-xs text-slate-400 flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-[#FF5B00]" />
-                    {pkg.duration}
-                  </span>
+                {/* Holiday Tour Image Box */}
+                <div className="relative h-48 w-full rounded-2xl overflow-hidden mb-4 bg-slate-900">
+                  <img
+                    src={pkg.image}
+                    alt={pkg.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#111827] via-black/25 to-transparent" />
+                  
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500 text-white backdrop-blur-sm shadow-md">
+                      {pkg.location}
+                    </span>
+                  </div>
+
+                  <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs text-white/95 font-medium">
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-amber-300" />
+                      {pkg.duration}
+                    </span>
+                  </div>
                 </div>
 
                 <Link to={`/holiday-packages/${pkg.id}`}>
@@ -48,7 +62,7 @@ export default function HolidayPackagesSection() {
                   </h3>
                 </Link>
 
-                <p className="text-xs sm:text-sm text-slate-400 mt-3 font-jakarta leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-400 mt-2 font-jakarta leading-relaxed">
                   {pkg.description}
                 </p>
 

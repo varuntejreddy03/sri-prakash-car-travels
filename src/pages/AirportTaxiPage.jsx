@@ -14,6 +14,7 @@ export default function AirportTaxiPage({ onOpenBooking }) {
       name: "Rajahmundry Airport Taxi (RJA)",
       distance: "~65 km",
       time: "~1.5 Hours",
+      image: "/images/airport-rajahmundry.jpg",
       route: "Kakinada → Samarlakota → Rajanagaram → Madhurapudi Airport",
       description: "Fastest express route for daily domestic flights (IndiGo, Air India) connecting Hyderabad, Bengaluru, Chennai, and Tirupati.",
       cars: ["Swift Dzire (4+1)", "Toyota Etios (4+1)", "Toyota Innova Crysta (7+1)", "Kia Carens (6+1)"],
@@ -25,6 +26,7 @@ export default function AirportTaxiPage({ onOpenBooking }) {
       name: "Visakhapatnam (Vizag) Airport Taxi (VTZ)",
       distance: "~155 km",
       time: "~3.5 Hours",
+      image: "/images/airport-vizag.jpg",
       route: "Kakinada → Annavaram → Tuni → Anakapalle → Vizag Airport (NH16)",
       description: "Direct 4-lane highway transfer to Visakhapatnam International Airport for international and major metro flights.",
       cars: ["Toyota Innova Crysta (7+1 VIP)", "Kia Carens (6+1)", "Maruti Ertiga (6+1)", "Swift Dzire (4+1)"],
@@ -36,6 +38,7 @@ export default function AirportTaxiPage({ onOpenBooking }) {
       name: "Vijayawada Airport Taxi (Gannavaram - VGA)",
       distance: "~210 km",
       time: "~4.5 Hours",
+      image: "/images/airport-vijayawada.jpg",
       route: "Kakinada → Ravulapalem → Tanuku → Tadepalligudem → Eluru → Gannavaram",
       description: "Comfortable inter-city airport transfer connecting state capital flights and Gulf/international journeys.",
       cars: ["Toyota Innova Crysta (7+1)", "Kia Carens (6+1)", "Toyota Etios (4+1)"],
@@ -47,6 +50,7 @@ export default function AirportTaxiPage({ onOpenBooking }) {
       name: "Hyderabad Airport Taxi (Shamshabad - HYD)",
       distance: "~490 km",
       time: "9 to 10 Hours",
+      image: "/images/airport-hyderabad.jpg",
       route: "Kakinada → Vijayawada Expressway → Suryapet → Hyderabad RGIA",
       description: "Full overnight sleeper-style outstation taxi for international travelers with extensive luggage.",
       cars: ["Toyota Innova Crysta (7+1)", "Force Urbania Luxury Van"],
@@ -111,20 +115,38 @@ export default function AirportTaxiPage({ onOpenBooking }) {
               {airportOptions.map((apt) => (
                 <div
                   key={apt.code}
-                  className="bg-[#F8FAFC] rounded-3xl p-8 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                  className="bg-[#F8FAFC] rounded-3xl p-5 sm:p-7 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <span className="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-[#FF5B00] text-white">
-                        {apt.code}
-                      </span>
-                      <span className="text-xs font-bold text-[#FF5B00]">
-                        {apt.distance} • {apt.time}
-                      </span>
+                    {/* Airport Terminal Photo */}
+                    <div className="relative h-52 w-full rounded-2xl overflow-hidden mb-5 bg-slate-900">
+                      <img
+                        src={apt.image}
+                        alt={apt.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                      
+                      <div className="absolute top-3 left-3">
+                        <span className="px-3.5 py-1 rounded-full text-xs font-mono font-bold bg-[#FF5B00] text-white shadow-md">
+                          {apt.code}
+                        </span>
+                      </div>
+
+                      <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-white/95 font-medium">
+                        <span className="flex items-center gap-1.5 font-bold text-amber-300">
+                          <Clock className="w-3.5 h-3.5 text-amber-300" />
+                          {apt.time}
+                        </span>
+                        <span className="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 text-[11px]">
+                          {apt.distance}
+                        </span>
+                      </div>
                     </div>
 
                     <Link to={`/airport-taxi/${apt.id}`}>
-                      <h3 className="font-outfit font-extrabold text-2xl text-slate-900 hover:text-[#FF5B00] transition-colors leading-snug mb-2">
+                      <h3 className="font-outfit font-extrabold text-2xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug mb-2">
                         {apt.name}
                       </h3>
                     </Link>

@@ -7,51 +7,67 @@ export default function PhotoGallerySection() {
   const galleryItems = [
     {
       id: 1,
-      title: "Toyota Innova Crysta",
+      title: "Toyota Innova Crysta & Fleet",
       category: "fleet",
       categoryName: "Luxury Fleet",
       sub: "Kakinada Executive Cabs",
-      image: "/images/innova-crysta.jpg"
+      image: "/images/gallery-fleet.jpg"
     },
     {
       id: 2,
-      title: "Airport Transfers",
+      title: "Airport Transfers & Flight Drops",
       category: "airport",
       categoryName: "Airport Drop & Pickup",
       sub: "Rajahmundry & Vizag Express",
-      image: "/images/dzire.jpg"
+      image: "/images/gallery-airport.jpg"
     },
     {
       id: 3,
-      title: "Araku & Lambasingi Tour",
+      title: "Araku Valley & Hill Tour",
       category: "tours",
       categoryName: "Hill & Nature Tours",
       sub: "Holiday Tour Packages",
-      image: "/images/kia-carens.jpg"
+      image: "/images/gallery-araku.jpg"
     },
     {
       id: 4,
-      title: "Temple Tour Pilgrimage",
+      title: "Annavaram & Temple Pilgrimages",
       category: "temple",
       categoryName: "Divine Pilgrimages",
       sub: "Annavaram & Draksharamam",
-      image: "/images/tempo-traveller.jpg"
+      image: "/images/gallery-temple.jpg"
     },
     {
       id: 5,
-      title: "Toyota Etios Comfort",
-      category: "fleet",
-      categoryName: "Sedan Fleet",
-      sub: "City & Outstation Cabs",
-      image: "/images/etios.jpg"
+      title: "Rajahmundry Airport Express",
+      category: "airport",
+      categoryName: "Airport Drop & Pickup",
+      sub: "Direct Domestic Flight Drops",
+      image: "/images/airport-rajahmundry.jpg"
     },
     {
       id: 6,
-      title: "Luxury Coach & Buses",
+      title: "Ratnagiri Annavaram Shrine",
+      category: "temple",
+      categoryName: "Divine Pilgrimages",
+      sub: "Ratnagiri Hill Top View",
+      image: "/images/temple-annavaram.png"
+    },
+    {
+      id: 7,
+      title: "Lambasingi Fog & Coffee Hills",
+      category: "tours",
+      categoryName: "Hill & Nature Tours",
+      sub: "Kashmir of Andhra Pradesh",
+      image: "/images/tour-lambasingi.png"
+    },
+    {
+      id: 8,
+      title: "Executive Force Urbania & Coach",
       category: "fleet",
-      categoryName: "Group Travel",
-      sub: "Wedding & Large Pilgrimages",
-      image: "/images/luxury-bus.jpg"
+      categoryName: "Luxury Fleet",
+      sub: "VIP Luxury Passenger Van",
+      image: "/images/urbania.jpg"
     }
   ];
 

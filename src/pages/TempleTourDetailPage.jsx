@@ -55,6 +55,31 @@ Please share customized itinerary and fixed pricing.`;
             {/* Left Content */}
             <div className="lg:col-span-8 space-y-10">
               
+              {/* Temple Hero Photo Banner */}
+              <div className="relative h-64 sm:h-80 w-full rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <img
+                  src={pkg.image}
+                  alt={pkg.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5B00] text-white shadow-lg">
+                    {pkg.tag}
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
+                  <div>
+                    <h3 className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{pkg.title}</h3>
+                    <p className="text-xs text-amber-300 mt-0.5">{pkg.subtitle}</p>
+                  </div>
+                  <div className="hidden sm:block text-right">
+                    <span className="text-xs text-slate-300 block">Distance</span>
+                    <strong className="text-white text-sm">{pkg.distance}</strong>
+                  </div>
+                </div>
+              </div>
+
               <div>
                 <span className="ref-section-tag">{pkg.subtitle}</span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mt-2">

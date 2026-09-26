@@ -222,6 +222,61 @@ export const servicesData = [
   }
 ];
 
+export const airportTransfersData = [
+  {
+    id: "rajahmundry",
+    code: "RJA",
+    name: "Rajahmundry Airport Taxi",
+    fullName: "Rajahmundry Airport Taxi (RJA)",
+    distance: "~65 km",
+    time: "~1.5 Hours",
+    route: "Via Samarlakota & Rajanagaram NH16",
+    desc: "Guaranteed on-time drop & arrival pickup for all Indigo & domestic flights.",
+    recommended: "Swift Dzire / Maruti Ertiga",
+    image: "/images/airport-rajahmundry.jpg",
+    popular: true
+  },
+  {
+    id: "vizag",
+    code: "VTZ",
+    name: "Visakhapatnam (Vizag) Airport Taxi",
+    fullName: "Visakhapatnam (Vizag) Airport Taxi (VTZ)",
+    distance: "~155 km",
+    time: "~3.5 Hours",
+    route: "Via NH16 Express Highway",
+    desc: "Direct express highway drive with zero delays and comfortable cruising.",
+    recommended: "Toyota Innova Crysta / Kia Carens",
+    image: "/images/airport-vizag.jpg",
+    popular: true
+  },
+  {
+    id: "vijayawada",
+    code: "VGA",
+    name: "Vijayawada Airport Taxi (Gannavaram)",
+    fullName: "Vijayawada Airport Taxi (Gannavaram - VGA)",
+    distance: "~210 km",
+    time: "~4.5 Hours",
+    route: "Via Ravulapalem, Tanuku & Eluru",
+    desc: "Smooth journey to Gannavaram airport for international & metro flight connections.",
+    recommended: "Innova Crysta / Toyota Etios",
+    image: "/images/airport-vijayawada.jpg",
+    popular: false
+  },
+  {
+    id: "hyderabad",
+    code: "HYD",
+    name: "Hyderabad Airport Taxi (Shamshabad)",
+    fullName: "Hyderabad Airport Taxi (Shamshabad - HYD)",
+    distance: "~490 km",
+    time: "Overnight / 9-10 Hours",
+    route: "Via Vijayawada - Hyderabad Highway",
+    desc: "Comfortable sleeper-style family trip for early morning international flights.",
+    recommended: "Toyota Innova Crysta / Force Urbania",
+    image: "/images/airport-hyderabad.jpg",
+    popular: false
+  }
+];
+
 export const templePackagesData = [
   {
     id: "annavaram",
@@ -229,6 +284,7 @@ export const templePackagesData = [
     subtitle: "Sri Veera Venkata Satyanarayana Swamy Temple",
     distance: "~50 km (1 Hr)",
     duration: "1 Day Trip",
+    image: "/images/temple-annavaram.png",
     description: "Darshan of Sri Veera Venkata Satyanarayana Swamy at Ratnagiri Hill, holy bath in Pampa river, Vratham rituals, and serene hill views. Punctual doorstep pickup and drop in Kakinada.",
     itinerary: ["Pickup from Kakinada residence/hotel", "Drive via NH16 to Annavaram hill top", "Time for Darshan & Satyanarayana Vratham", "Visit Pampa river view & return drop"],
     recommendedCar: "Swift Dzire / Ertiga / Innova Crysta",
@@ -240,6 +296,7 @@ export const templePackagesData = [
     subtitle: "5 Sacred Shiva Kshetras of Godavari",
     distance: "Custom Circuit (200-350 km)",
     duration: "1-2 Days Trip",
+    image: "/images/temple-pancharamalu.png",
     description: "Sacred pilgrimage covering 5 Lord Shiva Kshetras: Draksharamam (Bhimeswara Swamy & Manikyamba Shakti Peetham), Samarlakota (Kumara Rama), Palakollu, Bhimavaram, and Amaravathi.",
     itinerary: ["Draksharamam Bhimeswara Swamy & Manikyamba Shakti Peetham", "Samarlakota Kumara Rama Temple", "Palakollu & Bhimavaram Kshetras", "Optional Amaravathi extension"],
     recommendedCar: "Innova Crysta / Ertiga / Tempo Traveller",
@@ -251,6 +308,7 @@ export const templePackagesData = [
     subtitle: "Dattatreya Avatar & Puruhutika Shakti Peetham",
     distance: "~18 km (30 Mins)",
     duration: "Half Day / 1 Day",
+    image: "/images/temple-pithapuram.png",
     description: "Visit Sripada Srivallabha Mahasamsthanam (first avatar of Lord Dattatreya in Kali Yuga), Kukkuteswara Swamy temple, and sacred Pada Gaya Sarovaram.",
     itinerary: ["Quick pickup from Kakinada", "Sripada Srivallabha Mahasamsthanam Darshan", "Pada Gaya holy bath & Kukkuteswara Temple", "Safe return to Kakinada"],
     recommendedCar: "Dzire / Etios / Carens",
@@ -262,6 +320,7 @@ export const templePackagesData = [
     subtitle: "Ainavilli, Ryali, Vadapalli & Ravulapalem",
     distance: "~120 km Circuit",
     duration: "1 Day Tour",
+    image: "/images/temple-ainavilli.png",
     description: "Divine Konaseema circuit: Siddhi Vinayaka at Ainavilli, rare Jaganmohini Kesava Swamy at Ryali, and Vadapalli Sri Venkateswara Swamy amidst lush coconut groves.",
     itinerary: ["Ainavilli Vigneswara Temple", "Mukteswaram ferry & Godavari river views", "Ryali Jaganmohini Kesava Swamy", "Vadapalli Lord Venkateswara & return"],
     recommendedCar: "Ertiga / Innova Crysta / Dzire",
@@ -273,6 +332,7 @@ export const templePackagesData = [
     subtitle: "Sri Sita Ramachandra Swamy Temple",
     distance: "~220 km (5 Hrs)",
     duration: "1-2 Days Trip",
+    image: "/images/temple-bhadrachalam.png",
     description: "Pilgrimage to Sri Sita Ramachandra Swamy Temple on the banks of Godavari, holy river bath, temple darshan, and visit to historic Parnasala.",
     itinerary: ["Early morning start from Kakinada", "Scenic drive via Rajahmundry & Rampachodavaram", "Bhadrachalam Temple Darshan & Parnasala", "Overnight stay or same day return"],
     recommendedCar: "Toyota Innova Crysta / Force Urbania",
@@ -284,6 +344,7 @@ export const templePackagesData = [
     subtitle: "Lord Venkateswara & Mallikarjuna Jyotirlinga",
     distance: "~540+ km",
     duration: "3-4 Days Trip",
+    image: "/images/temple-srisailam.png",
     description: "Grand pilgrimage tour to Lord Mallikarjuna Swamy Jyotirlinga at Srisailam and Lord Venkateswara Swamy Balaji at Tirumala Tirupati with Kanipakam darshan.",
     itinerary: ["Customized pickup and itinerary planning", "Dedicated chauffeur with extensive Ghat road experience", "Assistance with accommodation route stops", "Safe and punctual round trip drop"],
     recommendedCar: "Innova Crysta / Force Urbania / Tempo Traveller",
@@ -297,6 +358,7 @@ export const holidayPackagesData = [
     title: "Lambasingi & Vanajangi Fog Tour",
     location: "Kashmir of Andhra Pradesh",
     duration: "2 Days / 1 Night",
+    image: "/images/tour-lambasingi.png",
     highlights: ["Vanajangi Cloud Sunrise Peak", "Lambasingi Sub-Zero Winter Fog", "Kothapalli Waterfalls", "Coffee & Pepper Plantations"],
     description: "Experience Kashmir of Andhra, cloud sunrise views at Vanajangi hills, Kothapalli waterfalls, apple & strawberry farms, and campfire nights with our hill-expert chauffeurs.",
     car: "Kia Carens / Innova Crysta / Ertiga"
@@ -306,6 +368,7 @@ export const holidayPackagesData = [
     title: "Maredumilli & Mothugudem",
     location: "Dense Eastern Ghats Eco-Tourism",
     duration: "1-2 Days",
+    image: "/images/tour-maredumilli.png",
     highlights: ["Jalatarangini & Amruthadhara Falls", "Authentic Bamboo Chicken", "Mothugudem Polluru Waterfalls", "Jungle Eco-Resorts"],
     description: "Dense eco-forests, waterfalls, famous bamboo chicken, crystal clean streams, and serene nature resorts. Perfect weekend escape for families from Kakinada.",
     car: "Innova Crysta / Force Urbania / Dzire"
@@ -315,6 +378,7 @@ export const holidayPackagesData = [
     title: "Vizag City & Araku Valley",
     location: "Beaches & Coffee Hills",
     duration: "2-3 Days",
+    image: "/images/tour-araku.png",
     highlights: ["Borra Caves & Chaparai Rapids", "Coffee Museum & Padmapuram Gardens", "RK Beach & Submarine Museum", "Kailasagiri Hilltop"],
     description: "RK Beach, Submarine Museum, Kailasagiri, Borra Caves, & Chaparai water cascade. The complete coastal and hill-station holiday package.",
     car: "Kia Carens / Toyota Innova Crysta"
@@ -324,6 +388,7 @@ export const holidayPackagesData = [
     title: "Konaseema & Dindi Backwaters",
     location: "Godavari Backwaters & Mangroves",
     duration: "1-2 Days",
+    image: "/images/tour-konaseema.png",
     highlights: ["Dindi Houseboats on Godavari", "Coringa Mangrove Sanctuary Walk", "Hope Island Boat Point", "Coconut Country Roadscapes"],
     description: "Coconut country tour, Dindi houseboats, Coringa Mangrove Sanctuary, and Hope Island boat point with fresh seafood delicacies.",
     car: "Swift Dzire / Toyota Etios / Ertiga"
@@ -333,6 +398,7 @@ export const holidayPackagesData = [
     title: "Papikondalu Godavari Cruise",
     location: "Gorge Cruise & Nature Huts",
     duration: "1-2 Days",
+    image: "/images/tour-papikondalu.png",
     highlights: ["Purushothapatanam Boat Point Transfer", "Breathtaking Godavari Hill Gorges", "Perantapalli Ashram", "Kolluru Night Bamboo Huts"],
     description: "Breathtaking Godavari gorge boat cruise, Kolluru night stay huts & Perantapalli Ashram with express cab and boat point transfer.",
     car: "Innova Crysta / Force Urbania / Tempo Traveller"
@@ -342,6 +408,7 @@ export const holidayPackagesData = [
     title: "Hyderabad & Ramoji Film City",
     location: "Heritage & Entertainment Capital",
     duration: "3-4 Days",
+    image: "/images/tour-hyderabad.jpg",
     highlights: ["Full day Ramoji Film City Tour", "Charminar & Laad Bazaar", "Golconda Fort Sound & Light", "Salar Jung Museum & Birla Mandir"],
     description: "Full day Ramoji Film City tour, Charminar, Golconda Fort, Salar Jung Museum & shopping with dedicated round trip outstation SUV cab.",
     car: "Toyota Innova Crysta / Kia Carens / Urbania"
@@ -349,14 +416,14 @@ export const holidayPackagesData = [
 ];
 
 export const popularRoutes = [
-  { from: "Kakinada", to: "Rajahmundry Airport (RJA)", dist: "65 km", time: "1.5 Hrs", route: "Via Samarlakota & Rajanagaram", car: "Dzire / Ertiga / Innova" },
-  { from: "Kakinada", to: "Visakhapatnam (Vizag)", dist: "155 km", time: "3.5 Hrs", route: "Via NH16 Annavaram Highway", car: "Dzire / Carens / Crysta" },
-  { from: "Kakinada", to: "Vijayawada", dist: "210 km", time: "4.5 Hrs", route: "Via Ravulapalem & Eluru", car: "All Fleet Options" },
-  { from: "Kakinada", to: "Annavaram Temple", dist: "50 km", time: "1.0 Hr", route: "Via NH16 Express Way", car: "Dzire / Etios / Ertiga" },
-  { from: "Kakinada", to: "Hyderabad", dist: "490 km", time: "9.0 Hrs", route: "Via Vijayawada Expressway", car: "Innova Crysta / Carens / Bus" },
-  { from: "Kakinada", to: "Tirupati", dist: "540 km", time: "10.0 Hrs", route: "Via Ongole & Nellore", car: "Innova Crysta / Urbania" },
-  { from: "Kakinada", to: "Maredumilli", dist: "135 km", time: "3.5 Hrs", route: "Via Rajahmundry & Rampachodavaram", car: "Carens / Crysta / Urbania" },
-  { from: "Kakinada", to: "Araku Valley", dist: "245 km", time: "6.0 Hrs", route: "Via Anakapalle & S.Kota Ghat", car: "Innova Crysta / Carens" }
+  { from: "Kakinada", to: "Rajahmundry Airport (RJA)", dist: "65 km", time: "1.5 Hrs", route: "Via Samarlakota & Rajanagaram", car: "Dzire / Ertiga / Innova", image: "/images/airport-rajahmundry.jpg" },
+  { from: "Kakinada", to: "Visakhapatnam (Vizag)", dist: "155 km", time: "3.5 Hrs", route: "Via NH16 Annavaram Highway", car: "Dzire / Carens / Crysta", image: "/images/tour-araku.png" },
+  { from: "Kakinada", to: "Vijayawada", dist: "210 km", time: "4.5 Hrs", route: "Via Ravulapalem & Eluru", car: "All Fleet Options", image: "/images/airport-vijayawada.jpg" },
+  { from: "Kakinada", to: "Annavaram Temple", dist: "50 km", time: "1.0 Hr", route: "Via NH16 Express Way", car: "Dzire / Etios / Ertiga", image: "/images/temple-annavaram.png" },
+  { from: "Kakinada", to: "Hyderabad", dist: "490 km", time: "9.0 Hrs", route: "Via Vijayawada Expressway", car: "Innova Crysta / Carens / Bus", image: "/images/tour-hyderabad.jpg" },
+  { from: "Kakinada", to: "Tirupati", dist: "540 km", time: "10.0 Hrs", route: "Via Ongole & Nellore", car: "Innova Crysta / Urbania", image: "/images/temple-srisailam.png" },
+  { from: "Kakinada", to: "Maredumilli", dist: "135 km", time: "3.5 Hrs", route: "Via Rajahmundry & Rampachodavaram", car: "Carens / Crysta / Urbania", image: "/images/tour-maredumilli.png" },
+  { from: "Kakinada", to: "Araku Valley", dist: "245 km", time: "6.0 Hrs", route: "Via Anakapalle & S.Kota Ghat", car: "Innova Crysta / Carens", image: "/images/tour-lambasingi.png" }
 ];
 
 export const testimonialsData = [

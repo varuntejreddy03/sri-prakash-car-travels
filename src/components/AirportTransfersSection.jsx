@@ -1,55 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Plane, Clock, ShieldCheck, MapPin, CheckCircle, ArrowRight, MessageCircle } from 'lucide-react';
-import { createWhatsAppUrl } from '../data/travelData';
+import { airportTransfersData, createWhatsAppUrl } from '../data/travelData';
 
 export default function AirportTransfersSection({ onOpenBooking }) {
-  const airports = [
-    {
-      id: "rajahmundry",
-      code: "RJA",
-      name: "Rajahmundry Airport Taxi",
-      distance: "~65 km",
-      time: "~1.5 Hours",
-      route: "Via Samarlakota & Rajanagaram NH16",
-      desc: "Guaranteed on-time drop & arrival pickup for all Indigo & domestic flights.",
-      recommended: "Swift Dzire / Maruti Ertiga",
-      popular: true
-    },
-    {
-      id: "vizag",
-      code: "VTZ",
-      name: "Visakhapatnam (Vizag) Airport Taxi",
-      distance: "~155 km",
-      time: "~3.5 Hours",
-      route: "Via NH16 Express Highway",
-      desc: "Direct express highway drive with zero delays and comfortable cruising.",
-      recommended: "Toyota Innova Crysta / Kia Carens",
-      popular: true
-    },
-    {
-      id: "vijayawada",
-      code: "VGA",
-      name: "Vijayawada Airport Taxi (Gannavaram)",
-      distance: "~210 km",
-      time: "~4.5 Hours",
-      route: "Via Ravulapalem, Tanuku & Eluru",
-      desc: "Smooth journey to Gannavaram airport for international & metro flight connections.",
-      recommended: "Innova Crysta / Toyota Etios",
-      popular: false
-    },
-    {
-      id: "hyderabad",
-      code: "HYD",
-      name: "Hyderabad Airport Taxi (Shamshabad)",
-      distance: "~490 km",
-      time: "Overnight / 9-10 Hours",
-      route: "Via Vijayawada - Hyderabad Highway",
-      desc: "Comfortable sleeper-style family trip for early morning international flights.",
-      recommended: "Toyota Innova Crysta / Force Urbania",
-      popular: false
-    }
-  ];
+  const airports = airportTransfersData;
 
   return (
     <section id="airport-transfers" className="py-20 bg-[#F8FAFC]">
@@ -83,41 +38,66 @@ export default function AirportTransfersSection({ onOpenBooking }) {
           {airports.map((airport) => (
             <div
               key={airport.code}
-              className={`bg-white rounded-3xl p-6 border transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl ${
+              className={`bg-white rounded-3xl p-4 sm:p-5 border transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl group ${
                 airport.popular 
                   ? 'border-[#FF5B00]/40 ring-1 ring-[#FF5B00]/20' 
                   : 'border-slate-200 hover:border-slate-300'
               }`}
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-orange-50 text-[#FF5B00] border border-orange-200">
-                    {airport.code}
-                  </span>
-                  {airport.popular && (
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                      Popular
+                {/* Airport Real Image Box */}
+                <div className="relative h-44 w-full rounded-2xl overflow-hidden mb-4 bg-slate-900">
+                  <img
+                    src={airport.image}
+                    alt={airport.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                  
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#FF5B00] text-white shadow-md">
+                      {airport.code}
                     </span>
+                  </div>
+
+                  {airport.popular && (
+                    <div className="absolute top-3 right-3">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300 bg-emerald-950/85 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+                        Popular
+                      </span>
+                    </div>
                   )}
+
+                  <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-white/95 font-medium">
+                    <span className="flex items-center gap-1">
+                      <MapPin className="w-3 h-3 text-[#FF5B00]" />
+                      {airport.distance}
+                    </span>
+                    <span className="flex items-center gap-1 font-bold text-amber-300">
+                      <Clock className="w-3 h-3 text-amber-300" />
+                      {airport.time}
+                    </span>
+                  </div>
                 </div>
 
                 <Link to={`/airport-taxi/${airport.id}`}>
-                  <h3 className="font-outfit font-extrabold text-lg text-slate-900 hover:text-[#FF5B00] transition-colors mb-2 leading-snug">
+                  <h3 className="font-outfit font-extrabold text-lg text-slate-900 group-hover:text-[#FF5B00] transition-colors mb-2 leading-snug">
                     {airport.name}
                   </h3>
                 </Link>
-                <p className="text-xs text-slate-500 font-jakarta leading-relaxed mb-4">
+                <p className="text-xs text-slate-500 font-jakarta leading-relaxed mb-4 line-clamp-2">
                   {airport.desc}
                 </p>
 
-                <div className="space-y-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4">
+                <div className="space-y-1.5 py-2.5 border-y border-slate-100 text-xs text-slate-600 mb-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-400">Distance:</span>
-                    <strong className="text-slate-900">{airport.distance}</strong>
+                    <span className="text-slate-400">Route:</span>
+                    <strong className="text-slate-800 text-[11px] truncate max-w-[170px]">{airport.route}</strong>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-400">Travel Time:</span>
-                    <strong className="text-[#FF5B00]">{airport.time}</strong>
+                    <span className="text-slate-400">Fleet:</span>
+                    <strong className="text-[#FF5B00] text-[11px] truncate max-w-[170px]">{airport.recommended}</strong>
                   </div>
                 </div>
               </div>

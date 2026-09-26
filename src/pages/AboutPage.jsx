@@ -56,8 +56,8 @@ export default function AboutPage({ onOpenBooking }) {
             <div className="lg:col-span-6">
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[16/11] bg-slate-900">
                 <img
-                  src="/images/tempo-traveller.jpg"
-                  alt="Sri Prakash Car Travels Branded Vehicle"
+                  src="/images/about-kakinada.jpeg"
+                  alt="Sri Prakash Car Travels Fleet and Team"
                   className="w-full h-full object-cover"
                 />
               </div>

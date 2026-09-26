@@ -32,17 +32,34 @@ export default function TempleToursPage({ onOpenBooking }) {
             {templePackagesData.map((pkg) => (
               <div
                 key={pkg.id}
-                className="bg-[#F8FAFC] rounded-3xl p-7 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-[#F8FAFC] rounded-3xl p-5 sm:p-6 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-orange-50 text-[#FF5B00] border border-orange-200">
-                      {pkg.tag}
-                    </span>
-                    <span className="text-xs text-slate-500 font-semibold flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-[#FF5B00]" />
-                      {pkg.duration}
-                    </span>
+                  {/* Temple Package Image */}
+                  <div className="relative h-52 w-full rounded-2xl overflow-hidden mb-4 bg-slate-900">
+                    <img
+                      src={pkg.image}
+                      alt={pkg.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                    
+                    <div className="absolute top-3 left-3">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#FF5B00] text-white shadow-md">
+                        {pkg.tag}
+                      </span>
+                    </div>
+
+                    <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-xs text-white/95 font-medium">
+                      <span className="flex items-center gap-1 font-bold text-amber-300">
+                        <Clock className="w-3.5 h-3.5 text-amber-300" />
+                        {pkg.duration}
+                      </span>
+                      <span className="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 text-[11px]">
+                        {pkg.distance}
+                      </span>
+                    </div>
                   </div>
 
                   <Link to={`/temple-tours/${pkg.id}`}>
