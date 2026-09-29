@@ -489,5 +489,156 @@ export const faqData = [
   {
     q: "What payment modes do you accept?",
     a: "We accept Google Pay, PhonePe, UPI, Bank Transfer, Net Banking, and Cash directly to the driver upon trip completion."
+  },
+  {
+    q: "What is the cab fare from Kakinada to Rajahmundry Airport?",
+    a: "We offer fixed, transparent all-inclusive taxi fares starting from ₹2,000 for Swift Dzire/Etios sedans and ₹3,000 for Innova Crysta/Ertiga SUVs with doorstep pickup in Kakinada and live flight tracking included. Zero hidden night surge."
+  },
+  {
+    q: "Can I hire an Innova Crysta for a wedding or outstation pilgrimage in Kakinada?",
+    a: "Yes! We operate our own authentic fleet of Toyota Innova Crysta (AP 39 UZ 3223 and sister vehicles) with captain seating, dual AC, and luggage carriers. We offer customized multi-day packages for marriages, Tirupati, Srisailam, and Pancharamalu tours."
+  },
+  {
+    q: "Which areas in Kakinada do you provide doorstep cab pickup?",
+    a: "We provide 24/7 doorstep pickup across all Kakinada localities: Bhanugudi Junction, Sriram Nagar, Kondayya Palem, Ramanayyapeta, Jagannaickpur, Kakinada Port / Beach Road, Atchampeta, JNTU Kakinada, Collectorate, Gandhi Nagar, Madhavapatnam, and Samarlakota."
+  },
+  {
+    q: "How does Sri Prakash Car Travels compare to online app aggregators in Kakinada?",
+    a: "Unlike app aggregators who outsource rides to unverified drivers with high surge rates and frequent cancellations, Sri Prakash Car Travels operates our own verified fleet with AP commercial registrations, fixed transparent tariffs, 15-minute early arrival guarantee, and 24/7 direct phone support at +91 9848903025."
   }
 ];
+
+export const tariffRatesData = [
+  {
+    vehicle: "Maruti Suzuki Dzire",
+    type: "Sedan (4+1)",
+    perKm: "₹12 - ₹13 / km",
+    minKm: "300 km / day",
+    driverBatta: "₹300 - ₹400 / day",
+    airportRJA: "Fixed Best Rate",
+    airportVTZ: "Fixed Best Rate",
+    idealFor: "Outstation drop, Rajahmundry airport, budget family round trips",
+    image: "/images/dzire.jpg"
+  },
+  {
+    vehicle: "Toyota Etios",
+    type: "Sedan (4+1)",
+    perKm: "₹12.5 - ₹13.5 / km",
+    minKm: "300 km / day",
+    driverBatta: "₹300 - ₹400 / day",
+    airportRJA: "Fixed Best Rate",
+    airportVTZ: "Fixed Best Rate",
+    idealFor: "Huge luggage boot, long highway trips to Vizag & Vijayawada",
+    image: "/images/etios.jpg"
+  },
+  {
+    vehicle: "Toyota Innova Crysta",
+    type: "Executive MPV (7+1)",
+    perKm: "₹18 - ₹20 / km",
+    minKm: "300 km / day",
+    driverBatta: "₹400 - ₹500 / day",
+    airportRJA: "Fixed Best Rate",
+    airportVTZ: "Fixed Best Rate",
+    idealFor: "VIP executive travel, family temple pilgrimages, wedding convoy",
+    image: "/images/innova-crysta.jpg"
+  },
+  {
+    vehicle: "Kia Carens Luxury",
+    type: "Modern MPV (6+1)",
+    perKm: "₹16 - ₹18 / km",
+    minKm: "300 km / day",
+    driverBatta: "₹400 - ₹500 / day",
+    airportRJA: "Fixed Best Rate",
+    airportVTZ: "Fixed Best Rate",
+    idealFor: "Family holiday tours to Araku, Lambasingi & Maredumilli resorts",
+    image: "/images/kia-carens.jpg"
+  },
+  {
+    vehicle: "Force Urbania Luxury Van",
+    type: "Executive Van (10-17)",
+    perKm: "Custom Package",
+    minKm: "Fixed Tour Basis",
+    driverBatta: "Included in Package",
+    airportRJA: "VIP Group Drop",
+    airportVTZ: "VIP Group Drop",
+    idealFor: "Celebrities, corporate delegacies, ultra-luxury group pilgrimages",
+    image: "/images/urbania.jpg"
+  },
+  {
+    vehicle: "Force Tempo Traveller",
+    type: "Tourist Coach (12-26)",
+    perKm: "₹24 - ₹28 / km",
+    minKm: "300 km / day",
+    driverBatta: "₹500 - ₹600 / day",
+    airportRJA: "Group Transfer",
+    airportVTZ: "Group Transfer",
+    idealFor: "Pancharamalu circuit, Tirupati Balaji, Sabarimala, wedding parties",
+    image: "/images/tempo-traveller.jpg"
+  },
+  {
+    vehicle: "Luxury AC Tourist Bus",
+    type: "AC Coach (32-45)",
+    perKm: "Custom Package",
+    minKm: "Tour Basis",
+    driverBatta: "Dual Driver Included",
+    airportRJA: "Corporate Conveyance",
+    airportVTZ: "Corporate Conveyance",
+    idealFor: "Marriage guest transport, college industrial tours, large pilgrimages",
+    image: "/images/luxury-bus.jpg"
+  }
+];
+
+export const kakinadaLocalitiesData = [
+  { name: "Bhanugudi Junction", tag: "Central Hub", desc: "10-15 min arrival for local & outstation bookings" },
+  { name: "Sriram Nagar & Kondayya Palem", tag: "Head Office Area", desc: "Immediate 5-minute vehicle dispatch" },
+  { name: "Ramanayyapeta & Cinema Road", tag: "Commercial Zone", desc: "Fast pickup for shopping & station drops" },
+  { name: "Jagannaickpur (JDM)", tag: "Old Town Hub", desc: "Regular cabs for port & outstation routes" },
+  { name: "Kakinada Town Railway Station (CCT)", tag: "Transit Hub", desc: "24/7 train arrival pickup & doorstep drops" },
+  { name: "Kakinada Port & Beach Road", tag: "Industrial Hub", desc: "Corporate vehicles for port delegates & plants" },
+  { name: "JNTU Kakinada (JNTUK)", tag: "Academic Zone", desc: "Student & faculty airport / vacation shuttles" },
+  { name: "Atchampeta & NFCL Plant", tag: "Industrial Corridor", desc: "Monthly & daily executive plant transportation" },
+  { name: "RMC / Government General Hospital", tag: "Medical Hub", desc: "Emergency sanitized taxi service 24 hours" },
+  { name: "Samarlakota Junction", tag: "Rail & Temple Gate", desc: "Direct connecting cabs to Kumara Rama temple" },
+  { name: "Pithapuram & Gollaprolu", tag: "Pilgrim Corridor", desc: "Dedicated temple taxis to Sripada Srivallabha" },
+  { name: "Peddapuram & Madhavapatnam", tag: "Suburban Zone", desc: "Door-to-door highway outstation cab pickups" }
+];
+
+export const competitorComparisonData = [
+  {
+    feature: "Fleet Ownership",
+    sriPrakash: "100% Verified Own Fleet (AP Commercial Plates)",
+    appAggregators: "Outsourced to random unverified gig drivers",
+    otherLocalCabs: "Middlemen renting cars from sub-operators"
+  },
+  {
+    feature: "Pricing Transparency",
+    sriPrakash: "100% Fixed Fares with Zero Hidden Night Surge",
+    appAggregators: "Peak surge up to 2x - 3x during rain/festivals",
+    otherLocalCabs: "Fluctuating verbal quotes with extra unexpected fees"
+  },
+  {
+    feature: "Arrival Punctuality",
+    sriPrakash: "Guaranteed 15 Mins Early Doorstep Arrival",
+    appAggregators: "Frequent cancellations after 10-15 minute wait",
+    otherLocalCabs: "Unreliable timing and delayed dispatch"
+  },
+  {
+    feature: "Airport Flight Tracking",
+    sriPrakash: "Real-time flight radar tracking; driver waits on delays",
+    appAggregators: "Cancellation fees if flight is delayed by >10 mins",
+    otherLocalCabs: "Extra hourly waiting penalties added to bill"
+  },
+  {
+    feature: "Ghat Road & Temple Expertise",
+    sriPrakash: "Chauffeurs trained on Araku, Lambasingi & Temple timings",
+    appAggregators: "City-only drivers unfamiliar with Ghat routes",
+    otherLocalCabs: "Inconsistent driver route experience"
+  },
+  {
+    feature: "Emergency & Customer Support",
+    sriPrakash: "24/7 Dedicated Local Helpline (+91 9848903025)",
+    appAggregators: "Automated chatbot with no direct phone support",
+    otherLocalCabs: "Often unreachable late at night or early morning"
+  }
+];
+

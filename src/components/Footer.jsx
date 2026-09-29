@@ -66,6 +66,7 @@ export default function Footer() {
             <h4 className="font-outfit font-bold text-white text-sm">Quick Links</h4>
             <ul className="space-y-2 text-xs">
               <li><Link to="/" className="hover:text-[#FF5B00] transition-colors">› Home</Link></li>
+              <li><Link to="/#tariff" className="hover:text-[#FF5B00] transition-colors">› Cab Tariff & Rates</Link></li>
               <li><Link to="/about" className="hover:text-[#FF5B00] transition-colors">› About Us</Link></li>
               <li><Link to="/services" className="hover:text-[#FF5B00] transition-colors">› Cab Services</Link></li>
               <li><Link to="/cars" className="hover:text-[#FF5B00] transition-colors">› Fleet Vehicles</Link></li>
@@ -109,27 +110,32 @@ export default function Footer() {
         {/* SEO Popular Keyword Tags Section matching competitor */}
         <div className="border-t border-slate-800/80 pt-8 mt-8">
           <h5 className="text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
-            Popular "Kakinada to" Outstation & Local Searches
+            Popular High-Ranking Kakinada Searches
           </h5>
           <div className="flex flex-wrap gap-2">
             {[
               "Best Car Travels in Kakinada",
-              "Best Taxi Service in Kakinada",
-              "Kakinada Cab Service",
+              "Taxi Service in Kakinada",
+              "Kakinada Cab Service 24/7",
+              "Car Travels Kakinada Tariff",
               "Kakinada to Rajahmundry Airport Taxi",
               "Kakinada to Vizag Airport Cab",
+              "Innova Crysta Hire in Kakinada",
+              "Tempo Traveller 12 Seater Kakinada",
+              "Bhanugudi Junction Taxi Service",
+              "JNTU Kakinada Cab Booking",
+              "Kakinada Town Railway Station Cabs",
               "Kakinada to Vijayawada Cab",
               "Kakinada to Hyderabad Taxi",
-              "Kakinada to Tirupati Cab",
-              "Kakinada to Annavaram Cab",
-              "Kakinada to Draksharamam Taxi",
-              "Kakinada to Araku Valley Cab",
-              "Kakinada to Maredumilli Taxi",
-              "Kakinada to Chennai Cab",
-              "Kakinada to Bangalore Taxi",
-              "Cab Booking Kakinada",
-              "Affordable Taxi Service Kakinada",
-              "One Way Taxi Kakinada"
+              "Kakinada to Tirupati Balaji Cab",
+              "Kakinada to Annavaram Temple Taxi",
+              "Pancharamalu Tour Package from Kakinada",
+              "Kakinada to Draksharamam Cab",
+              "Wedding Luxury Car Rental Kakinada",
+              "Force Urbania Luxury Van Kakinada",
+              "One Way Taxi Kakinada to Vizag",
+              "Affordable Outstation Taxi Kakinada",
+              "Sri Prakash Car Travels Contact Number"
             ].map((tag, idx) => (
               <Link
                 key={idx}
