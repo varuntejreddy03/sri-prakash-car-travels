@@ -1,0 +1,40 @@
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# Real-time AI Search Crawlers (ChatGPT Search, Claude Search, Perplexity, Google)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Model Training Bots (Opt-out training while allowing search citation above)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://sriprakashcartravelskakinada.com/sitemap.xml

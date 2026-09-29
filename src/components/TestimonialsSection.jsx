@@ -43,10 +43,10 @@ export default function TestimonialsSection() {
               {/* Reviewer Profile matching reference */}
               <div className="pt-4 border-t border-slate-200 flex items-center justify-between">
                 <div>
-                  <h4 className="font-outfit font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                  <p className="font-outfit font-bold text-slate-900 text-sm flex items-center gap-1.5">
                     <span>{review.name}</span>
                     <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-[#FF5B00] font-semibold truncate max-w-[170px]">
                     {review.city}
                   </p>

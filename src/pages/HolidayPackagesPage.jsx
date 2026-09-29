@@ -3,10 +3,17 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import { Mountain, Clock, Car, Check, ArrowRight, MessageCircle, Phone, MapPin } from 'lucide-react';
 import { holidayPackagesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
+import SEOHead from '../components/SEOHead';
 
 export default function HolidayPackagesPage({ onOpenBooking }) {
   return (
     <div>
+      <SEOHead
+        title="Holiday Tour Packages from Kakinada – Araku, Lambasingi, Maredumilli & Vizag"
+        description="Scenic holiday tour packages from Kakinada: Lambasingi fog tour, Maredumilli eco-tourism, Araku Valley, Papikondalu cruise, Konaseema backwaters & Hyderabad city tour. Book now!"
+        canonical="/holiday-packages"
+        keywords="Lambasingi tour from Kakinada, Araku Valley cab, Maredumilli tour package, holiday packages Kakinada"
+      />
       <PageBanner
         title="Holiday & Tourist Packages"
         subtitle="Explore scenic hill stations, lush green backwaters, and breathtaking waterfalls with Sri Prakash Car Travels."

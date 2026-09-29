@@ -1,4 +1,15 @@
 {
+  "redirects": [
+    { "source": "/fleet", "destination": "/cars", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/tour-packages", "destination": "/holiday-packages", "permanent": true },
+    { "source": "/packages", "destination": "/holiday-packages", "permanent": true },
+    { "source": "/tour-packages/:match*", "destination": "/holiday-packages/:match*", "permanent": true },
+    { "source": "/packages/:match*", "destination": "/holiday-packages/:match*", "permanent": true },
+    { "source": "/kakinada-temple-tours", "destination": "/temple-tours", "permanent": true },
+    { "source": "/kakinada-temple-tours/:match*", "destination": "/temple-tours/:match*", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

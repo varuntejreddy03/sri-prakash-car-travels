@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
+import SEOHead from '../components/SEOHead';
 import { Mountain, Clock, Car, CheckCircle2, ArrowRight, ArrowLeft, MessageCircle, Phone, MapPin, Sparkles } from 'lucide-react';
 import { holidayPackagesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
 
@@ -26,8 +27,30 @@ Please share resort coordination, full sightseeing plan and fixed price.`;
     window.open(createWhatsAppUrl(msg), '_blank');
   };
 
+  const tourSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": `${pkg.title} - Sri Prakash Car Travels`,
+    "description": pkg.description,
+    "touristType": "Tourist",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": businessInfo.name,
+      "telephone": `+91${businessInfo.phone}`,
+      "image": `https://sriprakashcartravelskakinada.com${pkg.image}`
+    }
+  };
+
   return (
     <div>
+      <SEOHead
+        title={`${pkg.title} | Holiday Tour Package`}
+        description={`Book ${pkg.title} (${pkg.location}). ${pkg.duration} scenic tour package from Kakinada with experienced hill drivers and resort coordination. Call +91 9848903025.`}
+        canonical={`/holiday-packages/${pkg.id}`}
+        image={pkg.image}
+        keywords={`${pkg.title}, ${pkg.location}, Araku tour Kakinada, Lambasingi cab package`}
+        schema={tourSchema}
+      />
       <PageBanner
         title={pkg.title}
         subtitle={`${pkg.location} • ${pkg.duration} from Kakinada`}
@@ -68,7 +91,7 @@ Please share resort coordination, full sightseeing plan and fixed price.`;
                 </div>
                 <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
                   <div>
-                    <h3 className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{pkg.title}</h3>
+                    <p className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{pkg.title}</p>
                     <p className="text-xs text-slate-200 mt-0.5">{pkg.duration} Tour Package from Kakinada</p>
                   </div>
                 </div>

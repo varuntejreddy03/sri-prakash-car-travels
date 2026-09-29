@@ -2,10 +2,17 @@ import React from 'react';
 import PageBanner from '../components/PageBanner';
 import { ShieldCheck, Award, Users, HeartHandshake, ArrowRight, Phone, MessageCircle, CheckCircle2 } from 'lucide-react';
 import { businessInfo, createWhatsAppUrl } from '../data/travelData';
+import SEOHead from '../components/SEOHead';
 
 export default function AboutPage({ onOpenBooking }) {
   return (
     <div>
+      <SEOHead
+        title="About Sri Prakash Car Travels – 15+ Years Trusted Taxi Service in Kakinada"
+        description="Learn about Sri Prakash Car Travels' 15+ year legacy of safe, transparent taxi service in Kakinada with our own verified fleet, trained chauffeurs & 10,000+ happy customers."
+        canonical="/about"
+        keywords="about Sri Prakash Car Travels, best taxi service Kakinada, car travels history Kakinada"
+      />
       <PageBanner
         title="About Sri Prakash Car Travels"
         subtitle="15+ Years of trusted taxi and car travels service in Kakinada, Andhra Pradesh."

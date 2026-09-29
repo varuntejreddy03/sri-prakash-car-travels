@@ -3,10 +3,17 @@ import PageBanner from '../components/PageBanner';
 import PopularRoutesSection from '../components/PopularRoutesSection';
 import { businessInfo, createWhatsAppUrl } from '../data/travelData';
 import { ArrowRight, MessageCircle } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 export default function RoutesPage({ onOpenBooking }) {
   return (
     <div>
+      <SEOHead
+        title="Outstation Routes & Distance Guide from Kakinada – Taxi Fare Calculator"
+        description="Check distances, travel times & fixed taxi fares from Kakinada to Vizag, Vijayawada, Hyderabad, Tirupati, Rajahmundry, Araku & more. Transparent pricing by Sri Prakash Car Travels."
+        canonical="/routes"
+        keywords="Kakinada to Vizag distance, Kakinada to Hyderabad taxi fare, outstation routes Kakinada"
+      />
       <PageBanner
         title="Outstation Routes & Distance Guide"
         subtitle="Transparent fixed fares and estimated travel times for top destinations from Kakinada."

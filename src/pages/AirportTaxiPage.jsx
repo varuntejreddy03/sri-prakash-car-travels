@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import { Plane, Clock, ShieldCheck, CheckCircle2, MessageCircle, Phone, ArrowRight, MapPin, Luggage } from 'lucide-react';
 import { businessInfo, createWhatsAppUrl } from '../data/travelData';
+import SEOHead from '../components/SEOHead';
 
 export default function AirportTaxiPage({ onOpenBooking }) {
   const [selectedAirport, setSelectedAirport] = useState('RJA');
@@ -60,6 +61,12 @@ export default function AirportTaxiPage({ onOpenBooking }) {
 
   return (
     <div>
+      <SEOHead
+        title="Airport Taxi Kakinada – Rajahmundry, Vizag, Vijayawada & Hyderabad Airport Cabs"
+        description="24/7 airport pickup & drop taxi from Kakinada to Rajahmundry Airport (RJA), Vizag Airport (VTZ), Vijayawada Airport (VGA) & Hyderabad Airport (HYD). Flight tracking, fixed fares. Call 9848903025."
+        canonical="/airport-taxi"
+        keywords="Kakinada airport taxi, Rajahmundry airport cab, Vizag airport taxi from Kakinada, Vijayawada airport cab"
+      />
       <PageBanner
         title="Airport Taxi Service Kakinada"
         subtitle="24/7 guaranteed on-time doorstep pickup and airport transfers to Rajahmundry (RJA) & Vizag (VTZ) airports with live flight tracking."

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PageBanner from '../components/PageBanner';
 import { Users, Briefcase, Snowflake, Fuel, Check, MessageCircle, ArrowRight, Phone, Sparkles } from 'lucide-react';
 import { fleetData, createWhatsAppUrl, businessInfo } from '../data/travelData';
+import SEOHead from '../components/SEOHead';
 
 export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -17,8 +18,39 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
     ? fleetData
     : fleetData.filter(car => car.category === activeFilter);
 
+  const fleetSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Sri Prakash Car Travels Fleet - Kakinada",
+    "description": "Available car rentals and taxi fleet in Kakinada including sedans, luxury MPVs, and group travel buses.",
+    "itemListElement": fleetData.map((car, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "item": {
+        "@type": "Product",
+        "name": car.name,
+        "image": `https://sriprakashcartravelskakinada.com${car.image}`,
+        "description": car.idealFor,
+        "category": car.categoryLabel,
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": "1500",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }))
+  };
+
   return (
     <div>
+      <SEOHead
+        title="Our Fleet – Dzire, Innova Crysta, Tempo Traveller & Luxury Bus Hire"
+        description="Explore Sri Prakash Car Travels' verified fleet in Kakinada: Maruti Dzire, Toyota Etios, Innova Crysta, Kia Carens, Force Urbania, Tempo Traveller & AC Luxury Coach. Book 24/7."
+        canonical="/cars"
+        keywords="Innova Crysta cab Kakinada, Dzire car hire Kakinada, Tempo Traveller Kakinada, luxury car rental Kakinada"
+        schema={fleetSchema}
+      />
       <PageBanner
         title="Our Verified Fleet"
         subtitle="Explore our sanitized, chauffeur-driven cars, luxury MPVs, and tourist buses available 24/7 in Kakinada."

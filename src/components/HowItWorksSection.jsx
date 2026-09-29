@@ -41,9 +41,9 @@ export default function HowItWorksSection({ onOpenBooking }) {
               <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5B00] text-white">
                 Chauffeur Driven
               </span>
-              <h3 className="font-outfit font-extrabold text-2xl text-white mt-2">
+              <p className="font-outfit font-extrabold text-2xl text-white mt-2">
                 Safe, Timely & Comfortable Every Mile
-              </h3>
+              </p>
               <p className="text-xs text-slate-300 font-jakarta mt-1">
                 Kakinada's premier fleet for local & outstation journeys.
               </p>
@@ -73,9 +73,9 @@ export default function HowItWorksSection({ onOpenBooking }) {
                       {step.num}
                     </div>
                     <div>
-                      <h4 className="font-outfit font-bold text-white text-base">
+                      <h3 className="font-outfit font-bold text-white text-base">
                         {step.title}
-                      </h4>
+                      </h3>
                       <p className="text-xs text-slate-400 font-jakarta leading-relaxed mt-1">
                         {step.desc}
                       </p>

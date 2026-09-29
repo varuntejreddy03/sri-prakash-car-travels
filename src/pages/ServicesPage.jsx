@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import { servicesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
 import { Plane, Compass, Landmark, MapPin, Palmtree, Briefcase, Heart, Users, Route, CalendarCheck, ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
+import SEOHead from '../components/SEOHead';
 
 const iconMap = {
   Plane: Plane,
@@ -20,6 +21,12 @@ const iconMap = {
 export default function ServicesPage({ onOpenBooking }) {
   return (
     <div>
+      <SEOHead
+        title="Taxi & Cab Services in Kakinada – Local, Outstation, Airport & Temple Tours"
+        description="Complete taxi services by Sri Prakash Car Travels Kakinada: local city cabs, airport transfers, outstation one-way & round trips, temple pilgrimages, wedding cars, and corporate travel."
+        canonical="/services"
+        keywords="taxi services Kakinada, outstation cabs Kakinada, airport taxi Kakinada, wedding car booking Kakinada"
+      />
       <PageBanner
         title="Our Services"
         subtitle="Explore our comprehensive transportation services: Airport taxis, outstation cabs, temple packages, and luxury group coaches."

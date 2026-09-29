@@ -77,6 +77,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                     alt={`${car.name} Sri Prakash Car Travels`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    decoding="async"
                   />
                   
                   {/* Top Right Category Pill Badge matching reference */}

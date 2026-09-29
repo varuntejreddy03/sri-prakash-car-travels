@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
+import SEOHead from '../components/SEOHead';
 import { Landmark, Clock, Car, CheckCircle2, ArrowRight, ArrowLeft, MessageCircle, Phone, MapPin, Sparkles } from 'lucide-react';
 import { templePackagesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
 
@@ -28,8 +29,38 @@ Please share customized itinerary and fixed pricing.`;
     window.open(createWhatsAppUrl(msg), '_blank');
   };
 
+  const templeSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": `${pkg.title} - Sri Prakash Car Travels`,
+    "description": pkg.description,
+    "touristType": "Pilgrim",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": businessInfo.name,
+      "telephone": `+91${businessInfo.phone}`,
+      "image": `https://sriprakashcartravelskakinada.com${pkg.image}`
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "itemListElement": pkg.itinerary.map((step, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "name": step
+      }))
+    }
+  };
+
   return (
     <div>
+      <SEOHead
+        title={`${pkg.title} | Temple Tour Taxi Package`}
+        description={`Book ${pkg.title} (${pkg.subtitle}). ${pkg.distance}, ${pkg.duration} pilgrimage tour from Kakinada with experienced driver. Call +91 9848903025.`}
+        canonical={`/temple-tours/${pkg.id}`}
+        image={pkg.image}
+        keywords={`${pkg.title}, ${pkg.subtitle}, Kakinada temple taxi, Annavaram cab package`}
+        schema={templeSchema}
+      />
       <PageBanner
         title={pkg.title}
         subtitle={`${pkg.subtitle} • ${pkg.duration} from Kakinada`}
@@ -70,7 +101,7 @@ Please share customized itinerary and fixed pricing.`;
                 </div>
                 <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-white">
                   <div>
-                    <h3 className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{pkg.title}</h3>
+                    <p className="font-outfit font-extrabold text-xl sm:text-2xl drop-shadow-md">{pkg.title}</p>
                     <p className="text-xs text-amber-300 mt-0.5">{pkg.subtitle}</p>
                   </div>
                   <div className="hidden sm:block text-right">

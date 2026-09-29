@@ -3,10 +3,36 @@ import { Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
 import { Landmark, Clock, Car, CheckCircle2, ArrowRight, MessageCircle, Phone, MapPin } from 'lucide-react';
 import { templePackagesData, createWhatsAppUrl, businessInfo } from '../data/travelData';
+import SEOHead from '../components/SEOHead';
 
 export default function TempleToursPage({ onOpenBooking }) {
+  const templeCatalogSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Temple Tour Packages from Kakinada",
+    "description": "Pilgrimage cab packages from Kakinada to famous temples across Andhra Pradesh.",
+    "itemListElement": templePackagesData.map((pkg, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "item": {
+        "@type": "TouristTrip",
+        "name": pkg.title,
+        "description": pkg.description,
+        "touristType": "Pilgrim",
+        "url": `https://sriprakashcartravelskakinada.com/temple-tours/${pkg.id}`
+      }
+    }))
+  };
+
   return (
     <div>
+      <SEOHead
+        title="Temple Tour Packages from Kakinada – Annavaram, Pancharamalu, Tirupati & More"
+        description="Spiritual pilgrimage taxi packages from Kakinada to Annavaram, Draksharamam, Pancharamalu, Pithapuram, Bhadrachalam, Srisailam & Tirupati. Senior citizen friendly. Call 9848903025."
+        canonical="/temple-tours"
+        keywords="Annavaram taxi Kakinada, temple tour packages Kakinada, Pancharamalu tour, Draksharamam cab"
+        schema={templeCatalogSchema}
+      />
       <PageBanner
         title="Temple Tour Packages Kakinada"
         subtitle="Spiritual pilgrimages to Annavaram, Pancharamalu, Draksharamam, Pithapuram, Bhadrachalam & Tirupati with experienced family-safe chauffeurs."

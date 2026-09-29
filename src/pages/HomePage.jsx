@@ -1,4 +1,5 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
 import FeaturesStrip from '../components/FeaturesStrip';
 import AboutSection from '../components/AboutSection';
@@ -19,6 +20,12 @@ import PreFooterBanner from '../components/PreFooterBanner';
 export default function HomePage({ onOpenBooking, onSelectVehicle }) {
   return (
     <>
+      <SEOHead
+        title="Sri Prakash Car Travels Kakinada | 24/7 Taxi Service, Airport Cabs & Temple Tours"
+        description="Sri Prakash Car Travels in Kakinada offers 24/7 Cab & Taxi Service, Rajahmundry & Vizag Airport Cabs, Outstation One Way / Round Trips, Temple Tours, and Luxury Car Rentals. Call +91 9848903025."
+        canonical="/"
+        keywords="Sri Prakash Car Travels, Car Travels in Kakinada, Taxi Service in Kakinada, Kakinada Cab Service, Airport Taxi Kakinada"
+      />
       {/* 1. Hero Section with #1 badge, 4 stats badges, and Instant Cab Booking Widget */}
       <Hero onOpenBooking={onOpenBooking} />
 

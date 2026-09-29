@@ -36,9 +36,9 @@ export default function FeaturesStrip() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-outfit font-bold text-slate-900 text-base leading-snug mb-1">
+                  <h2 className="font-outfit font-bold text-slate-900 text-base leading-snug mb-1">
                     {feat.title}
-                  </h3>
+                  </h2>
                   <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
                     {feat.desc}
                   </p>

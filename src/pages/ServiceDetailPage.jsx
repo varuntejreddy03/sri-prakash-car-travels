@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
+import SEOHead from '../components/SEOHead';
 import { servicesData, fleetData, createWhatsAppUrl, businessInfo } from '../data/travelData';
 import { CheckCircle2, ShieldCheck, Clock, MapPin, Car, MessageCircle, Phone, ArrowRight, ArrowLeft } from 'lucide-react';
 
@@ -29,8 +30,29 @@ Please share driver details and best fixed rate.`;
     window.open(createWhatsAppUrl(msg), '_blank');
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": `${service.title} - Sri Prakash Car Travels`,
+    "description": service.shortDesc,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": businessInfo.name,
+      "telephone": `+91${businessInfo.phone}`,
+      "image": "https://sriprakashcartravelskakinada.com/images/logo-badge.png"
+    },
+    "areaServed": "Kakinada & Andhra Pradesh"
+  };
+
   return (
     <div>
+      <SEOHead
+        title={`${service.title} | 24/7 Cab Service Kakinada`}
+        description={`${service.shortDesc} Reliable chauffeurs, sanitized vehicles & fixed billing in Kakinada. Call +91 9848903025.`}
+        canonical={`/services/${service.id}`}
+        keywords={`${service.title}, Kakinada car travels, taxi service Kakinada`}
+        schema={serviceSchema}
+      />
       <PageBanner
         title={service.title}
         subtitle={service.shortDesc}
