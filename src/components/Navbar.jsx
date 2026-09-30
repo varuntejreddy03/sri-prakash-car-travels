@@ -316,13 +316,13 @@ export default function Navbar({ onOpenBooking }) {
             </div>
 
             {/* Tariff / Rate Card (Special Pill Link) */}
-            <a
-              href="/#tariff"
+            <Link
+              to="/routes"
               className="px-3 py-1.5 rounded-full font-bold text-xs bg-[#FF5B00]/15 hover:bg-[#FF5B00]/25 text-[#FF5B00] border border-[#FF5B00]/30 transition-all whitespace-nowrap inline-flex items-center gap-1.5"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Tariff</span>
-            </a>
+              <span>Tariff & Fares</span>
+            </Link>
 
             {/* About Us */}
             <NavLink
@@ -519,14 +519,14 @@ export default function Navbar({ onOpenBooking }) {
                   )}
                 </div>
 
-                <a
-                  href="/#tariff"
+                <Link
+                  to="/routes"
                   onClick={() => setMobileMenuOpen(false)}
                   className="px-3 py-2 rounded-xl text-[#FF5B00] font-bold flex items-center gap-1.5 bg-[#FF5B00]/10"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>Tariff & Rates</span>
-                </a>
+                  <span>Tariff & Fares</span>
+                </Link>
 
                 <NavLink
                   to="/about"

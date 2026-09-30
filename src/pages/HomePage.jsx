@@ -2,92 +2,34 @@ import React from 'react';
 import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
 import FeaturesStrip from '../components/FeaturesStrip';
-import AboutSection from '../components/AboutSection';
-import UrgentTaxiBanner from '../components/UrgentTaxiBanner';
 import ServicesSection from '../components/ServicesSection';
-import FleetSection from '../components/FleetSection';
-import TariffSection from '../components/TariffSection';
-import AirportTransfersSection from '../components/AirportTransfersSection';
-import TempleToursSection from '../components/TempleToursSection';
-import HolidayPackagesSection from '../components/HolidayPackagesSection';
-import HowItWorksSection from '../components/HowItWorksSection';
-import CompetitorComparisonSection from '../components/CompetitorComparisonSection';
-import StatsCounterSection from '../components/StatsCounterSection';
 import TestimonialsSection from '../components/TestimonialsSection';
-import PhotoGallerySection from '../components/PhotoGallerySection';
-import PopularRoutesSection from '../components/PopularRoutesSection';
-import LocalCoverageSection from '../components/LocalCoverageSection';
 import FAQSection from '../components/FAQSection';
-import PreFooterBanner from '../components/PreFooterBanner';
 
-export default function HomePage({ onOpenBooking, onSelectVehicle }) {
+export default function HomePage({ onOpenBooking }) {
   return (
     <>
       <SEOHead
         title="Sri Prakash Car Travels Kakinada | 24/7 Taxi Service, Airport Cabs & Temple Tours"
         description="Sri Prakash Car Travels in Kakinada offers 24/7 Cab & Taxi Service, Rajahmundry & Vizag Airport Cabs, Outstation One Way / Round Trips, Temple Tours, and Luxury Car Rentals. Call +91 9848903025."
         canonical="/"
-        keywords="car travels in kakinada, taxi service in kakinada, kakinada cab service, car travels kakinada tariff, kakinada to rajahmundry airport taxi, kakinada to vizag airport cab, outstation cabs kakinada, tempo traveller hire kakinada, innova crysta cab kakinada, best car travels in kakinada, kakinada cab booking phone number, car travels near bhanugudi junction"
+        keywords="car travels in kakinada, taxi service in kakinada, kakinada cab service, airport taxi kakinada, outstation cabs kakinada, innova crysta cab kakinada, best car travels in kakinada"
       />
-      {/* 1. Hero Section with #1 badge, 4 stats badges, and Instant Cab Booking Widget */}
+
+      {/* 1. Hero Section with 24/7 Booking Form */}
       <Hero onOpenBooking={onOpenBooking} />
 
-      {/* 2. 3 Feature Highlights Strip */}
+      {/* 2. 3-Pillar Trust Highlights Strip */}
       <FeaturesStrip />
 
-      {/* 3. About Section with 15+ Years badge & 6 feature checkmarks */}
-      <AboutSection onOpenBooking={onOpenBooking} />
-
-      {/* 4. Mid-Page Urgent Taxi Booking CTA Banner */}
-      <UrgentTaxiBanner onOpenBooking={onOpenBooking} />
-
-      {/* 5. Complete Taxi & Cab Services Grid (9 services) */}
+      {/* 3. Core Cab Services Gateway (Links to Airport, Outstation, Local, Tours) */}
       <ServicesSection onOpenBooking={onOpenBooking} />
 
-      {/* 6. Vehicle Fleet Showcase Section with category filters */}
-      <FleetSection 
-        onSelectVehicle={onSelectVehicle}
-        onOpenBooking={onOpenBooking}
-      />
-
-      {/* 7. Transparent Tariff & Rate Card Table */}
-      <TariffSection onOpenBooking={onOpenBooking} />
-
-      {/* 8. Dedicated Airport Transfers Section & Pre-Booking Benefits */}
-      <AirportTransfersSection onOpenBooking={onOpenBooking} />
-
-      {/* 9. Famous Temple Tour Packages from Kakinada (6 pilgrimages) */}
-      <TempleToursSection onOpenBooking={onOpenBooking} />
-
-      {/* 10. Popular Holiday Tour Packages (6 hill & nature tours) */}
-      <HolidayPackagesSection />
-
-      {/* 11. Simple 3-Step Booking Process */}
-      <HowItWorksSection onOpenBooking={onOpenBooking} />
-
-      {/* 12. Competitor Comparison - Why Sri Prakash Beats 40+ Other Cabs */}
-      <CompetitorComparisonSection onOpenBooking={onOpenBooking} />
-
-      {/* 13. Live Statistics Counter Section */}
-      <StatsCounterSection />
-
-      {/* 14. Verified Customer Testimonials & Reviews */}
+      {/* 4. Verified Customer Testimonials & Reviews */}
       <TestimonialsSection />
 
-      {/* 15. Fleet & Moments Photo Gallery */}
-      <PhotoGallerySection />
-
-      {/* 16. Top Outstation Routes & Distance Matrix */}
-      <PopularRoutesSection />
-
-      {/* 17. Hyper-Local Coverage - All Kakinada Localities & Landmark Pickup Points */}
-      <LocalCoverageSection onOpenBooking={onOpenBooking} />
-
-      {/* 18. SEO FAQ Accordion Section */}
-      <FAQSection />
-
-      {/* 19. Pre-Footer Call to Action Banner */}
-      <PreFooterBanner onOpenBooking={onOpenBooking} />
+      {/* 5. Frequently Asked Questions (FAQ) & Direct Helpline */}
+      <FAQSection onOpenBooking={onOpenBooking} />
     </>
   );
 }

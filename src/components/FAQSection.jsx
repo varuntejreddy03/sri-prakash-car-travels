@@ -17,7 +17,7 @@ export default function FAQSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Left Column */}
-          <div className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-5">
             <span className="ref-section-tag">FAQs</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
               Frequently asked <br />
@@ -26,6 +26,15 @@ export default function FAQSection() {
             <p className="text-sm text-slate-600 font-jakarta leading-relaxed max-w-sm">
               Everything you need to know about booking our taxi service, outstation cabs, and airport transfers in Kakinada.
             </p>
+
+            <div className="pt-2 flex flex-col sm:flex-row lg:flex-col gap-3">
+              <a
+                href="tel:+919848903025"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#e04f00] text-white transition-all shadow-md w-fit"
+              >
+                <span>Call 24/7: +91 9848903025</span>
+              </a>
+            </div>
           </div>
 
           {/* Right Column: Clean Accordion with + and - matching reference */}

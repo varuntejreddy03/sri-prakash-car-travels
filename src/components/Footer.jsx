@@ -66,7 +66,7 @@ export default function Footer() {
             <h4 className="font-outfit font-bold text-white text-sm">Quick Links</h4>
             <ul className="space-y-2 text-xs">
               <li><Link to="/" className="hover:text-[#FF5B00] transition-colors">› Home</Link></li>
-              <li><Link to="/#tariff" className="hover:text-[#FF5B00] transition-colors">› Cab Tariff & Rates</Link></li>
+              <li><Link to="/routes" className="hover:text-[#FF5B00] transition-colors">› Cab Tariff & Rates</Link></li>
               <li><Link to="/about" className="hover:text-[#FF5B00] transition-colors">› About Us</Link></li>
               <li><Link to="/services" className="hover:text-[#FF5B00] transition-colors">› Cab Services</Link></li>
               <li><Link to="/cars" className="hover:text-[#FF5B00] transition-colors">› Fleet Vehicles</Link></li>
