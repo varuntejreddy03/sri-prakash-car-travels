@@ -144,6 +144,7 @@ export const servicesData = [
     id: "local-city-taxi",
     icon: "MapPin",
     title: "Local Taxi Service Kakinada",
+    image: "/images/dzire.jpg",
     shortDesc: "Fast, comfortable, and affordable local cab booking in Kakinada for city commutes, shopping, business meetings, and railway station transfers.",
     features: ["4hr/40km & 8hr/80km Packages", "Uniformed Local Drivers", "Quick 15-Min Arrival", "Clean Interiors"],
     popularDestinations: ["Kakinada Town & Port", "Kakinada Railway Station", "Apollo / Local Hospitals", "Local Shopping"]
@@ -152,6 +153,7 @@ export const servicesData = [
     id: "airport-taxi",
     icon: "Plane",
     title: "Airport Taxi Kakinada",
+    image: "/images/service-airport-taxi.jpg",
     shortDesc: "24/7 dedicated Airport Pickup & Drop cab service to Rajahmundry Airport (RJA), Vizag Airport (VTZ), Vijayawada (VGA), and Hyderabad (HYD).",
     features: ["Flight Delay Tracking", "Fixed Transparent Rates", "Doorstep Luggage Help", "Guaranteed On-Time"],
     popularDestinations: ["Rajahmundry Airport (1.5 Hrs)", "Vizag Airport (3.5 Hrs)", "Vijayawada Airport (4.5 Hrs)", "Hyderabad Airport"]
@@ -160,6 +162,7 @@ export const servicesData = [
     id: "outstation-cabs",
     icon: "Compass",
     title: "Outstation Cab Kakinada",
+    image: "/images/innova-crysta.jpg",
     shortDesc: "Hassle-free Outstation Taxi booking from Kakinada to Vizag, Vijayawada, Hyderabad, Chennai, Bangalore, Tirupati, and all major South India towns.",
     features: ["One-Way & Round Trip", "Zero Night Surge", "Clean AC Cars", "Flexible Stops"],
     popularDestinations: ["Kakinada to Vijayawada", "Kakinada to Hyderabad", "Kakinada to Tirupati", "Kakinada to Bangalore"]
@@ -168,6 +171,7 @@ export const servicesData = [
     id: "one-way-taxi",
     icon: "Route",
     title: "One Way Taxi Service",
+    image: "/images/etios.jpg",
     shortDesc: "Pay only for one-way distance with our budget One Way Cab Kakinada packages to Vijayawada, Vizag, Hyderabad, and Tirupati.",
     features: ["Pay Only For 1 Way", "No Return Toll Burden", "Instant Cab Confirmation", "Doorstep Pickup & Drop"],
     popularDestinations: ["Kakinada to Vizag One Way", "Kakinada to Vijayawada One Way", "Kakinada to Hyderabad Drop"]
@@ -176,6 +180,7 @@ export const servicesData = [
     id: "temple-tours",
     icon: "Landmark",
     title: "Temple Pilgrimage Packages",
+    image: "/images/service-temple-tours.jpg",
     shortDesc: "Spiritual temple tour cabs to Annavaram, Draksharamam, Pithapuram, Samarlakota, Srisailam, Tirupati Balaji, & Sabarimala with custom timing.",
     features: ["Temple Timings Expertise", "Custom Puja Itineraries", "Senior Citizen Friendly", "Same Day & Multi-Day"],
     popularDestinations: ["Annavaram Satyanarayana", "Draksharamam & Samarlakota", "Pithapuram Sripada Srivallabha", "Tirupati & Srisailam"]
@@ -184,6 +189,7 @@ export const servicesData = [
     id: "holiday-packages",
     icon: "Palmtree",
     title: "Holiday Tour Packages",
+    image: "/images/service-holiday-packages.jpg",
     shortDesc: "Scenic tourist taxi packages to Araku Valley, Lambasingi, Maredumilli, Papikondalu, Konaseema backwaters, and Vizag beaches.",
     features: ["Hill-Station Expert Drivers", "Photo-Spot Guidance", "Family-Safe Journeys", "Resort Drop & Pickup"],
     popularDestinations: ["Lambasingi & Vanajangi", "Maredumilli & Mothugudem", "Araku Valley & Borra Caves", "Konaseema Dindi"]
@@ -192,6 +198,7 @@ export const servicesData = [
     id: "corporate-travel",
     icon: "Briefcase",
     title: "Corporate Taxi Service",
+    image: "/images/service-corporate-car.jpg",
     shortDesc: "Professional executive car hiring and employee transportation in Kakinada for corporate clients, IT companies, & industrial visits.",
     features: ["GST Invoice Billing", "Pristine Luxury Sedans/SUVs", "Professional Chauffeurs", "Monthly Rental Contracts"],
     popularDestinations: ["Kakinada Deep Water Port", "Coromandel / NFCL Plants", "District Collectorate", "Industrial Corridors"]
@@ -200,6 +207,7 @@ export const servicesData = [
     id: "wedding-events",
     icon: "Heart",
     title: "Wedding Car Booking",
+    image: "/images/service-wedding-car.jpg",
     shortDesc: "Luxury wedding cars and marriage taxi services for bride/groom entries, guest transfers, and family event travel in Kakinada.",
     features: ["Decorated Luxury Cars", "Coordinated Fleet Convoys", "Innova Crysta & Urbania Vans", "Large AC Buses for Guests"],
     popularDestinations: ["Marriage Function Halls", "Convention Centres", "Door-to-door Guest Shuttles"]
@@ -208,6 +216,7 @@ export const servicesData = [
     id: "daily-monthly-cabs",
     icon: "CalendarCheck",
     title: "Daily & Monthly Cab Booking",
+    image: "/images/dzire.jpg",
     shortDesc: "Flexible long-term cab booking plans with dedicated drivers for business executives, doctors, and families residing in Kakinada.",
     features: ["Dedicated Chauffeur", "Cost-Effective Monthly Packages", "Priority Fleet Backup", "Full Maintenance Included"],
     popularDestinations: ["Daily Office Commutes", "Medical & Hospital Runs", "Long-Term Project Support"]
@@ -216,6 +225,7 @@ export const servicesData = [
     id: "group-travel",
     icon: "Users",
     title: "Tempo Traveller & Luxury Bus Hire",
+    image: "/images/tempo-traveller.jpg",
     shortDesc: "Spacious 12 to 26 seater Tempo Travellers, Force Urbania, and 32-45 seater AC luxury buses for family gatherings and pilgrimages.",
     features: ["Pushback Reclining Seats", "High-Back Air Suspension", "Dual Professional Drivers", "Audio-Video Systems"],
     popularDestinations: ["College Industrial Tours", "Tirupati Pilgrim Groups", "Family Destination Events"]
