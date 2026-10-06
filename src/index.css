@@ -257,3 +257,33 @@
   border-color: #FF5B00;
 }
 
+/* Competitor-style Airport Cards (.airport-item-card) */
+.airport-item-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.15rem;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+.airport-item-card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #FF5B00;
+  transform: translateY(-4px);
+}
+.airport-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 91, 0, 0.2);
+  color: #FF5B00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+
