@@ -56,26 +56,23 @@ Please share immediate fare quote and confirm cab availability.`;
               Enjoy premium, comfortable, and affordable travel with <strong>Sri Prakash Car Travels</strong>. We offer 24/7 Airport Taxi Service, Local Cab Bookings, One Way & Round Trip Outstation Cabs, Temple Packages, and Corporate Travel in Kakinada & across India.
             </p>
 
-            {/* Action Buttons */}
+            {/* Action Buttons matching competitor hero-cta-buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 href={`tel:+91${businessInfo.phone}`}
-                className="ref-btn-primary group !bg-[#FF5B00] hover:!bg-[#e04f00]"
+                className="btn-call-now-pill"
               >
                 <Phone className="w-4 h-4 text-white" />
-                <span>Call Now: +91 {businessInfo.phone}</span>
-                <span className="ref-circle-arrow">
-                  <ArrowRight className="w-3 h-3 text-white" />
-                </span>
+                <span>Call Now (+91 {businessInfo.phone})</span>
               </a>
 
               <a
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all group"
+                className="btn-whatsapp-pill"
               >
-                <MessageCircle className="w-4 h-4 text-emerald-400 fill-emerald-400" />
+                <MessageCircle className="w-4 h-4 fill-current" />
                 <span>Quick WhatsApp Booking</span>
               </a>
             </div>

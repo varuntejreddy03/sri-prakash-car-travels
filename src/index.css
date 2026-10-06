@@ -124,3 +124,136 @@
   box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.08);
   transform: translateY(-3px);
 }
+
+/* ==========================================================================
+   Competitor-matched Premium Button & Card Design System
+   Adapted with Sri Prakash Brand Palette (#FF5B00 orange, dark navy)
+   ========================================================================== */
+
+/* Main Brand Pill Action Button (.btn-primary style from competitor) */
+.btn-primary-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #FF5B00, #E04F00);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.85rem 1.8rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 91, 0, 0.35);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+.btn-primary-brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 91, 0, 0.55);
+  background: linear-gradient(135deg, #FF7824, #E04F00);
+  color: #FFFFFF;
+}
+
+/* WhatsApp Floating/Action Pill (.btn-whatsapp from competitor) */
+.btn-whatsapp-pill {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.75rem 1.4rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.875rem;
+}
+.btn-whatsapp-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+  color: #FFFFFF;
+}
+
+/* Call Now Pill Button (.btn-call-now-pill from competitor) */
+.btn-call-now-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #FF5B00, #E04F00);
+  color: #FFFFFF;
+  font-weight: 800;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(255, 91, 0, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+.btn-call-now-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(255, 91, 0, 0.6);
+  color: #FFFFFF;
+}
+
+/* Competitor Glass Card Dark */
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+/* Competitor-style Service Card (.service-card) */
+.comp-service-card {
+  background: #FFFFFF;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E2E8F0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.comp-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: #FF5B00;
+}
+
+/* Competitor-style Fleet Card (.fleet-card) */
+.comp-fleet-card {
+  background: #FFFFFF;
+  border-radius: 1.25rem;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comp-fleet-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: #FF5B00;
+}
+
+/* Competitor-style Package Card (.package-card) */
+.comp-package-card {
+  background: #FFFFFF;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #E2E8F0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comp-package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  border-color: #FF5B00;
+}
+

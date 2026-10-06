@@ -38,15 +38,11 @@ export default function AirportTransfersSection({ onOpenBooking }) {
           {airports.map((airport) => (
             <div
               key={airport.code}
-              className={`bg-white rounded-3xl p-4 sm:p-5 border transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl group ${
-                airport.popular 
-                  ? 'border-[#FF5B00]/40 ring-1 ring-[#FF5B00]/20' 
-                  : 'border-slate-200 hover:border-slate-300'
-              }`}
+              className="comp-package-card flex flex-col justify-between group"
             >
               <div>
                 {/* Airport Real Image Box */}
-                <div className="relative h-44 w-full rounded-2xl overflow-hidden mb-4 bg-slate-900">
+                <div className="relative h-44 w-full overflow-hidden bg-slate-900">
                   <img
                     src={airport.image}
                     alt={airport.name}
@@ -82,45 +78,47 @@ export default function AirportTransfersSection({ onOpenBooking }) {
                   </div>
                 </div>
 
-                <Link to={`/airport-taxi/${airport.id}`}>
-                  <h3 className="font-outfit font-extrabold text-lg text-slate-900 group-hover:text-[#FF5B00] transition-colors mb-2 leading-snug">
-                    {airport.name}
-                  </h3>
-                </Link>
-                <p className="text-xs text-slate-500 font-jakarta leading-relaxed mb-4 line-clamp-2">
-                  {airport.desc}
-                </p>
+                <div className="p-6 pb-2">
+                  <Link to={`/airport-taxi/${airport.id}`}>
+                    <h3 className="font-outfit font-extrabold text-lg text-slate-900 group-hover:text-[#FF5B00] transition-colors mb-2 leading-snug">
+                      {airport.name}
+                    </h3>
+                  </Link>
+                  <p className="text-xs text-slate-500 font-jakarta leading-relaxed mb-4 line-clamp-2">
+                    {airport.desc}
+                  </p>
 
-                <div className="space-y-1.5 py-2.5 border-y border-slate-100 text-xs text-slate-600 mb-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-slate-400">Route:</span>
-                    <strong className="text-slate-800 text-[11px] truncate max-w-[170px]">{airport.route}</strong>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-slate-400">Fleet:</span>
-                    <strong className="text-[#FF5B00] text-[11px] truncate max-w-[170px]">{airport.recommended}</strong>
+                  <div className="space-y-1.5 py-2.5 border-y border-slate-100 text-xs text-slate-600 mb-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-slate-400">Route:</span>
+                      <strong className="text-slate-800 text-[11px] truncate max-w-[170px]">{airport.route}</strong>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-slate-400">Fleet:</span>
+                      <strong className="text-[#FF5B00] text-[11px] truncate max-w-[170px]">{airport.recommended}</strong>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="pt-2 space-y-2">
-                <Link
-                  to={`/airport-taxi/${airport.id}`}
-                  className="w-full py-2.5 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-all flex items-center justify-center gap-1.5"
-                >
-                  <span>View Route & Fares</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-
+              <div className="p-6 pt-0 space-y-2">
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I need an Airport Taxi for ${airport.name} (${airport.code}). Please share fare.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2 rounded-full font-bold text-xs bg-emerald-50 hover:bg-emerald-100 text-emerald-700 transition-all flex items-center justify-center gap-1.5"
+                  className="btn-whatsapp-pill w-full text-center text-xs !py-2.5"
                 >
                   <MessageCircle className="w-3.5 h-3.5 fill-current" />
-                  <span>WhatsApp Quote</span>
+                  <span>WhatsApp Fare Quote</span>
                 </a>
+
+                <Link
+                  to={`/airport-taxi/${airport.id}`}
+                  className="w-full py-2 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-all flex items-center justify-center gap-1.5"
+                >
+                  <span>View Route Details</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
 
             </div>

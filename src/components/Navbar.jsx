@@ -355,26 +355,20 @@ export default function Navbar({ onOpenBooking }) {
           </nav>
 
           {/* Right Action Block (Call & Booking Button) */}
-          <div className="hidden sm:flex items-center gap-3 shrink-0">
+          <div className="hidden sm:flex items-center gap-2.5 shrink-0">
             <a
               href={`tel:+91${businessInfo.phone}`}
-              className="text-xs font-bold text-slate-300 hover:text-white px-2.5 py-1.5 rounded-full hover:bg-white/5 flex items-center gap-1.5 transition-colors whitespace-nowrap"
+              className="btn-call-now-pill !py-2 !px-4 !text-xs !shadow-none"
             >
-              <div className="w-6 h-6 rounded-full bg-[#FF5B00]/20 flex items-center justify-center">
-                <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
-              </div>
-              <span className="hidden xl:inline text-slate-400 font-normal">Call:</span>
-              <span className="text-white font-mono">{businessInfo.phone}</span>
+              <Phone className="w-3.5 h-3.5 text-white" />
+              <span>Call Now</span>
             </a>
 
             <button
               onClick={onOpenBooking}
-              className="ref-btn-primary group !py-2.5 !px-5 whitespace-nowrap"
+              className="btn-primary-brand !py-2 !px-4 !text-xs whitespace-nowrap"
             >
-              <span>Book Cab</span>
-              <span className="ref-circle-arrow">
-                <ArrowRight className="w-3 h-3 text-white" />
-              </span>
+              <span>Book Cab Now</span>
             </button>
           </div>
 

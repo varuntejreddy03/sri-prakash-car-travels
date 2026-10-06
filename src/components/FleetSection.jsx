@@ -62,16 +62,16 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
           </div>
         </div>
 
-        {/* Fleet Cards Grid matching pinterest-bulk-4 */}
+        {/* Fleet Cards Grid matching competitor */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {filteredFleet.map((car) => (
             <div
               key={car.id}
-              className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="comp-fleet-card flex flex-col justify-between group"
             >
               <div>
                 {/* Vehicle Image Container */}
-                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-4">
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                   <img
                     src={car.image}
                     alt={`${car.name} Sri Prakash Car Travels`}
@@ -80,9 +80,9 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                     decoding="async"
                   />
                   
-                  {/* Top Right Category Pill Badge matching reference */}
+                  {/* Top Right Category Pill Badge */}
                   <div className="absolute top-3 right-3">
-                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-sm text-[#FF5B00] border border-orange-200 shadow-sm">
+                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-sm text-[#FF5B00] border border-orange-200 shadow-sm">
                       {car.tag}
                     </span>
                   </div>
@@ -95,50 +95,43 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                   </div>
                 </div>
 
-                {/* Car Title */}
-                <h3 className="font-outfit font-extrabold text-xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug">
-                  {car.name}
-                </h3>
-                <p className="text-xs text-slate-500 font-jakarta mt-0.5 line-clamp-1">
-                  {car.idealFor}
-                </p>
+                <div className="p-6 pb-2">
+                  {/* Car Title */}
+                  <h3 className="font-outfit font-extrabold text-xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug">
+                    {car.name}
+                  </h3>
+                  <p className="text-xs text-slate-500 font-jakarta mt-1 line-clamp-1">
+                    {car.idealFor}
+                  </p>
 
-                {/* Specs List matching reference format (Cars, Types, Transmission/AC) */}
-                <div className="space-y-2 py-3.5 my-3 border-y border-slate-100 text-xs text-slate-600">
-                  <div className="flex items-center gap-2">
-                    <Users className="w-3.5 h-3.5 text-[#FF5B00]" />
-                    <span><strong>Capacity:</strong> {car.seats}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Car className="w-3.5 h-3.5 text-slate-500" />
-                    <span><strong>Type:</strong> {car.categoryLabel}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Snowflake className="w-3.5 h-3.5 text-cyan-500" />
-                    <span><strong>Comfort:</strong> {car.ac}</span>
+                  {/* Specs List matching competitor format */}
+                  <div className="grid grid-cols-2 gap-3 py-3.5 my-3 border-y border-slate-100 text-xs text-slate-600">
+                    <div className="flex items-center gap-2">
+                      <Users className="w-3.5 h-3.5 text-[#FF5B00]" />
+                      <span>{car.seats}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Car className="w-3.5 h-3.5 text-slate-500" />
+                      <span>{car.categoryLabel}</span>
+                    </div>
+                    <div className="flex items-center gap-2 col-span-2">
+                      <Snowflake className="w-3.5 h-3.5 text-cyan-500" />
+                      <span>{car.ac}</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Bottom Price & Book Now Pill Button matching reference */}
-              <div className="flex items-center justify-between pt-1">
-                <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">
-                    Pricing
-                  </span>
-                  <span className="text-sm font-extrabold font-outfit text-slate-900">
-                    {car.startingRate}
-                  </span>
-                </div>
-
+              {/* Bottom Book Now Button matching competitor */}
+              <div className="p-6 pt-0">
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${car.name} (${car.registration}). Please share rates.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-5 py-2.5 rounded-full font-bold text-xs bg-[#FF5B00] text-white hover:bg-[#E04F00] shadow-md shadow-[#FF5B00]/30 transition-all flex items-center gap-1.5"
+                  className="btn-whatsapp-pill w-full text-center"
                 >
-                  <MessageCircle className="w-3.5 h-3.5 fill-current" />
-                  <span>Book Now</span>
+                  <MessageCircle className="w-4 h-4 fill-current" />
+                  <span>Book {car.name.split(' ')[0]} Now</span>
                 </a>
               </div>
 
