@@ -11,7 +11,7 @@ export default function PhotoGallerySection() {
       category: "fleet",
       categoryName: "Luxury Fleet",
       sub: "Kakinada Executive Cabs",
-      image: "/images/gallery-fleet.jpg"
+      image: "/images/innova-crysta.jpg"
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function PhotoGallerySection() {
       category: "airport",
       categoryName: "Airport Drop & Pickup",
       sub: "Rajahmundry & Vizag Express",
-      image: "/images/gallery-airport.jpg"
+      image: "/images/service-airport-taxi.jpg"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export default function PhotoGallerySection() {
       category: "tours",
       categoryName: "Hill & Nature Tours",
       sub: "Holiday Tour Packages",
-      image: "/images/gallery-araku.jpg"
+      image: "/images/service-holiday-packages.jpg"
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ export default function PhotoGallerySection() {
       category: "temple",
       categoryName: "Divine Pilgrimages",
       sub: "Annavaram & Draksharamam",
-      image: "/images/gallery-temple.jpg"
+      image: "/images/service-temple-tours.jpg"
     },
     {
       id: 5,
