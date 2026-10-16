@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#090D14] text-slate-400 font-jakarta pt-16 pb-24 md:pb-12 border-t border-slate-800">
+    <footer className="bg-[#040B17] text-slate-400 font-jakarta pt-16 pb-24 md:pb-12 border-t border-amber-400/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
         
         {/* Main 4-Column Grid matching competitor footer */}
@@ -45,7 +45,7 @@ export default function Footer() {
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a cab.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-xs bg-[#25D366] text-white hover:bg-emerald-600 transition-colors shadow-lg"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-xs bg-emerald-600 text-white hover:bg-emerald-500 transition-colors shadow-lg"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-current" />
                 <span>Chat on WhatsApp</span>
@@ -53,9 +53,9 @@ export default function Footer() {
 
               <a
                 href={`tel:+91${businessInfo.phone}`}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-xs bg-white/10 hover:bg-white/20 text-white transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full font-bold text-xs bg-[#0C2340] border border-amber-400/40 hover:border-amber-400 text-white transition-colors"
               >
-                <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+                <Phone className="w-3.5 h-3.5 text-amber-400" />
                 <span>Call Now</span>
               </a>
             </div>
@@ -65,15 +65,15 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-3">
             <h4 className="font-outfit font-bold text-white text-sm">Quick Links</h4>
             <ul className="space-y-2 text-xs">
-              <li><Link to="/" className="hover:text-[#FF5B00] transition-colors">› Home</Link></li>
-              <li><Link to="/routes" className="hover:text-[#FF5B00] transition-colors">› Cab Tariff & Rates</Link></li>
-              <li><Link to="/about" className="hover:text-[#FF5B00] transition-colors">› About Us</Link></li>
-              <li><Link to="/services" className="hover:text-[#FF5B00] transition-colors">› Cab Services</Link></li>
-              <li><Link to="/cars" className="hover:text-[#FF5B00] transition-colors">› Fleet Vehicles</Link></li>
-              <li><Link to="/airport-taxi" className="hover:text-[#FF5B00] transition-colors">› Airport Taxi</Link></li>
-              <li><Link to="/temple-tours" className="hover:text-[#FF5B00] transition-colors">› Temple Tours</Link></li>
-              <li><Link to="/holiday-packages" className="hover:text-[#FF5B00] transition-colors">› Tour Packages</Link></li>
-              <li><Link to="/contact" className="hover:text-[#FF5B00] transition-colors">› Contact Us</Link></li>
+              <li><Link to="/" className="hover:text-amber-400 transition-colors">› Home</Link></li>
+              <li><Link to="/routes" className="hover:text-amber-400 transition-colors">› Cab Tariff & Rates</Link></li>
+              <li><Link to="/about" className="hover:text-amber-400 transition-colors">› About Us</Link></li>
+              <li><Link to="/services" className="hover:text-amber-400 transition-colors">› Cab Services</Link></li>
+              <li><Link to="/cars" className="hover:text-amber-400 transition-colors">› Fleet Vehicles</Link></li>
+              <li><Link to="/airport-taxi" className="hover:text-amber-400 transition-colors">› Airport Taxi</Link></li>
+              <li><Link to="/temple-tours" className="hover:text-amber-400 transition-colors">› Temple Tours</Link></li>
+              <li><Link to="/holiday-packages" className="hover:text-amber-400 transition-colors">› Tour Packages</Link></li>
+              <li><Link to="/contact" className="hover:text-amber-400 transition-colors">› Contact Us</Link></li>
             </ul>
           </div>
 
@@ -81,13 +81,13 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-outfit font-bold text-white text-sm">Top "Kakinada to" Routes</h4>
             <ul className="space-y-2 text-xs">
-              <li><Link to="/airport-taxi/rajahmundry" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Rajahmundry Airport Taxi</Link></li>
-              <li><Link to="/airport-taxi/vizag" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Vizag Airport Cab</Link></li>
-              <li><Link to="/services/outstation-cabs" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Vijayawada Cab</Link></li>
-              <li><Link to="/services/outstation-cabs" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Hyderabad Taxi</Link></li>
-              <li><Link to="/services/outstation-cabs" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Tirupati Taxi</Link></li>
-              <li><Link to="/services/outstation-cabs" className="hover:text-[#FF5B00] transition-colors">› Kakinada to Bangalore Cab</Link></li>
-              <li><Link to="/routes" className="hover:text-[#FF5B00] transition-colors">› View All Route Tariffs</Link></li>
+              <li><Link to="/airport-taxi/rajahmundry" className="hover:text-amber-400 transition-colors">› Kakinada to Rajahmundry Airport Taxi</Link></li>
+              <li><Link to="/airport-taxi/vizag" className="hover:text-amber-400 transition-colors">› Kakinada to Vizag Airport Cab</Link></li>
+              <li><Link to="/services/outstation-cabs" className="hover:text-amber-400 transition-colors">› Kakinada to Vijayawada Cab</Link></li>
+              <li><Link to="/services/outstation-cabs" className="hover:text-amber-400 transition-colors">› Kakinada to Hyderabad Taxi</Link></li>
+              <li><Link to="/services/outstation-cabs" className="hover:text-amber-400 transition-colors">› Kakinada to Tirupati Taxi</Link></li>
+              <li><Link to="/services/outstation-cabs" className="hover:text-amber-400 transition-colors">› Kakinada to Bangalore Cab</Link></li>
+              <li><Link to="/routes" className="hover:text-amber-400 transition-colors">› View All Route Tariffs</Link></li>
             </ul>
           </div>
 
@@ -95,20 +95,20 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-3">
             <h4 className="font-outfit font-bold text-white text-sm">Kakinada Tour Packages</h4>
             <ul className="space-y-2 text-xs">
-              <li><Link to="/temple-tours/annavaram" className="hover:text-[#FF5B00] transition-colors">› Annavaram Temple Taxi</Link></li>
-              <li><Link to="/temple-tours/pancharamalu" className="hover:text-[#FF5B00] transition-colors">› Pancharama Kshetra Package</Link></li>
-              <li><Link to="/temple-tours/srisailam-tirupati" className="hover:text-[#FF5B00] transition-colors">› Tirupati Pilgrimage Tour</Link></li>
-              <li><Link to="/holiday-packages/araku-vizag" className="hover:text-[#FF5B00] transition-colors">› Araku Valley Tour Package</Link></li>
-              <li><Link to="/holiday-packages/lambasingi" className="hover:text-[#FF5B00] transition-colors">› Lambasingi & Vanajangi Tour</Link></li>
-              <li><Link to="/holiday-packages/maredumilli" className="hover:text-[#FF5B00] transition-colors">› Maredumilli Eco Tour</Link></li>
-              <li><Link to="/holiday-packages/papikondalu" className="hover:text-[#FF5B00] transition-colors">› Papikondalu Godavari Cruise</Link></li>
+              <li><Link to="/temple-tours/annavaram" className="hover:text-amber-400 transition-colors">› Annavaram Temple Taxi</Link></li>
+              <li><Link to="/temple-tours/pancharamalu" className="hover:text-amber-400 transition-colors">› Pancharama Kshetra Package</Link></li>
+              <li><Link to="/temple-tours/srisailam-tirupati" className="hover:text-amber-400 transition-colors">› Tirupati Pilgrimage Tour</Link></li>
+              <li><Link to="/holiday-packages/araku-vizag" className="hover:text-amber-400 transition-colors">› Araku Valley Tour Package</Link></li>
+              <li><Link to="/holiday-packages/lambasingi" className="hover:text-amber-400 transition-colors">› Lambasingi & Vanajangi Tour</Link></li>
+              <li><Link to="/holiday-packages/maredumilli" className="hover:text-amber-400 transition-colors">› Maredumilli Eco Tour</Link></li>
+              <li><Link to="/holiday-packages/papikondalu" className="hover:text-amber-400 transition-colors">› Papikondalu Godavari Cruise</Link></li>
             </ul>
           </div>
 
         </div>
 
-        {/* SEO Popular Keyword Tags Section matching competitor */}
-        <div className="border-t border-slate-800/80 pt-8 mt-8">
+        {/* SEO Popular Keyword Tags Section */}
+        <div className="border-t border-white/10 pt-8 mt-8">
           <h5 className="text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
             Popular High-Ranking Kakinada Searches
           </h5>
@@ -140,7 +140,7 @@ export default function Footer() {
               <Link
                 key={idx}
                 to="/services"
-                className="bg-white/5 hover:bg-[#FF5B00] text-slate-300 hover:text-white px-3 py-1 rounded-md text-[11px] border border-white/10 transition-colors"
+                className="bg-white/5 hover:bg-gold-gradient hover:text-navy-950 text-slate-300 px-3 py-1 rounded-md text-[11px] border border-white/10 transition-colors font-medium"
               >
                 {tag}
               </Link>
@@ -148,13 +148,13 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright Bar matching competitor */}
-        <div className="pt-6 border-t border-slate-800 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+        {/* Bottom Copyright Bar */}
+        <div className="pt-6 border-t border-white/10 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             © {currentYear} <strong>Sri Prakash Car Travels</strong>. All Rights Reserved.
           </div>
           <div className="text-slate-400 text-center md:text-right">
-            {businessInfo.address} | Phone: <a href={`tel:+91${businessInfo.phone}`} className="text-[#FF5B00] font-bold">+91 {businessInfo.phone}</a>
+            {businessInfo.address} | Phone: <a href={`tel:+91${businessInfo.phone}`} className="text-amber-400 font-bold">+91 {businessInfo.phone}</a>
           </div>
         </div>
 

@@ -7,18 +7,18 @@ export default function AirportTransfersSection({ onOpenBooking }) {
   const airports = airportTransfersData;
 
   return (
-    <section id="airport-transfers" className="py-20 bg-gradient-to-br from-[#0B0F17] via-[#0F172A] to-[#1E293B] text-white">
+    <section id="airport-transfers" className="py-20 bg-gradient-to-br from-[#040B17] via-[#08172C] to-[#0C2340] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
           {/* Left Column: Airport Title, Intro & Compact Airport Item Cards */}
           <div className="lg:col-span-7 space-y-6">
             <div>
-              <span className="inline-block px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-[#FF5B00]/20 text-[#FF5B00] border border-[#FF5B00]/30 mb-3">
+              <span className="inline-block px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-amber-400/15 text-amber-400 border border-amber-400/30 mb-3">
                 24/7 Airport Cab Service
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white leading-tight">
-                Punctual <span className="text-[#FF5B00]">Airport Pickup & Drop</span> Kakinada
+                Punctual <span className="text-gradient-gold">Airport Pickup & Drop</span> Kakinada
               </h2>
               <p className="text-sm sm:text-base text-slate-300 font-jakarta mt-3 leading-relaxed">
                 Never miss a flight again! Sri Prakash Car Travels provides round-the-clock{' '}
@@ -35,11 +35,11 @@ export default function AirportTransfersSection({ onOpenBooking }) {
                   className="airport-item-card group cursor-pointer block"
                 >
                   <div className="flex items-center gap-3.5">
-                    <div className="airport-icon-box shrink-0 group-hover:scale-110 group-hover:bg-[#FF5B00] group-hover:text-white transition-all">
-                      <Plane className="w-5 h-5 text-[#FF5B00] group-hover:text-white transition-colors" />
+                    <div className="airport-icon-box shrink-0 group-hover:scale-110 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-all">
+                      <Plane className="w-5 h-5 text-amber-400 group-hover:text-navy-950 transition-colors" />
                     </div>
                     <div className="min-w-0">
-                      <h4 className="text-sm font-extrabold font-outfit text-white group-hover:text-[#FF5B00] transition-colors truncate">
+                      <h4 className="text-sm font-extrabold font-outfit text-white group-hover:text-amber-400 transition-colors truncate">
                         {airport.name} ({airport.code})
                       </h4>
                       <p className="text-xs text-slate-400 font-jakarta mt-0.5">
@@ -55,7 +55,7 @@ export default function AirportTransfersSection({ onOpenBooking }) {
             <div className="pt-2">
               <Link
                 to="/airport-taxi"
-                className="inline-flex items-center gap-2 text-xs font-bold text-[#FF5B00] hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-white transition-colors"
               >
                 <span>View All Airport Taxi Routes & Fares</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -65,9 +65,9 @@ export default function AirportTransfersSection({ onOpenBooking }) {
 
           {/* Right Column: Glass Card Dark matching competitor */}
           <div className="lg:col-span-5">
-            <div className="glass-card-dark p-7 sm:p-8 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+            <div className="glass-card-dark p-7 sm:p-8 rounded-3xl border border-amber-400/25 shadow-2xl relative overflow-hidden">
               <div className="flex items-center gap-2 text-amber-400 font-outfit font-extrabold text-xl mb-6">
-                <Clock className="w-5 h-5 text-[#FF5B00]" />
+                <Clock className="w-5 h-5 text-amber-400" />
                 <h3>Why Pre-Book Airport Cab?</h3>
               </div>
 
@@ -96,9 +96,9 @@ export default function AirportTransfersSection({ onOpenBooking }) {
               <div className="mt-8 space-y-3">
                 <a
                   href={`tel:+91${businessInfo.phone}`}
-                  className="btn-call-now-pill w-full !py-3.5 text-center flex items-center justify-center gap-2 shadow-lg shadow-[#FF5B00]/30"
+                  className="w-full !py-3.5 text-center flex items-center justify-center gap-2 rounded-full font-bold text-sm bg-gold-gradient text-navy-950 shadow-gold-glow hover:brightness-105 transition-all"
                 >
-                  <Phone className="w-4 h-4 fill-current" />
+                  <Phone className="w-4 h-4 fill-current text-navy-950" />
                   <span>Call Airport Taxi Helpline</span>
                 </a>
 

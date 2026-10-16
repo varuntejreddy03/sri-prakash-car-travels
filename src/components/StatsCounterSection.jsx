@@ -10,18 +10,18 @@ export default function StatsCounterSection() {
   ];
 
   return (
-    <section className="py-16 bg-[#0B0F17] text-white border-y border-white/10 relative overflow-hidden">
+    <section className="py-16 bg-[#040B17] text-white border-y border-amber-400/20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
               <div key={i} className="text-center space-y-2">
-                <div className="w-12 h-12 mx-auto rounded-2xl bg-[#FF5B00]/10 border border-[#FF5B00]/20 flex items-center justify-center text-[#FF5B00] mb-3">
+                <div className="w-12 h-12 mx-auto rounded-2xl bg-amber-400/15 border border-amber-400/30 flex items-center justify-center text-amber-400 mb-3">
                   <Icon className="w-6 h-6" />
                 </div>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white tracking-tight">
-                  {stat.number}
+                  {stat.number === "100%" ? <span className="text-gradient-gold">100%</span> : stat.number}
                 </div>
                 <div className="text-sm font-bold text-slate-200 uppercase tracking-wider font-jakarta">
                   {stat.label}

@@ -10,9 +10,9 @@ export default function TestimonialsSection() {
         {/* Section Header matching reference */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="ref-section-tag">Testimonials</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
             What our customers are <br />
-            <span className="text-[#FF5B00]">saying about us</span>
+            <span className="text-gradient-gold">saying about us</span>
           </h2>
           <p className="text-sm text-slate-600 font-jakarta mt-3">
             Real feedback from verified travelers who book our taxi and car travels services in Kakinada.
@@ -24,7 +24,7 @@ export default function TestimonialsSection() {
           {testimonialsData.map((review, idx) => (
             <div
               key={idx}
-              className="bg-[#F8FAFC] rounded-3xl p-6 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-200 flex flex-col justify-between"
+              className="bg-[#FAF9F6] rounded-3xl p-6 border border-slate-200 hover:border-amber-400 hover:bg-white hover:shadow-xl transition-all duration-200 flex flex-col justify-between"
             >
               <div>
                 {/* 5 Stars */}
@@ -43,11 +43,11 @@ export default function TestimonialsSection() {
               {/* Reviewer Profile matching reference */}
               <div className="pt-4 border-t border-slate-200 flex items-center justify-between">
                 <div>
-                  <p className="font-outfit font-bold text-slate-900 text-sm flex items-center gap-1.5">
+                  <p className="font-outfit font-bold text-[#0C2340] text-sm flex items-center gap-1.5">
                     <span>{review.name}</span>
                     <CheckCircle className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                   </p>
-                  <p className="text-[11px] text-[#FF5B00] font-semibold truncate max-w-[170px]">
+                  <p className="text-[11px] text-amber-600 font-semibold truncate max-w-[170px]">
                     {review.city}
                   </p>
                 </div>

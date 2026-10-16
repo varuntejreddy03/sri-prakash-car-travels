@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
-import { faqData } from '../data/travelData';
+import { faqData, businessInfo } from '../data/travelData';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -19,9 +19,9 @@ export default function FAQSection() {
           {/* Left Column */}
           <div className="lg:col-span-4 space-y-5">
             <span className="ref-section-tag">FAQs</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight">
               Frequently asked <br />
-              <span className="text-[#FF5B00]">questions</span>
+              <span className="text-gradient-gold">questions</span>
             </h2>
             <p className="text-sm text-slate-600 font-jakarta leading-relaxed max-w-sm">
               Everything you need to know about booking our taxi service, outstation cabs, and airport transfers in Kakinada.
@@ -29,10 +29,10 @@ export default function FAQSection() {
 
             <div className="pt-2 flex flex-col sm:flex-row lg:flex-col gap-3">
               <a
-                href="tel:+919848903025"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#e04f00] text-white transition-all shadow-md w-fit"
+                href={`tel:+91${businessInfo.phone}`}
+                className="btn-call-now-pill w-fit"
               >
-                <span>Call 24/7: +91 9848903025</span>
+                <span>Call 24/7: +91 {businessInfo.phone}</span>
               </a>
             </div>
           </div>
@@ -48,10 +48,10 @@ export default function FAQSection() {
                     onClick={() => toggle(idx)}
                     className="w-full flex items-center justify-between text-left gap-4 group"
                   >
-                    <span className="font-outfit font-bold text-base sm:text-lg text-slate-900 group-hover:text-[#FF5B00] transition-colors">
+                    <span className="font-outfit font-bold text-base sm:text-lg text-[#0C2340] group-hover:text-amber-600 transition-colors">
                       {item.q}
                     </span>
-                    <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#FF5B00] group-hover:text-white transition-colors flex items-center justify-center shrink-0 text-slate-700">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-colors flex items-center justify-center shrink-0 text-slate-700">
                       {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                     </span>
                   </button>

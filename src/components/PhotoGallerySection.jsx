@@ -76,14 +76,14 @@ export default function PhotoGallerySection() {
     : galleryItems.filter(item => item.category === filter);
 
   return (
-    <section id="gallery" className="py-20 bg-slate-50">
+    <section id="gallery" className="py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="ref-section-tag">Our Fleet & Moments</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-            Sri Prakash <span className="text-[#FF5B00]">Travels Photo Gallery</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
+            Sri Prakash <span className="text-gradient-gold">Travels Photo Gallery</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 font-jakarta mt-3">
             Sneak peek of our premium luxury cars, happy families, and memorable tour destinations.
@@ -103,8 +103,8 @@ export default function PhotoGallerySection() {
                 onClick={() => setFilter(tab.id)}
                 className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
                   filter === tab.id
-                    ? 'bg-[#FF5B00] text-white shadow-md shadow-[#FF5B00]/30'
-                    : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
+                    ? 'bg-gold-gradient text-navy-950 shadow-gold-glow'
+                    : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100 hover:text-[#0C2340]'
                 }`}
               >
                 {tab.label}
@@ -130,7 +130,7 @@ export default function PhotoGallerySection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
 
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#FF5B00] bg-white/10 backdrop-blur-md px-2.5 py-0.5 rounded-full inline-block mb-1.5 border border-white/10">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-black/40 backdrop-blur-md px-2.5 py-0.5 rounded-full inline-block mb-1.5 border border-amber-400/30">
                   {item.categoryName}
                 </span>
                 <h4 className="font-outfit font-extrabold text-lg text-white">

@@ -9,9 +9,14 @@
   }
 
   body {
-    background-color: #F8FAFC;
-    color: #0F172A;
+    background-color: #FAF9F6; /* Karthikeya warm ivory background */
+    color: #0C2340; /* Karthikeya deep navy text */
     overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #E3BE47;
+    color: #040B17;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,22 +24,47 @@
   }
 }
 
-/* Custom Scrollbar */
+/* Custom Scrollbar - Karthikeya Gold & Navy */
 ::-webkit-scrollbar {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #0F172A;
+  background: #0C2340;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FF5B00;
+  background: #D4AF37;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E04F00;
+  background: #B88911;
 }
 
-/* Raddito Reference Tag Style (Small red dot + tag) */
+/* Karthikeya Gold Gradient & Glow Utilities */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FFD233 0%, #F7B814 50%, #EF9E04 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FFD233 0%, #F7B814 50%, #EF9E04 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-gold-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.45);
+}
+
+.shadow-navy-elevated {
+  box-shadow: 0 20px 40px -15px rgba(12, 35, 64, 0.25);
+}
+
+/* Reference Tag Style (Small gold dot + tag) */
 .ref-section-tag {
   display: inline-flex;
   align-items: center;
@@ -42,14 +72,14 @@
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.025em;
-  color: #0F172A;
+  color: #0C2340;
 }
 .ref-section-tag::before {
   content: '';
   width: 7px;
   height: 7px;
   border-radius: 9999px;
-  background-color: #FF5B00;
+  background-color: #D4AF37;
 }
 
 /* Reference Pill Buttons */
@@ -59,18 +89,18 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.625rem 1.375rem;
-  background-color: #FF5B00;
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #FFD233 0%, #F7B814 50%, #EF9E04 100%);
+  color: #040B17;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 9999px;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(255, 91, 0, 0.35);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
 }
 .ref-btn-primary:hover {
-  background-color: #E04F00;
+  filter: brightness(1.05);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 91, 0, 0.45);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.55);
 }
 .ref-btn-primary:active {
   transform: scale(0.98);
@@ -83,24 +113,24 @@
   gap: 0.5rem;
   padding: 0.625rem 1.375rem;
   background-color: transparent;
-  color: #0F172A;
-  border: 1.5px solid #E2E8F0;
+  color: #0C2340;
+  border: 1.5px solid #CBD5E1;
   font-size: 0.875rem;
   font-weight: 700;
   border-radius: 9999px;
   transition: all 0.2s ease;
 }
 .ref-btn-outline:hover {
-  border-color: #FF5B00;
-  color: #FF5B00;
-  background-color: rgba(255, 91, 0, 0.04);
+  border-color: #D4AF37;
+  color: #0C2340;
+  background-color: rgba(212, 175, 55, 0.08);
 }
 
 .ref-circle-arrow {
   width: 1.375rem;
   height: 1.375rem;
   border-radius: 9999px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(4, 11, 23, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,30 +150,30 @@
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ref-card:hover {
-  border-color: #CBD5E1;
-  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.08);
+  border-color: #D4AF37;
+  box-shadow: 0 20px 35px -10px rgba(12, 35, 64, 0.12);
   transform: translateY(-3px);
 }
 
 /* ==========================================================================
-   Competitor-matched Premium Button & Card Design System
-   Adapted with Sri Prakash Brand Palette (#FF5B00 orange, dark navy)
+   Karthikeya-matched Premium Button & Card Design System
+   (#0C2340 Navy, #D4AF37 Gold, #F59E0B Amber, #FAF9F6 Ivory)
    ========================================================================== */
 
-/* Main Brand Pill Action Button (.btn-primary style from competitor) */
+/* Main Brand Pill Action Button */
 .btn-primary-brand {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: linear-gradient(135deg, #FF5B00, #E04F00);
-  color: #FFFFFF;
-  font-weight: 700;
+  background: linear-gradient(135deg, #FFD233 0%, #F7B814 50%, #EF9E04 100%);
+  color: #040B17;
+  font-weight: 800;
   padding: 0.85rem 1.8rem;
   border-radius: 9999px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(255, 91, 0, 0.35);
+  box-shadow: 0 4px 18px rgba(212, 175, 55, 0.45);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -151,14 +181,14 @@
 }
 .btn-primary-brand:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 91, 0, 0.55);
-  background: linear-gradient(135deg, #FF7824, #E04F00);
-  color: #FFFFFF;
+  filter: brightness(1.06);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+  color: #040B17;
 }
 
-/* WhatsApp Floating/Action Pill (.btn-whatsapp from competitor) */
+/* WhatsApp Floating/Action Pill */
 .btn-whatsapp-pill {
-  background: linear-gradient(135deg, #25D366, #128C7E);
+  background: linear-gradient(135deg, #059669, #047857);
   color: #FFFFFF;
   font-weight: 700;
   padding: 0.75rem 1.4rem;
@@ -167,54 +197,57 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.35);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 0.875rem;
 }
 .btn-whatsapp-pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.5);
+  background: linear-gradient(135deg, #10B981, #059669);
   color: #FFFFFF;
 }
 
-/* Call Now Pill Button (.btn-call-now-pill from competitor) */
+/* Call Now Pill Button - Karthikeya Navy + Amber Border */
 .btn-call-now-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #FF5B00, #E04F00);
+  background: linear-gradient(135deg, #0C2340 0%, #14335E 100%);
   color: #FFFFFF;
   font-weight: 800;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
+  border: 1px solid rgba(245, 158, 11, 0.5);
   font-size: 0.9rem;
-  box-shadow: 0 4px 15px rgba(255, 91, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(12, 35, 64, 0.35);
   transition: all 0.3s ease;
   letter-spacing: 0.3px;
 }
 .btn-call-now-pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(255, 91, 0, 0.6);
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.4);
+  border-color: #D4AF37;
   color: #FFFFFF;
 }
 
-/* Competitor Glass Card Dark */
+/* Glass Card Dark */
 .glass-card-dark {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(4, 11, 23, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   color: #FFFFFF;
   border-radius: 1rem;
 }
 
-/* Competitor-style Service Card (.service-card) */
+/* Service Card */
 .comp-service-card {
   background: #FFFFFF;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid #E2E8F0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -223,44 +256,44 @@
 }
 .comp-service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-  border-color: #FF5B00;
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.12);
+  border-color: #D4AF37;
 }
 
-/* Competitor-style Fleet Card (.fleet-card) */
+/* Fleet Card */
 .comp-fleet-card {
   background: #FFFFFF;
   border-radius: 1.25rem;
   border: 1px solid #E2E8F0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comp-fleet-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-  border-color: #FF5B00;
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.12);
+  border-color: #D4AF37;
 }
 
-/* Competitor-style Package Card (.package-card) */
+/* Package Card */
 .comp-package-card {
   background: #FFFFFF;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid #E2E8F0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comp-package-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-  border-color: #FF5B00;
+  box-shadow: 0 16px 40px rgba(12, 35, 64, 0.12);
+  border-color: #D4AF37;
 }
 
-/* Competitor-style Airport Cards (.airport-item-card) */
+/* Airport Cards */
 .airport-item-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 1rem;
   padding: 1.15rem;
   display: block;
@@ -268,16 +301,16 @@
   text-decoration: none;
 }
 .airport-item-card:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: #FF5B00;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #D4AF37;
   transform: translateY(-4px);
 }
 .airport-icon-box {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(255, 91, 0, 0.2);
-  color: #FF5B00;
+  background: rgba(212, 175, 55, 0.2);
+  color: #E3BE47;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,5 +318,3 @@
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
-
-

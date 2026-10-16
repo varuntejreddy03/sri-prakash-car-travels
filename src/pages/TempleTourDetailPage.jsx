@@ -67,18 +67,18 @@ Please share customized itinerary and fixed pricing.`;
         breadcrumb={`Temple Tours / ${pkg.title.split(' ')[2] || 'Pilgrimage'}`}
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
           
           <div className="flex items-center justify-between">
             <Link
               to="/temple-tours"
-              className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-[#FF5B00] transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-amber-500 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to All Temple Packages</span>
             </Link>
-            <span className="badge-orange-pill text-xs">{pkg.tag}</span>
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-700 border border-amber-300/60">{pkg.tag}</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -95,7 +95,7 @@ Please share customized itinerary and fixed pricing.`;
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5B00] text-white shadow-lg">
+                  <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-gradient text-navy-950 shadow-gold-glow">
                     {pkg.tag}
                   </span>
                 </div>
@@ -113,7 +113,7 @@ Please share customized itinerary and fixed pricing.`;
 
               <div>
                 <span className="ref-section-tag">{pkg.subtitle}</span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mt-2">
+                <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-navy-950 mt-2">
                   Devotional Tour Overview & Experience
                 </h2>
                 <p className="text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed mt-4">
@@ -125,18 +125,18 @@ Please share customized itinerary and fixed pricing.`;
               </div>
 
               {/* Day Plan & Itinerary */}
-              <div className="bg-[#F8FAFC] rounded-3xl p-8 border border-slate-200 space-y-4">
-                <h3 className="font-outfit font-extrabold text-xl text-slate-900">
+              <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm space-y-4">
+                <h3 className="font-outfit font-extrabold text-xl text-navy-950">
                   Pilgrimage Itinerary & Steps
                 </h3>
                 <div className="space-y-3 pt-2">
                   {pkg.itinerary.map((step, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <div className="w-7 h-7 rounded-full bg-[#FF5B00] text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                      <div className="w-7 h-7 rounded-full bg-gold-gradient text-navy-950 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                         {idx + 1}
                       </div>
                       <div>
-                        <h4 className="font-outfit font-bold text-slate-900 text-sm">{step}</h4>
+                        <h4 className="font-outfit font-bold text-navy-950 text-sm">{step}</h4>
                         <p className="text-xs text-slate-500 font-jakarta mt-0.5">Flexible waiting time allowed for darshan, pooja rituals & temple prasadam.</p>
                       </div>
                     </div>
@@ -146,7 +146,7 @@ Please share customized itinerary and fixed pricing.`;
 
               {/* Inclusions */}
               <div className="space-y-4">
-                <h3 className="font-outfit font-extrabold text-xl text-slate-900">
+                <h3 className="font-outfit font-extrabold text-xl text-navy-950">
                   Package Inclusions
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-700">
@@ -174,8 +174,8 @@ Please share customized itinerary and fixed pricing.`;
               </div>
 
               {/* Recommended Fleet */}
-              <div className="p-6 rounded-2xl bg-orange-50 border border-orange-200">
-                <h4 className="font-outfit font-bold text-slate-900 text-base mb-1">
+              <div className="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80">
+                <h4 className="font-outfit font-bold text-navy-950 text-base mb-1">
                   Recommended Vehicles for this Pilgrimage:
                 </h4>
                 <p className="text-xs text-slate-700">
@@ -187,8 +187,8 @@ Please share customized itinerary and fixed pricing.`;
 
             {/* Right Booking Form */}
             <div className="lg:col-span-4">
-              <div className="sticky top-28 bg-[#0F141E] text-white rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl space-y-4">
-                <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <div className="sticky top-28 bg-gradient-to-br from-[#040B17] to-[#0C2340] text-white rounded-3xl p-6 sm:p-7 border border-amber-400/20 shadow-2xl space-y-4">
+                <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                   Book Pilgrimage
                 </span>
                 <h3 className="font-outfit font-black text-xl text-white">
@@ -209,7 +209,7 @@ Please share customized itinerary and fixed pricing.`;
                       onChange={(e) => setPickup(e.target.value)}
                       placeholder="e.g. Sriram Nagar, Kakinada"
                       required
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
 
@@ -220,7 +220,7 @@ Please share customized itinerary and fixed pricing.`;
                     <select
                       value={car}
                       onChange={(e) => setCar(e.target.value)}
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400"
                     >
                       <option value="Swift Dzire (Sedan 4+1)">Swift Dzire (4+1)</option>
                       <option value="Toyota Etios (Sedan 4+1)">Toyota Etios (4+1)</option>
@@ -244,7 +244,7 @@ Please share customized itinerary and fixed pricing.`;
                         min="1"
                         max="45"
                         required
-                        className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                        className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400"
                       />
                     </div>
 
@@ -256,14 +256,14 @@ Please share customized itinerary and fixed pricing.`;
                         type="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
-                        className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                        className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400"
                       />
                     </div>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-lg shadow-[#FF5B00]/30 transition-all flex items-center justify-center gap-2 mt-4"
+                    className="w-full py-3 rounded-full font-bold text-xs bg-gold-gradient hover:opacity-95 text-navy-950 shadow-gold-glow transition-all flex items-center justify-center gap-2 mt-4"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Enquire on WhatsApp</span>
@@ -273,7 +273,7 @@ Please share customized itinerary and fixed pricing.`;
                     href={`tel:+91${businessInfo.phone}`}
                     className="w-full py-2.5 rounded-full font-bold text-xs bg-white/10 hover:bg-white/20 text-white transition-all flex items-center justify-center gap-2"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+                    <Phone className="w-3.5 h-3.5 text-amber-400" />
                     <span>Call Helpline: +91 {businessInfo.phone}</span>
                   </a>
                 </form>

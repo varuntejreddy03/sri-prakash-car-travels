@@ -17,15 +17,15 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
     : fleetData.filter(car => car.category === activeFilter);
 
   return (
-    <section id="fleet" className="py-20 bg-[#F8FAFC]">
+    <section id="fleet" className="py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header matching competitor */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="ref-section-tag">Our Premium Vehicles</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-              Well-Maintained <span className="text-[#FF5B00]">Car Travels Fleet</span> in Kakinada
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
+              Well-Maintained <span className="text-gradient-gold">Car Travels Fleet</span> in Kakinada
             </h2>
             <p className="text-sm sm:text-base text-slate-500 font-jakarta mt-3 max-w-2xl">
               Choose from modern sedans, spacious MPVs, luxury SUVs, and tempo travellers for all group sizes.
@@ -41,8 +41,8 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                   onClick={() => setActiveFilter(tab.id)}
                   className={`px-3 py-1.5 sm:px-3.5 rounded-xl sm:rounded-full text-[11px] sm:text-xs font-bold transition-all whitespace-nowrap shrink-0 ${
                     activeFilter === tab.id
-                      ? 'bg-[#FF5B00] text-white shadow-md shadow-[#FF5B00]/30'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                      ? 'bg-gold-gradient text-navy-950 shadow-gold-glow'
+                      : 'text-slate-600 hover:text-[#0C2340] hover:bg-slate-100'
                   }`}
                 >
                   {tab.label}
@@ -56,7 +56,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
             >
               <span>View Fleet</span>
               <span className="ref-circle-arrow">
-                <ArrowRight className="w-3 h-3 text-white" />
+                <ArrowRight className="w-3 h-3 text-navy-950" />
               </span>
             </button>
           </div>
@@ -82,7 +82,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                   
                   {/* Top Right Category Pill Badge */}
                   <div className="absolute top-3 right-3">
-                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-sm text-[#FF5B00] border border-orange-200 shadow-sm">
+                    <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-sm text-amber-600 border border-amber-300 shadow-sm">
                       {car.tag}
                     </span>
                   </div>
@@ -97,7 +97,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
 
                 <div className="p-6 pb-2">
                   {/* Car Title */}
-                  <h3 className="font-outfit font-extrabold text-xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug">
+                  <h3 className="font-outfit font-extrabold text-xl text-[#0C2340] group-hover:text-amber-600 transition-colors leading-snug">
                     {car.name}
                   </h3>
                   <p className="text-xs text-slate-500 font-jakarta mt-1 line-clamp-1">
@@ -107,7 +107,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                   {/* Specs List matching competitor format */}
                   <div className="grid grid-cols-2 gap-3 py-3.5 my-3 border-y border-slate-100 text-xs text-slate-600">
                     <div className="flex items-center gap-2">
-                      <Users className="w-3.5 h-3.5 text-[#FF5B00]" />
+                      <Users className="w-3.5 h-3.5 text-amber-500" />
                       <span>{car.seats}</span>
                     </div>
                     <div className="flex items-center gap-2">

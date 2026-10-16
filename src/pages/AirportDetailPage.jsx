@@ -99,18 +99,18 @@ Please confirm pickup timing and fixed fare.`;
         breadcrumb={`Airport Taxi / ${data.code}`}
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
           
           <div className="flex items-center justify-between">
             <Link
               to="/airport-taxi"
-              className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-[#FF5B00] transition-colors"
+              className="inline-flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-amber-500 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Airport Transfers</span>
             </Link>
-            <span className="badge-orange-pill text-xs">Airport Specialist</span>
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-700 border border-amber-300/60">Airport Specialist</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -127,7 +127,7 @@ Please confirm pickup timing and fixed fare.`;
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                 <div className="absolute top-4 left-4">
-                  <span className="px-4 py-1.5 rounded-full text-sm font-mono font-extrabold bg-[#FF5B00] text-white shadow-lg">
+                  <span className="px-4 py-1.5 rounded-full text-sm font-mono font-extrabold bg-gold-gradient text-navy-950 shadow-gold-glow">
                     {data.code} Airport Taxi
                   </span>
                 </div>
@@ -141,7 +141,7 @@ Please confirm pickup timing and fixed fare.`;
 
               <div>
                 <span className="ref-section-tag">{data.officialName}</span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mt-2">
+                <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-navy-950 mt-2">
                   Doorstep Pickup to {data.code} Terminal
                 </h2>
                 <p className="text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed mt-4">
@@ -150,14 +150,14 @@ Please confirm pickup timing and fixed fare.`;
               </div>
 
               {/* Route & Distance Info Card */}
-              <div className="bg-[#F8FAFC] rounded-3xl p-7 border border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Total Distance</span>
-                  <strong className="text-2xl font-outfit text-slate-900">{data.distance}</strong>
+                  <strong className="text-2xl font-outfit text-navy-950">{data.distance}</strong>
                 </div>
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Estimated Time</span>
-                  <strong className="text-2xl font-outfit text-[#FF5B00]">{data.travelTime}</strong>
+                  <strong className="text-2xl font-outfit text-amber-500">{data.travelTime}</strong>
                 </div>
                 <div>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">Highway Route</span>
@@ -167,14 +167,14 @@ Please confirm pickup timing and fixed fare.`;
 
               {/* Guarantees */}
               <div className="space-y-4">
-                <h3 className="font-outfit font-extrabold text-xl text-slate-900">
+                <h3 className="font-outfit font-extrabold text-xl text-navy-950">
                   Airport Transfer Guarantees
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-outfit font-bold text-slate-900 text-sm">15-Min Prior Arrival</h4>
+                      <h4 className="font-outfit font-bold text-navy-950 text-sm">15-Min Prior Arrival</h4>
                       <p className="text-xs text-slate-600 mt-0.5">Your driver reaches your doorstep 15 minutes before your schedule to ensure zero last-minute rush.</p>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ Please confirm pickup timing and fixed fare.`;
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-outfit font-bold text-slate-900 text-sm">Flight Tracking</h4>
+                      <h4 className="font-outfit font-bold text-navy-950 text-sm">Flight Tracking</h4>
                       <p className="text-xs text-slate-600 mt-0.5">Live monitoring of arrival/departure flight numbers. Automatic schedule adjustments at no extra charge.</p>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ Please confirm pickup timing and fixed fare.`;
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-outfit font-bold text-slate-900 text-sm">Trolley Luggage Boot</h4>
+                      <h4 className="font-outfit font-bold text-navy-950 text-sm">Trolley Luggage Boot</h4>
                       <p className="text-xs text-slate-600 mt-0.5">Clean, expansive boot compartments capable of accommodating multiple full-size international bags.</p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ Please confirm pickup timing and fixed fare.`;
                   <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-outfit font-bold text-slate-900 text-sm">Zero Surge Billing</h4>
+                      <h4 className="font-outfit font-bold text-navy-950 text-sm">Zero Surge Billing</h4>
                       <p className="text-xs text-slate-600 mt-0.5">Fixed fare agreed upfront. Zero unexpected midnight multipliers or holiday surges.</p>
                     </div>
                   </div>
@@ -207,12 +207,12 @@ Please confirm pickup timing and fixed fare.`;
 
               {/* Recommended Cars */}
               <div>
-                <h3 className="font-outfit font-extrabold text-xl text-slate-900 mb-4">
+                <h3 className="font-outfit font-extrabold text-xl text-navy-950 mb-4">
                   Recommended Cabs for {data.code} Airport
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {data.recommendedCars.map((c, i) => (
-                    <span key={i} className="px-4 py-2 rounded-xl text-xs font-bold bg-[#FF5B00]/10 text-[#FF5B00] border border-[#FF5B00]/25">
+                    <span key={i} className="px-4 py-2 rounded-xl text-xs font-bold bg-amber-500/10 text-amber-700 border border-amber-300/60">
                       🚘 {c}
                     </span>
                   ))}
@@ -223,8 +223,8 @@ Please confirm pickup timing and fixed fare.`;
 
             {/* Right Booking Form */}
             <div className="lg:col-span-4">
-              <div className="sticky top-28 bg-[#0F141E] text-white rounded-3xl p-6 sm:p-7 border border-white/10 shadow-2xl space-y-4">
-                <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <div className="sticky top-28 bg-gradient-to-br from-[#040B17] to-[#0C2340] text-white rounded-3xl p-6 sm:p-7 border border-amber-400/20 shadow-2xl space-y-4">
+                <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                   Book Airport Taxi
                 </span>
                 <h3 className="font-outfit font-black text-xl text-white">
@@ -242,7 +242,7 @@ Please confirm pickup timing and fixed fare.`;
                       onChange={(e) => setPickup(e.target.value)}
                       placeholder="e.g. Sriram Nagar, Kakinada"
                       required
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
 
@@ -253,7 +253,7 @@ Please confirm pickup timing and fixed fare.`;
                     <select
                       value={car}
                       onChange={(e) => setCar(e.target.value)}
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400"
                     >
                       <option value="Swift Dzire (Sedan 4+1)">Swift Dzire (4+1)</option>
                       <option value="Toyota Etios (4+1 Large Boot)">Toyota Etios (4+1 Large Boot)</option>
@@ -273,7 +273,7 @@ Please confirm pickup timing and fixed fare.`;
                       onChange={(e) => setDate(e.target.value)}
                       placeholder="e.g. 28th Oct, 3:30 AM"
                       required
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
 
@@ -286,13 +286,13 @@ Please confirm pickup timing and fixed fare.`;
                       value={flightNo}
                       onChange={(e) => setFlightNo(e.target.value)}
                       placeholder="e.g. 6E 7122"
-                      className="w-full bg-[#1A2234] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#08172C] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-lg shadow-[#FF5B00]/30 transition-all flex items-center justify-center gap-2 mt-4"
+                    className="w-full py-3 rounded-full font-bold text-xs bg-gold-gradient hover:opacity-95 text-navy-950 shadow-gold-glow transition-all flex items-center justify-center gap-2 mt-4"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Confirm Fare on WhatsApp</span>
@@ -302,7 +302,7 @@ Please confirm pickup timing and fixed fare.`;
                     href={`tel:+91${businessInfo.phone}`}
                     className="w-full py-2.5 rounded-full font-bold text-xs bg-white/10 hover:bg-white/20 text-white transition-all flex items-center justify-center gap-2"
                   >
-                    <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+                    <Phone className="w-3.5 h-3.5 text-amber-400" />
                     <span>Call Helpline: +91 {businessInfo.phone}</span>
                   </a>
                 </form>

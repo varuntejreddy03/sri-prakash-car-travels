@@ -21,11 +21,11 @@ export default function RoutesPage({ onOpenBooking }) {
       />
       <PopularRoutesSection />
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="bg-[#0B0F17] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="bg-gradient-to-r from-[#040B17] to-[#0C2340] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-amber-400/20">
             <div>
-              <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                 Custom Outstation Route?
               </span>
               <h3 className="font-outfit font-extrabold text-2xl text-white mt-1">

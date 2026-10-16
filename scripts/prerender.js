@@ -253,12 +253,12 @@ for (const route of routes) {
 
   // Pre-seed <div id="root"> with semantic SEO content for non-JS crawlers
   const seoContent = `
-    <div style="padding: 2rem; max-width: 1200px; margin: 0 auto; color: #0f172a; font-family: sans-serif;">
+    <div style="padding: 2rem; max-width: 1200px; margin: 0 auto; color: #0C2340; font-family: sans-serif;">
       <header>
-        <p style="color: #FF5B00; font-weight: bold; font-size: 0.875rem; text-transform: uppercase;">Sri Prakash Car Travels - Kakinada #1 Rated Taxi Service</p>
+        <p style="color: #D4AF37; font-weight: bold; font-size: 0.875rem; text-transform: uppercase;">Sri Prakash Car Travels - Kakinada #1 Rated Taxi Service</p>
         <h1 style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 1rem;">${route.h1}</h1>
         <p style="font-size: 1.125rem; line-height: 1.6; color: #334155;">${route.summary}</p>
-        <p style="margin-top: 1rem;"><strong>24/7 Booking Helpline:</strong> <a href="tel:+919848903025" style="color: #FF5B00;">${PHONE}</a></p>
+        <p style="margin-top: 1rem;"><strong>24/7 Booking Helpline:</strong> <a href="tel:+919848903025" style="color: #0C2340; font-weight: bold;">${PHONE}</a></p>
       </header>
     </div>
   `;

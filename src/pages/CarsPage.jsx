@@ -57,14 +57,14 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
         breadcrumb="Cars"
       />
 
-      <section className="py-20 bg-[#F8FAFC]">
+      <section className="py-20 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           
           {/* Filter Bar */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-12">
             <div>
               <span className="ref-section-tag">Explore Fleet</span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mt-1">
+              <h2 className="text-2xl sm:text-3xl font-extrabold font-outfit text-navy-950 mt-1">
                 Choose The Ideal Vehicle For Your Journey
               </h2>
             </div>
@@ -76,8 +76,8 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                   onClick={() => setActiveFilter(tab.id)}
                   className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                     activeFilter === tab.id
-                      ? 'bg-[#FF5B00] text-white shadow-md shadow-[#FF5B00]/30'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                      ? 'bg-gold-gradient text-navy-950 shadow-gold-glow font-bold'
+                      : 'text-slate-600 hover:text-navy-900 hover:bg-amber-50/50'
                   }`}
                 >
                   {tab.label}
@@ -91,7 +91,7 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
             {filteredFleet.map((car) => (
               <div
                 key={car.id}
-                className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:border-slate-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm hover:border-[#D4AF37] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Image */}
@@ -102,7 +102,7 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-3 right-3">
-                      <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-[#FF5B00] border border-orange-200 shadow-sm">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-amber-600 border border-amber-300 shadow-sm">
                         {car.tag}
                       </span>
                     </div>
@@ -113,7 +113,7 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                     </div>
                   </div>
 
-                  <h3 className="font-outfit font-extrabold text-2xl text-slate-900 group-hover:text-[#FF5B00] transition-colors">
+                  <h3 className="font-outfit font-extrabold text-2xl text-navy-950 group-hover:text-amber-500 transition-colors">
                     {car.name}
                   </h3>
                   <p className="text-xs text-slate-500 font-jakarta mt-1">
@@ -123,11 +123,11 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                   {/* 4-Specs Matrix */}
                   <div className="grid grid-cols-2 gap-2.5 py-4 my-4 border-y border-slate-100 text-xs text-slate-600">
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-[#FF5B00]" />
+                      <Users className="w-4 h-4 text-amber-500" />
                       <span>{car.seats}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase className="w-4 h-4 text-[#FF5B00]" />
+                      <Briefcase className="w-4 h-4 text-amber-500" />
                       <span>{car.luggage}</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -147,7 +147,7 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                         key={i}
                         className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-600 bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-200"
                       >
-                        <Check className="w-3 h-3 text-[#FF5B00]" />
+                        <Check className="w-3 h-3 text-amber-500" />
                         {feat}
                       </span>
                     ))}
@@ -160,7 +160,7 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
                     href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${car.name} (${car.registration}). Please share fare.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-3 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-md shadow-[#FF5B00]/30 transition-all flex items-center justify-center gap-2"
+                    className="flex-1 py-3 rounded-full font-bold text-xs bg-gold-gradient hover:opacity-95 text-navy-950 shadow-gold-glow transition-all flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Book on WhatsApp</span>
@@ -169,10 +169,10 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
 
                   <button
                     onClick={() => onSelectVehicle(car)}
-                    className="p-3 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
+                    className="p-3 rounded-full bg-slate-100 hover:bg-amber-50 text-navy-900 transition-colors"
                     title="View Specs"
                   >
-                    <Sparkles className="w-4 h-4 text-[#FF5B00]" />
+                    <Sparkles className="w-4 h-4 text-amber-500" />
                   </button>
                 </div>
 
@@ -181,9 +181,9 @@ export default function CarsPage({ onSelectVehicle, onOpenBooking }) {
           </div>
 
           {/* Bottom Help Strip */}
-          <div className="mt-16 bg-[#0B0F17] rounded-3xl p-8 sm:p-10 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="mt-16 bg-gradient-to-r from-[#040B17] to-[#0C2340] rounded-3xl p-8 sm:p-10 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl border border-amber-400/20">
             <div>
-              <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                 Custom Fleet Inquiries
               </span>
               <h3 className="font-outfit font-extrabold text-2xl text-white mt-1">

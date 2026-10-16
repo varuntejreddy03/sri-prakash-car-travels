@@ -28,10 +28,10 @@ Please share immediate fare quote and confirm cab availability.`;
   };
 
   return (
-    <section id="home" className="relative bg-[#0F141E] text-white pt-10 pb-20 overflow-hidden">
-      {/* Background Ambience */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#090D14] via-[#0F141E] to-[#141B28] opacity-95" />
-      <div className="absolute top-1/4 left-1/4 w-[600px] h-[350px] bg-[#FF5B00]/15 rounded-full blur-[150px] pointer-events-none" />
+    <section id="home" className="relative bg-gradient-to-br from-[#040B17] via-[#08172C] to-[#0C2340] text-white pt-10 pb-20 overflow-hidden">
+      {/* Background Ambience - Karthikeya Gold Glow */}
+      <div className="absolute top-1/4 left-1/4 w-[600px] h-[350px] bg-amber-400/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute -bottom-10 right-10 w-[450px] h-[300px] bg-[#0C2340]/40 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -47,7 +47,7 @@ Please share immediate fare quote and confirm cab availability.`;
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-5xl xl:text-6xl font-extrabold font-outfit text-white tracking-tight leading-[1.14]">
-              Best <span className="text-[#FF5B00]">Car Travels</span> & <br />
+              Best <span className="text-gradient-gold">Car Travels</span> & <br />
               Taxi Service in Kakinada
             </h1>
 
@@ -62,7 +62,7 @@ Please share immediate fare quote and confirm cab availability.`;
                 href={`tel:+91${businessInfo.phone}`}
                 className="btn-call-now-pill"
               >
-                <Phone className="w-4 h-4 text-white" />
+                <Phone className="w-4 h-4 text-amber-400" />
                 <span>Call Now (+91 {businessInfo.phone})</span>
               </a>
 
@@ -95,19 +95,19 @@ Please share immediate fare quote and confirm cab availability.`;
               </div>
 
               <div className="bg-white/5 rounded-2xl p-3 border border-white/5 text-center sm:text-left">
-                <div className="text-2xl font-extrabold font-outfit text-[#FF5B00]">100%</div>
+                <div className="text-2xl font-extrabold font-outfit text-amber-400">100%</div>
                 <div className="text-xs text-slate-400 font-medium mt-0.5">Safe & Sanitized</div>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Instant Cab Booking Kakinada Widget */}
+          {/* Right Column: Instant Cab Booking Kakinada Widget - Karthikeya Navy & Gold */}
           <div className="lg:col-span-5 relative" id="booking-form">
-            <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#141B28] p-4 sm:p-7">
+            <div className="relative rounded-3xl overflow-hidden border border-amber-400/25 shadow-2xl bg-[#08172C] p-4 sm:p-7">
               
               <div className="mb-5 pb-4 border-b border-white/10">
-                <span className="text-[11px] font-bold tracking-widest text-[#FF5B00] uppercase block">
+                <span className="text-[11px] font-bold tracking-widest text-amber-400 uppercase block">
                   Quick Fare Quote
                 </span>
                 <h3 className="font-outfit font-extrabold text-xl sm:text-2xl text-white mt-1">
@@ -127,7 +127,7 @@ Please share immediate fare quote and confirm cab availability.`;
                   <select
                     value={serviceType}
                     onChange={(e) => setServiceType(e.target.value)}
-                    className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                    className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-amber-400"
                   >
                     <option value="Airport Taxi Kakinada">Airport Taxi Service</option>
                     <option value="Local Cab Service Kakinada">Local City Taxi</option>
@@ -149,7 +149,7 @@ Please share immediate fare quote and confirm cab availability.`;
                       onChange={(e) => setPickup(e.target.value)}
                       placeholder="e.g. Kakinada Main Town"
                       required
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
                   <div>
@@ -162,7 +162,7 @@ Please share immediate fare quote and confirm cab availability.`;
                       onChange={(e) => setDestination(e.target.value)}
                       placeholder="e.g. Rajahmundry Airport"
                       required
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
                 </div>
@@ -176,7 +176,7 @@ Please share immediate fare quote and confirm cab availability.`;
                     <select
                       value={vehicle}
                       onChange={(e) => setVehicle(e.target.value)}
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-400"
                     >
                       <option value="Swift Dzire / Amaze (4+1)">Swift Dzire / Amaze (4+1)</option>
                       <option value="Maruti Ertiga (6+1)">Maruti Ertiga (6+1)</option>
@@ -194,7 +194,7 @@ Please share immediate fare quote and confirm cab availability.`;
                       value={travelDate}
                       onChange={(e) => setTravelDate(e.target.value)}
                       required
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-400"
                     />
                   </div>
                 </div>
@@ -211,7 +211,7 @@ Please share immediate fare quote and confirm cab availability.`;
                       onChange={(e) => setCustomerName(e.target.value)}
                       placeholder="Full Name"
                       required
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
                   <div>
@@ -224,17 +224,17 @@ Please share immediate fare quote and confirm cab availability.`;
                       onChange={(e) => setCustomerPhone(e.target.value)}
                       placeholder="Mobile Number"
                       required
-                      className="w-full bg-[#0B0F17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-[#FF5B00]"
+                      className="w-full bg-[#040B17] border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-amber-400"
                     />
                   </div>
                 </div>
 
-                {/* Submit button */}
+                {/* Submit button - Karthikeya Gold Gradient */}
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl font-bold text-sm bg-[#FF5B00] hover:bg-[#E04F00] text-white transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#FF5B00]/30 mt-2"
+                  className="w-full py-3 rounded-xl font-bold text-sm bg-gold-gradient text-navy-950 transition-all flex items-center justify-center gap-2 shadow-gold-glow hover:brightness-105 hover:scale-[1.01] mt-2"
                 >
-                  <MessageCircle className="w-4 h-4 fill-current" />
+                  <MessageCircle className="w-4 h-4 fill-current text-navy-950" />
                   <span>Get Fare Quote on WhatsApp</span>
                 </button>
               </form>

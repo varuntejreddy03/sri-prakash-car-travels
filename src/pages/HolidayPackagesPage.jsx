@@ -20,14 +20,14 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
         breadcrumb="Packages"
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto">
             <span className="ref-section-tag">Nature & Escapes</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold font-outfit text-slate-900 mt-2">
-              Unforgettable Roadtrips from <span className="text-[#FF5B00]">Kakinada</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-outfit text-navy-950 mt-2">
+              Unforgettable Roadtrips from <span className="text-gradient-gold">Kakinada</span>
             </h2>
             <p className="text-sm text-slate-600 font-jakarta mt-2">
               All packages include experienced hill-station drivers, clean sanitized AC vehicles, and flexible sightseeing stops.
@@ -39,7 +39,7 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
             {holidayPackagesData.map((pkg) => (
               <div
                 key={pkg.id}
-                className="bg-[#F8FAFC] rounded-3xl p-5 sm:p-6 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 hover:border-[#D4AF37] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Holiday Tour Image */}
@@ -67,7 +67,7 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
                   </div>
 
                   <Link to={`/holiday-packages/${pkg.id}`}>
-                    <h3 className="font-outfit font-extrabold text-2xl text-slate-900 group-hover:text-emerald-600 transition-colors leading-snug">
+                    <h3 className="font-outfit font-extrabold text-2xl text-navy-950 group-hover:text-amber-500 transition-colors leading-snug">
                       {pkg.title}
                     </h3>
                   </Link>
@@ -82,19 +82,19 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
                       Package Attractions:
                     </span>
                     <div className="flex flex-wrap gap-1.5">
-                      {pkg.highlights.map((h, idx) => (
+                      {pkg.highlights.map((idx, h) => (
                         <span
-                          key={idx}
-                          className="text-xs text-slate-700 bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm"
+                          key={h}
+                          className="text-xs text-slate-700 bg-[#FAF9F6] px-3 py-1 rounded-full border border-slate-200 shadow-sm"
                         >
-                          ✓ {h}
+                          ✓ {idx}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  <div className="mt-5 p-3 rounded-xl bg-white border border-slate-200 flex items-center gap-2 text-xs text-slate-700">
-                    <Car className="w-3.5 h-3.5 text-[#FF5B00] shrink-0" />
+                  <div className="mt-5 p-3 rounded-xl bg-[#FAF9F6] border border-slate-200 flex items-center gap-2 text-xs text-slate-700">
+                    <Car className="w-3.5 h-3.5 text-amber-500 shrink-0" />
                     <span>Recommended Car: <strong>{pkg.car}</strong></span>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
                 <div className="pt-6 mt-6 border-t border-slate-200 space-y-2.5">
                   <Link
                     to={`/holiday-packages/${pkg.id}`}
-                    className="w-full py-2.5 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-all flex items-center justify-center gap-2 shadow-sm"
+                    className="w-full py-2.5 rounded-full font-bold text-xs bg-[#0C2340] hover:bg-[#14335E] text-white transition-all flex items-center justify-center gap-2 shadow-sm border border-amber-400/30"
                   >
                     <span>View Package & Sightseeing Plan</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -112,7 +112,7 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
                     href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${pkg.title} (${pkg.duration}). Please send itinerary and pricing.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-md shadow-[#FF5B00]/30 transition-all flex items-center justify-center gap-2"
+                    className="w-full py-2.5 rounded-full font-bold text-xs bg-gold-gradient hover:opacity-95 text-navy-950 shadow-gold-glow transition-all flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Enquire on WhatsApp</span>
@@ -124,9 +124,9 @@ export default function HolidayPackagesPage({ onOpenBooking }) {
           </div>
 
           {/* Custom Holiday Trip Planner */}
-          <div className="bg-[#0B0F17] rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="bg-gradient-to-r from-[#040B17] to-[#0C2340] rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-amber-400/20">
             <div>
-              <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                 Customized Sightseeing
               </span>
               <h3 className="font-outfit font-extrabold text-2xl text-white mt-1">

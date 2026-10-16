@@ -10,9 +10,9 @@ export default function LocalCoverageSection({ onOpenBooking }) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="ref-section-tag">Hyper-Local 24/7 Coverage</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight">
             Doorstep Taxi Pickup Across <br />
-            <span className="text-[#FF5B00]">All Kakinada Localities</span>
+            <span className="text-gradient-gold">All Kakinada Localities</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed">
             Need a cab at Bhanugudi Junction, JNTU, the Railway Station, or the Port? We have vehicles stationed across Kakinada for swift 10–15 minute doorstep arrivals.
@@ -24,18 +24,18 @@ export default function LocalCoverageSection({ onOpenBooking }) {
           {kakinadaLocalitiesData.map((loc, idx) => (
             <div
               key={idx}
-              className="bg-[#F8FAFC] rounded-2xl p-5 border border-slate-200 hover:border-orange-300 hover:bg-orange-50/20 transition-all duration-200 flex flex-col justify-between group"
+              className="bg-[#FAF9F6] rounded-2xl p-5 border border-slate-200 hover:border-amber-400 hover:bg-amber-50/20 transition-all duration-200 flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-1.5 text-[#FF5B00]">
-                    <MapPin className="w-4 h-4 shrink-0" />
-                    <span className="text-[11px] font-bold uppercase tracking-wider font-jakarta">
+                  <div className="flex items-center gap-1.5 text-amber-500">
+                    <MapPin className="w-4 h-4 shrink-0 text-amber-500" />
+                    <span className="text-[11px] font-bold uppercase tracking-wider font-jakarta text-amber-500">
                       {loc.tag}
                     </span>
                   </div>
                 </div>
-                <h3 className="font-outfit font-bold text-slate-900 text-base group-hover:text-[#FF5B00] transition-colors">
+                <h3 className="font-outfit font-bold text-[#0C2340] text-base group-hover:text-amber-600 transition-colors">
                   {loc.name}
                 </h3>
                 <p className="text-xs text-slate-600 font-jakarta mt-1.5 leading-relaxed">
@@ -43,32 +43,32 @@ export default function LocalCoverageSection({ onOpenBooking }) {
                 </p>
               </div>
 
-              <div className="pt-4 mt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-[#FF5B00]">
+              <div className="pt-4 mt-3 border-t border-slate-200/80 flex items-center justify-between text-xs font-semibold text-amber-500">
                 <span>Doorstep Cab Ready</span>
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Travels, I need a taxi pickup at ${loc.name}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline flex items-center gap-1 text-slate-700 hover:text-[#FF5B00]"
+                  className="hover:underline flex items-center gap-1 text-slate-700 hover:text-amber-500"
                 >
                   <span>Book</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
                 </a>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Local Area Callout Banner */}
-        <div className="bg-[#0B0F17] rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        {/* Local Area Callout Banner - Karthikeya Navy & Gold */}
+        <div className="bg-gradient-to-r from-[#040B17] via-[#08172C] to-[#0C2340] border border-amber-400/20 rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-1.5">
-            <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+            <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
               Anywhere in East Godavari
             </span>
             <h3 className="font-outfit font-extrabold text-2xl text-white">
               Traveling From a Village or Town Near Kakinada?
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400 font-jakarta max-w-2xl">
+            <p className="text-xs sm:text-sm text-slate-300 font-jakarta max-w-2xl">
               We also service Samarlakota, Peddapuram, Pithapuram, Gollaprolu, Annavaram, Draksharamam, Ramachandrapuram, Yanam, and Tuni with punctual round-the-clock cabs.
             </p>
           </div>
@@ -78,8 +78,8 @@ export default function LocalCoverageSection({ onOpenBooking }) {
               href={`tel:+91${businessInfo.phone}`}
               className="ref-btn-primary group"
             >
-              <Phone className="w-4 h-4 text-white" />
-              <span>Call +91 {businessInfo.phone}</span>
+              <Phone className="w-4 h-4 text-navy-950" />
+              <span>Call Local Dispatch</span>
             </a>
           </div>
         </div>

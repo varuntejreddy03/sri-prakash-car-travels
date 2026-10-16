@@ -27,7 +27,7 @@ const NotFoundPage = React.lazy(() => import('./pages/NotFoundPage'));
 function PageLoader() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center">
-      <div className="w-8 h-8 border-3 border-[#FF5B00] border-t-transparent rounded-full animate-spin" />
+      <div className="w-8 h-8 border-3 border-amber-400 border-t-transparent rounded-full animate-spin" />
     </div>
   );
 }
@@ -43,7 +43,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-white text-slate-900 font-jakarta flex flex-col selection:bg-[#FF5B00] selection:text-white">
+      <div className="min-h-screen bg-[#FAF9F6] text-slate-800 font-jakarta flex flex-col selection:bg-[#E3BE47] selection:text-[#040B17]">
         
         {/* Persistent Sticky Navbar */}
         <Navbar onOpenBooking={handleOpenBooking} />

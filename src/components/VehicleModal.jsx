@@ -13,28 +13,28 @@ export default function VehicleModal({ vehicle, onClose }) {
         onClick={onClose}
       />
 
-      {/* Modal Card */}
-      <div className="relative w-full max-w-2xl bg-[#0F1626] border border-white/15 rounded-3xl overflow-hidden shadow-2xl z-10 my-auto max-h-[92vh] flex flex-col">
+      {/* Modal Card - Karthikeya Royal Navy */}
+      <div className="relative w-full max-w-2xl bg-[#0C2340] border border-amber-400/25 rounded-3xl overflow-hidden shadow-2xl z-10 my-auto max-h-[92vh] flex flex-col">
         
         {/* Modal Header & Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-[#FF5B00] transition-colors flex items-center justify-center border border-white/10"
+          className="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-gold-gradient hover:text-navy-950 transition-colors flex items-center justify-center border border-white/10"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Vehicle Image */}
-        <div className="relative aspect-[16/9] w-full bg-[#070A10] overflow-hidden shrink-0">
+        <div className="relative aspect-[16/9] w-full bg-[#040B17] overflow-hidden shrink-0">
           <img
             src={vehicle.image}
             alt={vehicle.name}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1626] via-transparent to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0C2340] via-transparent to-black/30" />
           
           <div className="absolute bottom-4 left-6">
-            <span className="badge-orange-pill text-xs mb-1">
+            <span className="px-3 py-1 rounded-full bg-gold-gradient text-navy-950 font-bold text-xs inline-block mb-1 shadow-sm">
               {vehicle.tag}
             </span>
             <h3 className="font-outfit font-black text-xl sm:text-3xl text-white">
@@ -51,25 +51,25 @@ export default function VehicleModal({ vehicle, onClose }) {
           
           {/* Key Specs Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5">
-              <Users className="w-5 h-5 text-[#FF5B00] mb-1" />
+            <div className="p-3 rounded-2xl bg-white/[0.04] border border-white/10">
+              <Users className="w-5 h-5 text-amber-400 mb-1" />
               <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Capacity</span>
               <strong className="text-xs text-white">{vehicle.seats}</strong>
             </div>
 
-            <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5">
-              <Briefcase className="w-5 h-5 text-[#FF5B00] mb-1" />
+            <div className="p-3 rounded-2xl bg-white/[0.04] border border-white/10">
+              <Briefcase className="w-5 h-5 text-amber-400 mb-1" />
               <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Luggage</span>
               <strong className="text-xs text-white">{vehicle.luggage}</strong>
             </div>
 
-            <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-3 rounded-2xl bg-white/[0.04] border border-white/10">
               <Snowflake className="w-5 h-5 text-cyan-400 mb-1" />
               <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Air Conditioning</span>
               <strong className="text-xs text-white">{vehicle.ac}</strong>
             </div>
 
-            <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/5">
+            <div className="p-3 rounded-2xl bg-white/[0.04] border border-white/10">
               <Fuel className="w-5 h-5 text-emerald-400 mb-1" />
               <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Fuel & Drive</span>
               <strong className="text-xs text-white">{vehicle.fuel}</strong>
@@ -107,7 +107,7 @@ export default function VehicleModal({ vehicle, onClose }) {
               href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${vehicle.name} (${vehicle.registration}). Please give me the best quote.`)}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:flex-1 btn-brand-primary !py-3.5 !rounded-xl text-xs font-bold"
+              className="w-full sm:flex-1 btn-whatsapp-pill !py-3.5 !rounded-xl text-xs font-bold"
             >
               <MessageCircle className="w-4 h-4 fill-current" />
               <span>Book This Vehicle on WhatsApp</span>
@@ -116,9 +116,9 @@ export default function VehicleModal({ vehicle, onClose }) {
 
             <a
               href={`tel:+91${businessInfo.phone}`}
-              className="w-full sm:w-auto btn-brand-outline !py-3.5 !px-5 !rounded-xl text-xs"
+              className="w-full sm:w-auto btn-call-now-pill !py-3.5 !px-5 !rounded-xl text-xs"
             >
-              <Phone className="w-4 h-4 text-[#FF5B00]" />
+              <Phone className="w-4 h-4 text-amber-400" />
               <span>Call Helpline</span>
             </a>
           </div>

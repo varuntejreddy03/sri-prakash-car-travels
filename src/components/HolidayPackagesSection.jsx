@@ -12,8 +12,8 @@ export default function HolidayPackagesSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="ref-section-tag">Exotic Escapes</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-              Popular <span className="text-[#FF5B00]">Holiday Tour Packages</span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
+              Popular <span className="text-gradient-gold">Holiday Tour Packages</span>
             </h2>
             <p className="text-sm text-slate-600 font-jakarta mt-2 max-w-xl">
               Explore nature, waterfalls, beaches, and hill stations with our comfortable tourist taxis.
@@ -27,7 +27,7 @@ export default function HolidayPackagesSection() {
             >
               <span>All Holiday Packages</span>
               <span className="ref-circle-arrow">
-                <ArrowRight className="w-3 h-3 text-white" />
+                <ArrowRight className="w-3 h-3 text-navy-950" />
               </span>
             </Link>
           </div>
@@ -52,15 +52,15 @@ export default function HolidayPackagesSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                   
-                  {/* Package Duration Badge matching competitor */}
-                  <span className="absolute bottom-3 right-3 bg-[#FF5B00] text-white font-extrabold text-xs px-3.5 py-1 rounded-full shadow-md">
+                  {/* Package Duration Badge matching competitor - Karthikeya Gold Gradient */}
+                  <span className="absolute bottom-3 right-3 bg-gold-gradient text-navy-950 font-extrabold text-xs px-3.5 py-1 rounded-full shadow-md">
                     {pkg.duration}
                   </span>
                 </div>
 
                 <div className="p-6">
                   <Link to={`/holiday-packages/${pkg.id}`}>
-                    <h3 className="font-outfit font-extrabold text-xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug">
+                    <h3 className="font-outfit font-extrabold text-xl text-[#0C2340] group-hover:text-amber-600 transition-colors leading-snug">
                       {pkg.title}
                     </h3>
                   </Link>
@@ -71,11 +71,11 @@ export default function HolidayPackagesSection() {
                   {/* Package Meta matching competitor package-meta */}
                   <ul className="mt-4 py-3 border-y border-slate-100 space-y-2 text-xs text-slate-600">
                     <li className="flex items-center gap-2">
-                      <span className="text-[#FF5B00] font-bold">📍</span>
+                      <span className="text-amber-500 font-bold">📍</span>
                       <span className="truncate">Covering: {pkg.location}</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="text-blue-600 font-bold">🚗</span>
+                      <span className="text-[#0C2340] font-bold">🚗</span>
                       <span className="truncate">Fleet: {pkg.car}</span>
                     </li>
                   </ul>
@@ -96,7 +96,7 @@ export default function HolidayPackagesSection() {
 
                 <Link
                   to={`/holiday-packages/${pkg.id}`}
-                  className="px-4 py-2.5 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-colors flex items-center justify-center gap-1"
+                  className="px-4 py-2.5 rounded-full font-bold text-xs bg-[#0C2340] hover:bg-gold-gradient hover:text-navy-950 text-white transition-all flex items-center justify-center gap-1 shadow-sm"
                 >
                   <span>Details</span>
                   <ArrowRight className="w-3 h-3" />

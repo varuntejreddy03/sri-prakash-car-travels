@@ -15,10 +15,10 @@ export default function NotFoundPage() {
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
-      <div className="min-h-[70vh] flex items-center justify-center bg-[#F8FAFC]">
+      <div className="min-h-[70vh] flex items-center justify-center bg-[#FAF9F6]">
         <div className="text-center px-4 py-20 max-w-lg">
-          <div className="text-8xl font-extrabold font-outfit text-[#FF5B00] mb-4">404</div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold font-outfit text-slate-900 mb-3">
+          <div className="text-8xl font-extrabold font-outfit text-gradient-gold mb-4">404</div>
+          <h1 className="text-2xl sm:text-3xl font-extrabold font-outfit text-navy-950 mb-3">
             Page Not Found
           </h1>
           <p className="text-sm text-slate-600 font-jakarta mb-8 leading-relaxed">
@@ -39,7 +39,7 @@ export default function NotFoundPage() {
               href={`tel:+91${businessInfo.phone}`}
               className="ref-btn-outline text-xs"
             >
-              <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+              <Phone className="w-3.5 h-3.5 text-amber-500" />
               <span>Call +91 {businessInfo.phone}</span>
             </a>
           </div>

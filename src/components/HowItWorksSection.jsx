@@ -22,7 +22,7 @@ export default function HowItWorksSection({ onOpenBooking }) {
   ];
 
   return (
-    <section className="py-16 bg-[#F8FAFC]">
+    <section className="py-16 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Split Section matching pinterest-bulk-5 */}
@@ -38,7 +38,7 @@ export default function HowItWorksSection({ onOpenBooking }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
             
             <div className="absolute bottom-8 left-8 right-8">
-              <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FF5B00] text-white">
+              <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-gradient text-navy-950 shadow-gold-glow">
                 Chauffeur Driven
               </span>
               <p className="font-outfit font-extrabold text-2xl text-white mt-2">
@@ -51,10 +51,10 @@ export default function HowItWorksSection({ onOpenBooking }) {
           </div>
 
           {/* Right Column: Deep Dark Card with 3 Easy Steps */}
-          <div className="lg:col-span-6 bg-[#0B0F17] p-8 sm:p-12 text-white flex flex-col justify-between space-y-8">
+          <div className="lg:col-span-6 bg-[#040B17] p-8 sm:p-12 text-white flex flex-col justify-between space-y-8 border-l border-amber-400/20">
             <div>
               <div className="inline-flex items-center gap-2 mb-3">
-                <span className="w-2 h-2 rounded-full bg-[#FF5B00]"></span>
+                <span className="w-2 h-2 rounded-full bg-amber-400"></span>
                 <span className="text-xs font-bold text-slate-300 uppercase tracking-widest font-jakarta">
                   How We Work
                 </span>
@@ -62,14 +62,14 @@ export default function HowItWorksSection({ onOpenBooking }) {
 
               <h2 className="text-3xl sm:text-4xl font-extrabold font-outfit text-white tracking-tight leading-tight">
                 Rent your car in <br />
-                <span className="text-[#FF5B00]">3 easy steps</span>
+                <span className="text-gradient-gold">3 easy steps</span>
               </h2>
 
               <div className="space-y-6 mt-8">
                 {steps.map((step, idx) => (
                   <div key={idx} className="flex items-start gap-4">
-                    {/* Red/Orange Step Circle matching reference */}
-                    <div className="w-8 h-8 rounded-full bg-[#FF5B00] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5 shadow-md shadow-[#FF5B00]/40">
+                    {/* Gold Step Circle matching Karthikeya */}
+                    <div className="w-8 h-8 rounded-full bg-gold-gradient text-navy-950 text-xs font-black flex items-center justify-center shrink-0 mt-0.5 shadow-gold-glow">
                       {step.num}
                     </div>
                     <div>
@@ -92,7 +92,7 @@ export default function HowItWorksSection({ onOpenBooking }) {
               >
                 <span>Book Now</span>
                 <span className="ref-circle-arrow">
-                  <ArrowRight className="w-3 h-3 text-white" />
+                  <ArrowRight className="w-3 h-3 text-navy-950" />
                 </span>
               </button>
 

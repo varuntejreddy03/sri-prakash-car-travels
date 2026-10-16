@@ -21,7 +21,7 @@ export default function AboutSection({ onOpenBooking }) {
           
           {/* Left Column: Image with Experience Badge */}
           <div className="lg:col-span-5 relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3] bg-slate-900 relative group">
+            <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[4/3] bg-[#040B17] relative group">
               <img
                 src="/images/kia-carens.jpg"
                 alt="Sri Prakash Car Travels Fleet and Chauffeurs"
@@ -29,12 +29,12 @@ export default function AboutSection({ onOpenBooking }) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-              {/* 15+ Years Excellence Badge */}
-              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#FF5B00] text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3">
-                <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none">
+              {/* 15+ Years Excellence Badge - Karthikeya Gold Gradient */}
+              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-gold-gradient text-navy-950 p-3.5 sm:p-5 rounded-2xl shadow-gold-glow flex items-center gap-2.5 sm:gap-3">
+                <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none text-navy-950">
                   15+
                 </div>
-                <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight">
+                <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight text-navy-950">
                   Years <br />Excellence
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function AboutSection({ onOpenBooking }) {
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
-              The Most Trusted <span className="text-[#FF5B00]">Car Travels & Best Taxi Service</span> in Kakinada
+              The Most Trusted <span className="text-gradient-gold">Car Travels & Best Taxi Service</span> in Kakinada
             </h2>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed">
@@ -74,18 +74,15 @@ export default function AboutSection({ onOpenBooking }) {
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <a
                 href={`tel:+91${businessInfo.phone}`}
-                className="ref-btn-primary group !bg-[#FF5B00] hover:!bg-[#e04f00]"
+                className="btn-call-now-pill"
               >
-                <Phone className="w-4 h-4 text-white" />
+                <Phone className="w-4 h-4 text-amber-400" />
                 <span>Book Call Now</span>
-                <span className="ref-circle-arrow">
-                  <ArrowRight className="w-3 h-3 text-white" />
-                </span>
               </a>
 
               <button
                 onClick={onOpenBooking}
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm bg-slate-900 hover:bg-slate-800 text-white transition-all shadow-md"
+                className="btn-primary-brand"
               >
                 <span>Book Cab Online</span>
               </button>

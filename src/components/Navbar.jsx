@@ -60,21 +60,21 @@ export default function Navbar({ onOpenBooking }) {
 
   return (
     <>
-      {/* Top Notification & Contact Bar */}
-      <div className="bg-[#070B12] text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-white/5">
+      {/* Top Notification & Contact Bar - Karthikeya Navy */}
+      <div className="bg-[#040B17] text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-amber-400/20">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 sm:gap-6">
             <a 
               href={`tel:+91${businessInfo.phone}`} 
-              className="flex items-center gap-1.5 hover:text-[#FF5B00] transition-colors font-medium text-white"
+              className="flex items-center gap-1.5 hover:text-amber-400 transition-colors font-medium text-white"
             >
-              <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+              <Phone className="w-3.5 h-3.5 text-amber-400" />
               <span className="text-[11px] sm:text-xs">
-                24/7 Kakinada Helpline: <strong className="text-[#FF5B00]">+91 {businessInfo.phone}</strong>
+                24/7 Kakinada Helpline: <strong className="text-amber-400">+91 {businessInfo.phone}</strong>
               </span>
             </a>
             <span className="hidden md:flex items-center gap-1.5 text-slate-400 text-[11px]">
-              <MapPin className="w-3.5 h-3.5 text-[#FF5B00]" />
+              <MapPin className="w-3.5 h-3.5 text-amber-400" />
               <span>Doorstep Pickup Across All Kakinada Localities</span>
             </span>
           </div>
@@ -98,11 +98,11 @@ export default function Navbar({ onOpenBooking }) {
         </div>
       </div>
 
-      {/* Main Sticky Header */}
+      {/* Main Sticky Header - Karthikeya Royal Navy */}
       <header className={`sticky top-0 z-50 transition-all duration-200 ${
         isScrolled 
-          ? 'bg-[#0B0F17]/95 backdrop-blur-md shadow-2xl py-2 border-b border-white/10' 
-          : 'bg-[#0B0F17] py-2.5 sm:py-3 border-b border-white/5'
+          ? 'bg-[#0C2340]/95 backdrop-blur-md shadow-navy-elevated py-2 border-b border-amber-400/20' 
+          : 'bg-[#0C2340] py-2.5 sm:py-3 border-b border-white/10'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between gap-4">
           
@@ -115,7 +115,7 @@ export default function Navbar({ onOpenBooking }) {
             />
           </Link>
 
-          {/* Desktop Navigation Menu (Streamlined & Clean) */}
+          {/* Desktop Navigation Menu */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2 text-[13px] xl:text-[14px]">
             
             {/* Home */}
@@ -124,8 +124,8 @@ export default function Navbar({ onOpenBooking }) {
               className={({ isActive }) =>
                 `px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
                   isActive 
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`
               }
             >
@@ -142,26 +142,26 @@ export default function Navbar({ onOpenBooking }) {
                 type="button"
                 className={`px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap inline-flex items-center gap-1 ${
                   isServicesActive
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`}
               >
                 <span>Services</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180 text-[#FF5B00]' : 'text-slate-400'}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${servicesDropdownOpen ? 'rotate-180 text-amber-400' : 'text-slate-400'}`} />
               </button>
 
               {servicesDropdownOpen && (
                 <div className="absolute top-full left-0 w-72 pt-2 z-50">
-                  <div className="bg-[#121824] rounded-2xl p-2.5 shadow-2xl border border-white/10 backdrop-blur-xl">
+                  <div className="bg-[#08172C] rounded-2xl p-2.5 shadow-2xl border border-amber-400/25 backdrop-blur-xl">
                     <Link
                       to="/services"
                       className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-[#FF5B00]/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#FF5B00] transition-colors">
-                        <Car className="w-4 h-4 text-[#FF5B00] group-hover:text-white transition-colors" />
+                      <div className="w-8 h-8 rounded-lg bg-amber-400/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-colors">
+                        <Car className="w-4 h-4 text-amber-400 group-hover:text-navy-950 transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
                           All Cab Services
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
@@ -178,7 +178,7 @@ export default function Navbar({ onOpenBooking }) {
                         <Plane className="w-4 h-4 text-sky-400 group-hover:text-white transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
                           Airport Taxi
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
@@ -195,7 +195,7 @@ export default function Navbar({ onOpenBooking }) {
                         <Compass className="w-4 h-4 text-amber-400 group-hover:text-white transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
                           Outstation Cabs
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
@@ -205,18 +205,18 @@ export default function Navbar({ onOpenBooking }) {
                     </Link>
 
                     <Link
-                      to="/services/local-city-taxi"
+                      to="/services/local-cabs"
                       className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors group"
                     >
                       <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-emerald-500 transition-colors">
-                        <Car className="w-4 h-4 text-emerald-400 group-hover:text-white transition-colors" />
+                        <MapPin className="w-4 h-4 text-emerald-400 group-hover:text-white transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
-                          Local City Taxi
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
+                          Local Taxi Kakinada
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
-                          Hourly packages in Kakinada
+                          Hourly city rentals & railway transfers
                         </div>
                       </div>
                     </Link>
@@ -231,8 +231,8 @@ export default function Navbar({ onOpenBooking }) {
               className={({ isActive }) =>
                 `px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
                   isActive 
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`
               }
             >
@@ -249,26 +249,26 @@ export default function Navbar({ onOpenBooking }) {
                 type="button"
                 className={`px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap inline-flex items-center gap-1 ${
                   isToursActive
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`}
               >
                 <span>Tour Packages</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${toursDropdownOpen ? 'rotate-180 text-[#FF5B00]' : 'text-slate-400'}`} />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${toursDropdownOpen ? 'rotate-180 text-amber-400' : 'text-slate-400'}`} />
               </button>
 
               {toursDropdownOpen && (
-                <div className="absolute top-full left-0 w-72 pt-2 z-50">
-                  <div className="bg-[#121824] rounded-2xl p-2.5 shadow-2xl border border-white/10 backdrop-blur-xl">
+                <div className="absolute top-full left-0 w-80 pt-2 z-50">
+                  <div className="bg-[#08172C] rounded-2xl p-2.5 shadow-2xl border border-amber-400/25 backdrop-blur-xl">
                     <Link
                       to="/temple-tours"
                       className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#FF5B00] transition-colors">
-                        <Landmark className="w-4 h-4 text-[#FF5B00] group-hover:text-white transition-colors" />
+                      <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-colors">
+                        <Landmark className="w-4 h-4 text-amber-400 group-hover:text-navy-950 transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
                           Temple Pilgrimages
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
@@ -285,11 +285,11 @@ export default function Navbar({ onOpenBooking }) {
                         <Compass className="w-4 h-4 text-emerald-400 group-hover:text-white transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
-                          Holiday & Hill Tours
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
+                          Holiday Tour Packages
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
-                          Araku, Lambasingi, Maredumilli
+                          Araku, Lambasingi, Maredumilli & Dindi
                         </div>
                       </div>
                     </Link>
@@ -298,15 +298,15 @@ export default function Navbar({ onOpenBooking }) {
                       to="/routes"
                       className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors group"
                     >
-                      <div className="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-purple-500 transition-colors">
-                        <Car className="w-4 h-4 text-purple-400 group-hover:text-white transition-colors" />
+                      <div className="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-amber-500 transition-colors">
+                        <Sparkles className="w-4 h-4 text-amber-400 group-hover:text-white transition-colors" />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-xs group-hover:text-[#FF5B00] transition-colors">
-                          Route Distance & Fares
+                        <div className="text-white font-semibold text-xs group-hover:text-amber-400 transition-colors">
+                          Route Tariffs & Distances
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
-                          Top destination rate cards
+                          Fixed rate cards from Kakinada
                         </div>
                       </div>
                     </Link>
@@ -318,9 +318,9 @@ export default function Navbar({ onOpenBooking }) {
             {/* Tariff / Rate Card (Special Pill Link) */}
             <Link
               to="/routes"
-              className="px-3 py-1.5 rounded-full font-bold text-xs bg-[#FF5B00]/15 hover:bg-[#FF5B00]/25 text-[#FF5B00] border border-[#FF5B00]/30 transition-all whitespace-nowrap inline-flex items-center gap-1.5"
+              className="px-3 py-1.5 rounded-full font-bold text-xs bg-amber-400/15 hover:bg-amber-400/25 text-amber-300 border border-amber-400/30 transition-all whitespace-nowrap inline-flex items-center gap-1.5"
             >
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
               <span>Tariff & Fares</span>
             </Link>
 
@@ -330,8 +330,8 @@ export default function Navbar({ onOpenBooking }) {
               className={({ isActive }) =>
                 `px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
                   isActive 
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`
               }
             >
@@ -344,8 +344,8 @@ export default function Navbar({ onOpenBooking }) {
               className={({ isActive }) =>
                 `px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
                   isActive 
-                    ? 'text-[#FF5B00] bg-white/[0.04]' 
-                    : 'text-slate-200 hover:text-white hover:bg-white/[0.04]'
+                    ? 'text-amber-400 bg-white/[0.08]' 
+                    : 'text-slate-200 hover:text-amber-300 hover:bg-white/[0.06]'
                 }`
               }
             >
@@ -360,7 +360,7 @@ export default function Navbar({ onOpenBooking }) {
               href={`tel:+91${businessInfo.phone}`}
               className="btn-call-now-pill !py-2 !px-4 !text-xs !shadow-none"
             >
-              <Phone className="w-3.5 h-3.5 text-white" />
+              <Phone className="w-3.5 h-3.5 text-amber-400" />
               <span>Call Now</span>
             </a>
 
@@ -378,7 +378,7 @@ export default function Navbar({ onOpenBooking }) {
             aria-label="Toggle navigation menu"
             className="lg:hidden p-2 rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 text-amber-400" /> : <Menu className="w-5 h-5 text-white" />}
           </button>
 
         </div>
@@ -389,12 +389,12 @@ export default function Navbar({ onOpenBooking }) {
         <div className="fixed inset-0 z-50 lg:hidden">
           {/* Backdrop */}
           <div 
-            className="fixed inset-0 bg-black/70 backdrop-blur-sm" 
+            className="fixed inset-0 bg-black/75 backdrop-blur-sm" 
             onClick={() => setMobileMenuOpen(false)}
           />
 
-          {/* Drawer Content */}
-          <div className="fixed right-0 top-0 bottom-0 w-[85%] max-w-sm bg-[#0E131F] text-white p-5 flex flex-col justify-between shadow-2xl z-10 overflow-y-auto border-l border-white/10">
+          {/* Drawer Content - Karthikeya Deepest Obsidian Navy */}
+          <div className="fixed right-0 top-0 bottom-0 w-[85%] max-w-sm bg-[#040B17] text-white p-5 flex flex-col justify-between shadow-2xl z-10 overflow-y-auto border-l border-amber-400/20">
             <div>
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-4 border-b border-white/10">
@@ -409,7 +409,7 @@ export default function Navbar({ onOpenBooking }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 rounded-lg bg-white/10 text-slate-300 hover:text-white"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-5 h-5 text-amber-400" />
                 </button>
               </div>
 
@@ -420,7 +420,7 @@ export default function Navbar({ onOpenBooking }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
                     `px-3 py-2 rounded-xl transition-colors ${
-                      isActive ? 'bg-[#FF5B00]/15 text-[#FF5B00] font-bold' : 'text-slate-300 hover:text-white'
+                      isActive ? 'bg-amber-400/15 text-amber-400 font-bold' : 'text-slate-300 hover:text-white'
                     }`
                   }
                 >
@@ -435,28 +435,28 @@ export default function Navbar({ onOpenBooking }) {
                     className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:text-white"
                   >
                     <span>Services</span>
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180 text-[#FF5B00]' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180 text-amber-400' : ''}`} />
                   </button>
                   {mobileServicesOpen && (
-                    <div className="pl-4 py-1 space-y-1 border-l-2 border-white/10 ml-3 mt-1">
+                    <div className="pl-4 py-1 space-y-1 border-l-2 border-amber-400/30 ml-3 mt-1">
                       <Link 
                         to="/services" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › All Cab Services
                       </Link>
                       <Link 
                         to="/airport-taxi" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › Airport Taxi (RJA, VTZ, VGA)
                       </Link>
                       <Link 
                         to="/services/outstation-cabs" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › Outstation Cabs
                       </Link>
@@ -469,7 +469,7 @@ export default function Navbar({ onOpenBooking }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
                     `px-3 py-2 rounded-xl transition-colors ${
-                      isActive ? 'bg-[#FF5B00]/15 text-[#FF5B00] font-bold' : 'text-slate-300 hover:text-white'
+                      isActive ? 'bg-amber-400/15 text-amber-400 font-bold' : 'text-slate-300 hover:text-white'
                     }`
                   }
                 >
@@ -484,28 +484,28 @@ export default function Navbar({ onOpenBooking }) {
                     className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-slate-300 hover:text-white"
                   >
                     <span>Tour Packages</span>
-                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileToursOpen ? 'rotate-180 text-[#FF5B00]' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileToursOpen ? 'rotate-180 text-amber-400' : ''}`} />
                   </button>
                   {mobileToursOpen && (
-                    <div className="pl-4 py-1 space-y-1 border-l-2 border-white/10 ml-3 mt-1">
+                    <div className="pl-4 py-1 space-y-1 border-l-2 border-amber-400/30 ml-3 mt-1">
                       <Link 
                         to="/temple-tours" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › Temple Pilgrimages (Annavaram, Tirupati)
                       </Link>
                       <Link 
                         to="/holiday-packages" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › Holiday Packages (Araku, Lambasingi)
                       </Link>
                       <Link 
                         to="/routes" 
                         onClick={() => setMobileMenuOpen(false)}
-                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-white"
+                        className="block px-3 py-1.5 text-xs text-slate-400 hover:text-amber-300"
                       >
                         › Route Distance & Fares
                       </Link>
@@ -516,9 +516,9 @@ export default function Navbar({ onOpenBooking }) {
                 <Link
                   to="/routes"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-3 py-2 rounded-xl text-[#FF5B00] font-bold flex items-center gap-1.5 bg-[#FF5B00]/10"
+                  className="px-3 py-2 rounded-xl text-amber-300 font-bold flex items-center gap-1.5 bg-amber-400/10"
                 >
-                  <Sparkles className="w-3.5 h-3.5" />
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                   <span>Tariff & Fares</span>
                 </Link>
 
@@ -527,7 +527,7 @@ export default function Navbar({ onOpenBooking }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
                     `px-3 py-2 rounded-xl transition-colors ${
-                      isActive ? 'bg-[#FF5B00]/15 text-[#FF5B00] font-bold' : 'text-slate-300 hover:text-white'
+                      isActive ? 'bg-amber-400/15 text-amber-400 font-bold' : 'text-slate-300 hover:text-white'
                     }`
                   }
                 >
@@ -539,7 +539,7 @@ export default function Navbar({ onOpenBooking }) {
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
                     `px-3 py-2 rounded-xl transition-colors ${
-                      isActive ? 'bg-[#FF5B00]/15 text-[#FF5B00] font-bold' : 'text-slate-300 hover:text-white'
+                      isActive ? 'bg-amber-400/15 text-amber-400 font-bold' : 'text-slate-300 hover:text-white'
                     }`
                   }
                 >
@@ -555,17 +555,17 @@ export default function Navbar({ onOpenBooking }) {
                   setMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-lg shadow-[#FF5B00]/30 transition-all"
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm bg-gold-gradient text-navy-950 shadow-gold-glow transition-all hover:scale-[1.02]"
               >
                 <span>Book Cab Online</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 text-navy-950" />
               </button>
 
               <a
                 href={`tel:+91${businessInfo.phone}`}
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold text-xs bg-white/10 text-white hover:bg-white/20 transition-all"
+                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold text-xs bg-[#0C2340] border border-amber-400/40 text-white hover:border-amber-400 transition-all"
               >
-                <Phone className="w-4 h-4 text-[#FF5B00]" />
+                <Phone className="w-4 h-4 text-amber-400" />
                 <span>Call Helpline (+91 {businessInfo.phone})</span>
               </a>
 
@@ -573,7 +573,7 @@ export default function Navbar({ onOpenBooking }) {
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-bold text-xs bg-[#25D366] text-white hover:bg-emerald-600 transition-all"
+                className="w-full btn-whatsapp-pill !py-2.5 text-xs text-center flex items-center justify-center gap-2"
               >
                 <MessageCircle className="w-4 h-4 fill-current" />
                 <span>WhatsApp Booking</span>

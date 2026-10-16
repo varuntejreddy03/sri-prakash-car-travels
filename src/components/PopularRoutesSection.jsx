@@ -4,15 +4,15 @@ import { popularRoutes, createWhatsAppUrl } from '../data/travelData';
 
 export default function PopularRoutesSection() {
   return (
-    <section id="routes" className="py-20 bg-[#F8FAFC] border-t border-slate-200">
+    <section id="routes" className="py-20 bg-[#FAF9F6] border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="ref-section-tag">Popular Routes</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
             Top "Kakinada To" <br />
-            <span className="text-[#FF5B00]">Outstation Cab Routes</span>
+            <span className="text-gradient-gold">Outstation Cab Routes</span>
           </h2>
           <p className="text-sm text-slate-600 font-jakarta mt-3">
             One-way drop and round-trip outstation cabs with transparent distance billing and highway-experienced chauffeurs.
@@ -24,7 +24,7 @@ export default function PopularRoutesSection() {
           {popularRoutes.map((route, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-3xl p-4 sm:p-5 border border-slate-200 hover:border-slate-300 hover:shadow-xl transition-all duration-200 flex flex-col justify-between group"
+              className="bg-white rounded-3xl p-4 sm:p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-200 flex flex-col justify-between group"
             >
               <div>
                 {/* Route Thumbnail Image */}
@@ -39,7 +39,7 @@ export default function PopularRoutesSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                   
                   <div className="absolute top-2.5 left-2.5">
-                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#FF5B00] text-white shadow-sm">
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-gold-gradient text-navy-950 shadow-sm">
                       {route.from} → {route.to.split(' ')[0]}
                     </span>
                   </div>
@@ -56,10 +56,10 @@ export default function PopularRoutesSection() {
                 <div className="flex items-center justify-between text-xs text-slate-500 mb-1">
                   <span className="font-semibold text-slate-600">{route.from}</span>
                   <span>→</span>
-                  <span className="font-bold text-[#FF5B00]">{route.dist}</span>
+                  <span className="font-bold text-amber-500">{route.dist}</span>
                 </div>
 
-                <h3 className="font-outfit font-extrabold text-lg text-slate-900 leading-snug mb-2 group-hover:text-[#FF5B00] transition-colors">
+                <h3 className="font-outfit font-extrabold text-lg text-[#0C2340] leading-snug mb-2 group-hover:text-amber-600 transition-colors">
                   {route.to}
                 </h3>
 
@@ -75,7 +75,7 @@ export default function PopularRoutesSection() {
                 href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book a taxi from ${route.from} to ${route.to} (${route.dist}). Please share fixed fare.`)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-colors flex items-center justify-center gap-1.5"
+                className="w-full py-2.5 rounded-full font-bold text-xs bg-[#0C2340] hover:bg-gold-gradient hover:text-navy-950 text-white transition-all flex items-center justify-center gap-1.5 shadow-sm"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-current" />
                 <span>Check Fixed Fare</span>

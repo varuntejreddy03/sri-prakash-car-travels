@@ -26,9 +26,9 @@ export default function AboutPage({ onOpenBooking }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <span className="ref-section-tag">Our Legacy</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight">
                 Setting The Standard for <br />
-                <span className="text-[#FF5B00]">Travels in Kakinada</span>
+                <span className="text-gradient-gold">Travels in Kakinada</span>
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed">
@@ -46,7 +46,7 @@ export default function AboutPage({ onOpenBooking }) {
                 >
                   <span>Book Your Ride</span>
                   <span className="ref-circle-arrow">
-                    <ArrowRight className="w-3 h-3 text-white" />
+                    <ArrowRight className="w-3 h-3 text-navy-950" />
                   </span>
                 </button>
 
@@ -54,14 +54,14 @@ export default function AboutPage({ onOpenBooking }) {
                   href={`tel:+91${businessInfo.phone}`}
                   className="ref-btn-outline text-xs"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#FF5B00]" />
+                  <Phone className="w-3.5 h-3.5 text-amber-500" />
                   <span>Call +91 {businessInfo.phone}</span>
                 </a>
               </div>
             </div>
 
             <div className="lg:col-span-6 relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[16/11] bg-slate-900 relative group">
+              <div className="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 aspect-[16/11] bg-[#040B17] relative group">
                 <img
                   src="/images/kia-carens.jpg"
                   alt="Sri Prakash Car Travels Fleet and Chauffeurs"
@@ -69,12 +69,12 @@ export default function AboutPage({ onOpenBooking }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                {/* 15+ Years Excellence Badge */}
-                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#FF5B00] text-white p-3.5 sm:p-5 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3">
-                  <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none">
+                {/* 15+ Years Excellence Badge - Karthikeya Gold Gradient */}
+                <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-gold-gradient text-navy-950 p-3.5 sm:p-5 rounded-2xl shadow-gold-glow flex items-center gap-2.5 sm:gap-3">
+                  <div className="text-2xl sm:text-4xl font-extrabold font-outfit leading-none text-navy-950">
                     15+
                   </div>
-                  <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight">
+                  <div className="text-[11px] sm:text-sm font-bold uppercase tracking-wider leading-tight text-navy-950">
                     Years <br />Excellence
                   </div>
                 </div>
@@ -84,51 +84,51 @@ export default function AboutPage({ onOpenBooking }) {
 
           {/* 4 Pillars of Excellence */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10 border-t border-slate-100">
-            <div className="bg-[#F8FAFC] rounded-3xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-2xl bg-orange-50 text-[#FF5B00] flex items-center justify-center mb-4">
+            <div className="bg-[#FAF9F6] rounded-3xl p-6 border border-slate-200 hover:border-amber-400 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-amber-400/15 text-amber-500 flex items-center justify-center mb-4">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="font-outfit font-bold text-slate-900 text-lg mb-1">Safety First</h3>
+              <h3 className="font-outfit font-bold text-[#0C2340] text-lg mb-1">Safety First</h3>
               <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
                 All vehicles undergo strict mechanical inspections, deep interior sanitization, and are equipped with GPS tracking.
               </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-3xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+            <div className="bg-[#FAF9F6] rounded-3xl p-6 border border-slate-200 hover:border-amber-400 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-blue-50 text-[#0C2340] flex items-center justify-center mb-4">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="font-outfit font-bold text-slate-900 text-lg mb-1">Verified Chauffeurs</h3>
+              <h3 className="font-outfit font-bold text-[#0C2340] text-lg mb-1">Verified Chauffeurs</h3>
               <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
                 Courteous, background-verified chauffeurs with deep knowledge of Ghat routes, temple timings, and smooth driving manners.
               </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-3xl p-6 border border-slate-200">
+            <div className="bg-[#FAF9F6] rounded-3xl p-6 border border-slate-200 hover:border-amber-400 transition-colors">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="font-outfit font-bold text-slate-900 text-lg mb-1">100% Fixed Rates</h3>
+              <h3 className="font-outfit font-bold text-[#0C2340] text-lg mb-1">100% Fixed Rates</h3>
               <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
                 Zero hidden charges, transparent toll and driver allowance billing, and no cancellation surprise fees.
               </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-3xl p-6 border border-slate-200">
+            <div className="bg-[#FAF9F6] rounded-3xl p-6 border border-slate-200 hover:border-amber-400 transition-colors">
               <div className="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center mb-4">
                 <HeartHandshake className="w-6 h-6" />
               </div>
-              <h3 className="font-outfit font-bold text-slate-900 text-lg mb-1">Customer Priority</h3>
+              <h3 className="font-outfit font-bold text-[#0C2340] text-lg mb-1">Customer Priority</h3>
               <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
                 Over 50,000 completed trips and 10,000+ satisfied repeat customers who rely on us for every travel occasion.
               </p>
             </div>
           </div>
 
-          {/* Office Address & Location Card */}
-          <div className="bg-[#0B0F17] rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+          {/* Office Address & Location Card - Karthikeya Navy & Gold */}
+          <div className="bg-gradient-to-r from-[#040B17] via-[#08172C] to-[#0C2340] border border-amber-400/20 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
             <div className="space-y-2">
-              <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">
                 Visit Our Office
               </span>
               <h3 className="font-outfit font-extrabold text-2xl text-white">
@@ -145,7 +145,7 @@ export default function AboutPage({ onOpenBooking }) {
               rel="noopener noreferrer"
               className="ref-btn-primary group whitespace-nowrap !py-3.5 !px-8 text-sm"
             >
-              <MessageCircle className="w-4 h-4 fill-current" />
+              <MessageCircle className="w-4 h-4 fill-current text-navy-950" />
               <span>Connect on WhatsApp</span>
             </a>
           </div>

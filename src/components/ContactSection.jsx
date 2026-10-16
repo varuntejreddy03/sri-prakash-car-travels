@@ -21,14 +21,14 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#F8FAFC]">
+    <section id="contact" className="py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="ref-section-tag">Get In Touch</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight mt-2">
-            Contact <span className="text-[#FF5B00]">Sri Prakash Car Travels</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
+            Contact <span className="text-gradient-gold">Sri Prakash Car Travels</span>
           </h2>
           <p className="text-sm text-slate-600 font-jakarta mt-3">
             We are available 24 hours a day, 7 days a week to serve your travel needs in Kakinada.
@@ -41,8 +41,8 @@ export default function ContactSection() {
           <div className="lg:col-span-5 space-y-4">
             
             {/* Phone Card */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-orange-50 text-[#FF5B00] flex items-center justify-center shrink-0">
+            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-amber-400 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-amber-400/15 text-amber-500 flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -51,7 +51,7 @@ export default function ContactSection() {
                 </span>
                 <a
                   href={`tel:+91${businessInfo.phone}`}
-                  className="font-outfit font-black text-xl text-slate-900 hover:text-[#FF5B00] transition-colors block mt-0.5"
+                  className="font-outfit font-black text-xl text-[#0C2340] hover:text-amber-500 transition-colors block mt-0.5"
                 >
                   +91 {businessInfo.phone}
                 </a>
@@ -62,22 +62,22 @@ export default function ContactSection() {
             </div>
 
             {/* Address Card */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-amber-400 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-blue-50 text-[#0C2340] flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
                   Office Address
                 </span>
-                <p className="font-outfit font-bold text-slate-900 text-sm mt-0.5 leading-snug">
+                <p className="font-outfit font-bold text-[#0C2340] text-sm mt-0.5 leading-snug">
                   {businessInfo.address}
                 </p>
               </div>
             </div>
 
             {/* Operating Hours Card */}
-            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4">
+            <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex items-start gap-4 hover:border-amber-400 transition-colors">
               <div className="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
                 <Clock className="w-5 h-5" />
               </div>
@@ -85,19 +85,19 @@ export default function ContactSection() {
                 <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
                   Business Hours
                 </span>
-                <p className="font-outfit font-bold text-slate-900 text-sm mt-0.5">
+                <p className="font-outfit font-bold text-[#0C2340] text-sm mt-0.5">
                   Open 24 Hours / 7 Days a Week (365 Days)
                 </p>
               </div>
             </div>
 
-            {/* Direct WhatsApp Callout */}
-            <div className="bg-[#FF5B00] rounded-3xl p-6 text-white shadow-xl shadow-[#FF5B00]/25 flex items-center justify-between">
+            {/* Direct WhatsApp Callout - Karthikeya Navy & Gold */}
+            <div className="bg-gradient-to-r from-[#0C2340] to-[#14335E] border border-amber-400/30 rounded-3xl p-6 text-white shadow-xl shadow-navy-950/20 flex items-center justify-between">
               <div>
                 <h4 className="font-outfit font-extrabold text-lg text-white">
                   Quick WhatsApp Chat
                 </h4>
-                <p className="text-xs text-white/90 mt-0.5">
+                <p className="text-xs text-slate-300 mt-0.5">
                   Send your itinerary for instant quote
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function ContactSection() {
                 href={createWhatsAppUrl("Hi Sri Prakash Car Travels, I want to book a taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full font-bold text-xs bg-white text-slate-900 hover:bg-slate-100 shadow-md transition-colors"
+                className="px-4 py-2 rounded-full font-bold text-xs bg-gold-gradient text-navy-950 hover:brightness-105 shadow-gold-glow transition-all"
               >
                 Chat Now
               </a>
@@ -132,7 +132,7 @@ export default function ContactSection() {
 
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm space-y-4">
-              <h3 className="font-outfit font-extrabold text-xl text-slate-900">
+              <h3 className="font-outfit font-extrabold text-xl text-[#0C2340]">
                 Send Fast Message on WhatsApp
               </h3>
 
@@ -143,7 +143,7 @@ export default function ContactSection() {
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Your Full Name"
                   required
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#FF5B00]"
+                  className="w-full bg-[#FAF9F6] border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500"
                 />
                 <input
                   type="tel"
@@ -151,7 +151,7 @@ export default function ContactSection() {
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Your Phone Number"
                   required
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#FF5B00]"
+                  className="w-full bg-[#FAF9F6] border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500"
                 />
               </div>
 
@@ -159,7 +159,7 @@ export default function ContactSection() {
                 <select
                   value={service}
                   onChange={(e) => setService(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-[#FF5B00]"
+                  className="w-full bg-[#FAF9F6] border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:outline-none focus:border-amber-500"
                 >
                   <option value="Airport Taxi Pickup/Drop">Airport Taxi Pickup / Drop</option>
                   <option value="Outstation Cab Booking">Outstation Cab Booking</option>
@@ -173,7 +173,7 @@ export default function ContactSection() {
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder="Travel destination / date"
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-[#FF5B00]"
+                  className="w-full bg-[#FAF9F6] border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500"
                 />
               </div>
 
@@ -181,9 +181,9 @@ export default function ContactSection() {
                 type="submit"
                 className="w-full ref-btn-primary group !py-3"
               >
-                <span>Send WhatsApp Message (+91 9848903025)</span>
+                <span>Send WhatsApp Message (+91 {businessInfo.phone})</span>
                 <span className="ref-circle-arrow">
-                  <ArrowRight className="w-3 h-3 text-white" />
+                  <ArrowRight className="w-3 h-3 text-navy-950" />
                 </span>
               </button>
             </form>

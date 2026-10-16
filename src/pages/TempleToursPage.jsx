@@ -39,14 +39,14 @@ export default function TempleToursPage({ onOpenBooking }) {
         breadcrumb="Temple Tours"
       />
 
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#FAF9F6]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
           
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto">
             <span className="ref-section-tag">Devotional Journeys</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold font-outfit text-slate-900 mt-2">
-              Sacred Pilgrimages Across <span className="text-[#FF5B00]">Godavari & Andhra</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-outfit text-navy-950 mt-2">
+              Sacred Pilgrimages Across <span className="text-gradient-gold">Godavari & Andhra</span>
             </h2>
             <p className="text-sm text-slate-600 font-jakarta mt-2">
               Our chauffeurs understand temple pooja timings, Vratham schedules, dress codes, and senior-citizen convenience routes.
@@ -58,7 +58,7 @@ export default function TempleToursPage({ onOpenBooking }) {
             {templePackagesData.map((pkg) => (
               <div
                 key={pkg.id}
-                className="bg-[#F8FAFC] rounded-3xl p-5 sm:p-6 border border-slate-200 hover:border-slate-300 hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 hover:border-[#D4AF37] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Temple Package Image */}
@@ -72,7 +72,7 @@ export default function TempleToursPage({ onOpenBooking }) {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
                     
                     <div className="absolute top-3 left-3">
-                      <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#FF5B00] text-white shadow-md">
+                      <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-gold-gradient text-navy-950 shadow-gold-glow">
                         {pkg.tag}
                       </span>
                     </div>
@@ -89,7 +89,7 @@ export default function TempleToursPage({ onOpenBooking }) {
                   </div>
 
                   <Link to={`/temple-tours/${pkg.id}`}>
-                    <h3 className="font-outfit font-extrabold text-2xl text-slate-900 group-hover:text-[#FF5B00] transition-colors leading-snug">
+                    <h3 className="font-outfit font-extrabold text-2xl text-navy-950 group-hover:text-amber-500 transition-colors leading-snug">
                       {pkg.title}
                     </h3>
                   </Link>
@@ -108,13 +108,13 @@ export default function TempleToursPage({ onOpenBooking }) {
                     </span>
                     {pkg.itinerary.map((item, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-xs text-slate-700">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#FF5B00] shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="mt-5 p-3 rounded-xl bg-white border border-slate-200 flex items-center gap-2 text-xs text-slate-700">
+                  <div className="mt-5 p-3 rounded-xl bg-[#FAF9F6] border border-slate-200 flex items-center gap-2 text-xs text-slate-700">
                     <Car className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>Recommended Fleet: <strong>{pkg.recommendedCar}</strong></span>
                   </div>
@@ -123,7 +123,7 @@ export default function TempleToursPage({ onOpenBooking }) {
                 <div className="pt-6 mt-6 border-t border-slate-200 space-y-2.5">
                   <Link
                     to={`/temple-tours/${pkg.id}`}
-                    className="w-full py-2.5 rounded-full font-bold text-xs bg-slate-900 hover:bg-[#FF5B00] text-white transition-all flex items-center justify-center gap-2 shadow-sm"
+                    className="w-full py-2.5 rounded-full font-bold text-xs bg-[#0C2340] hover:bg-[#14335E] text-white transition-all flex items-center justify-center gap-2 shadow-sm border border-amber-400/30"
                   >
                     <span>View Full Package & Itinerary</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -133,7 +133,7 @@ export default function TempleToursPage({ onOpenBooking }) {
                     href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I am planning for ${pkg.title} (${pkg.duration}). Please share fare options and timings.`)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-2.5 rounded-full font-bold text-xs bg-[#FF5B00] hover:bg-[#E04F00] text-white shadow-md shadow-[#FF5B00]/30 transition-all flex items-center justify-center gap-2"
+                    className="w-full py-2.5 rounded-full font-bold text-xs bg-gold-gradient hover:opacity-95 text-navy-950 shadow-gold-glow transition-all flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Book Package on WhatsApp</span>
@@ -145,9 +145,9 @@ export default function TempleToursPage({ onOpenBooking }) {
           </div>
 
           {/* Group Pilgrim Bus Strip */}
-          <div className="bg-[#0B0F17] rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="bg-gradient-to-r from-[#040B17] to-[#0C2340] rounded-3xl p-8 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-amber-400/20">
             <div>
-              <span className="text-xs font-bold text-[#FF5B00] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider block">
                 Group Pilgrimages
               </span>
               <h3 className="font-outfit font-extrabold text-2xl text-white mt-1">
