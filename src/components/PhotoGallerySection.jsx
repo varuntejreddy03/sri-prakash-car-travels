@@ -51,7 +51,7 @@ export default function PhotoGallerySection() {
       category: "temple",
       categoryName: "Divine Pilgrimages",
       sub: "Ratnagiri Hill Top View",
-      image: "/images/temple-annavaram.png"
+      image: "/images/temple-annavaram.jpg"
     },
     {
       id: 7,
@@ -59,7 +59,7 @@ export default function PhotoGallerySection() {
       category: "tours",
       categoryName: "Hill & Nature Tours",
       sub: "Kashmir of Andhra Pradesh",
-      image: "/images/tour-lambasingi.png"
+      image: "/images/tour-lambasingi.jpg"
     },
     {
       id: 8,
