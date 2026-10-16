@@ -16,11 +16,11 @@ export default function UrgentTaxiBanner({ onOpenBooking }) {
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-white tracking-tight max-w-4xl mx-auto leading-tight">
-          Need a <span className="text-gradient-gold">Taxi Urgently</span> in Kakinada or Outstation Cab?
+          Require an <span className="text-gradient-gold">Immediate Ride</span> or Outstation Cab in Kakinada?
         </h2>
 
         <p className="text-sm sm:text-base text-slate-300 font-jakarta max-w-2xl mx-auto leading-relaxed">
-          Enjoy 24/7 instant cab pickup with 0% surge pricing, clean AC cars, and polite local drivers. Book your ride in less than 60 seconds!
+          From emergency medical runs to last-minute airport departures, our dedicated fleet is positioned across Kakinada for instant dispatch with 100% upfront pricing.
         </p>
 
         {/* 3 Call to Action Buttons - Karthikeya Colors */}

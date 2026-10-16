@@ -33,7 +33,7 @@ export default function HolidayPackagesSection() {
           </div>
         </div>
 
-        {/* Packages Cards Grid matching competitor package-cards-grid */}
+        {/* Packages Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {holidayPackagesData.map((pkg) => (
             <div
@@ -41,7 +41,7 @@ export default function HolidayPackagesSection() {
               className="comp-package-card flex flex-col justify-between group"
             >
               <div>
-                {/* Tour Image Box matching competitor package-img-box */}
+                {/* Tour Image Box */}
                 <div className="relative h-52 w-full overflow-hidden bg-slate-900">
                   <img
                     src={pkg.image}
@@ -52,7 +52,7 @@ export default function HolidayPackagesSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                   
-                  {/* Package Duration Badge matching competitor - Karthikeya Gold Gradient */}
+                  {/* Package Duration Badge - Karthikeya Gold Gradient */}
                   <span className="absolute bottom-3 right-3 bg-gold-gradient text-navy-950 font-extrabold text-xs px-3.5 py-1 rounded-full shadow-md">
                     {pkg.duration}
                   </span>
@@ -68,7 +68,7 @@ export default function HolidayPackagesSection() {
                     {pkg.description}
                   </p>
 
-                  {/* Package Meta matching competitor package-meta */}
+                  {/* Package Meta Details */}
                   <ul className="mt-4 py-3 border-y border-slate-100 space-y-2 text-xs text-slate-600">
                     <li className="flex items-center gap-2">
                       <span className="text-amber-500 font-bold">📍</span>
@@ -82,7 +82,7 @@ export default function HolidayPackagesSection() {
                 </div>
               </div>
 
-              {/* Package Actions matching competitor */}
+              {/* Package Actions */}
               <div className="p-6 pt-0 flex gap-2">
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${pkg.title} (${pkg.duration}).`)}

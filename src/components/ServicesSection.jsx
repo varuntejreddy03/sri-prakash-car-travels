@@ -58,7 +58,7 @@ export default function ServicesSection({ onOpenBooking }) {
           </Link>
         </div>
 
-        {/* 9+ Services Grid matching competitor cartravelsinkakinada.in */}
+        {/* Premium Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicesData.map((item) => {
             const Icon = iconMap[item.icon] || MapPin;
@@ -68,7 +68,7 @@ export default function ServicesSection({ onOpenBooking }) {
                 key={item.id}
                 className="comp-service-card group"
               >
-                {/* Service Header matching competitor: icon box + title */}
+                {/* Service Header: Icon & Title */}
                 <div className="p-7 pb-4 flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-amber-400/10 text-amber-500 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-all shadow-sm">
                     <Icon className="w-7 h-7" />
@@ -80,20 +80,20 @@ export default function ServicesSection({ onOpenBooking }) {
                   </div>
                 </div>
 
-                {/* Service Body matching competitor */}
+                {/* Service Description */}
                 <div className="px-7 py-2 flex-1">
                   <p className="text-sm text-slate-600 font-jakarta leading-relaxed">
                     {item.shortDesc}
                   </p>
                 </div>
 
-                {/* Service Footer matching competitor: dashed border with link and icon */}
+                {/* Service Footer: Action Links */}
                 <div className="p-7 pt-4 mt-4 border-t border-dashed border-slate-200 flex items-center justify-between">
                   <Link
                     to={`/services/${item.id}`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0C2340] hover:text-amber-500 transition-colors"
                   >
-                    <span>Book {item.title.split(' ')[0]}</span>
+                    <span>Explore & Book</span>
                     <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
                   </Link>
 

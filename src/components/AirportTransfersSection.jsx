@@ -21,12 +21,11 @@ export default function AirportTransfersSection({ onOpenBooking }) {
                 Punctual <span className="text-gradient-gold">Airport Pickup & Drop</span> Kakinada
               </h2>
               <p className="text-sm sm:text-base text-slate-300 font-jakarta mt-3 leading-relaxed">
-                Never miss a flight again! Sri Prakash Car Travels provides round-the-clock{' '}
-                <strong className="text-white">Airport Taxi Kakinada</strong> services with guaranteed on-time door-step pickup, zero flight delay anxiety, and fixed transparent fares.
+                Connect seamlessly between Kakinada and regional airports. With real-time flight tracking, 15-minute advance arrival, and transparent fixed tariffs, your airport transfer is always stress-free.
               </p>
             </div>
 
-            {/* Airport Cards List matching competitor */}
+            {/* Airport Destination Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               {airports.map((airport) => (
                 <Link
@@ -63,7 +62,7 @@ export default function AirportTransfersSection({ onOpenBooking }) {
             </div>
           </div>
 
-          {/* Right Column: Glass Card Dark matching competitor */}
+          {/* Right Column: Why Pre-Book Card */}
           <div className="lg:col-span-5">
             <div className="glass-card-dark p-7 sm:p-8 rounded-3xl border border-amber-400/25 shadow-2xl relative overflow-hidden">
               <div className="flex items-center gap-2 text-amber-400 font-outfit font-extrabold text-xl mb-6">
@@ -92,7 +91,7 @@ export default function AirportTransfersSection({ onOpenBooking }) {
                 </li>
               </ul>
 
-              {/* Call Helpline Button matching competitor */}
+              {/* Call Helpline Button */}
               <div className="mt-8 space-y-3">
                 <a
                   href={`tel:+91${businessInfo.phone}`}

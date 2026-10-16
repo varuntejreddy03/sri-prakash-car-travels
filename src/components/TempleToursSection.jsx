@@ -34,7 +34,7 @@ export default function TempleToursSection({ onOpenBooking }) {
           </div>
         </div>
 
-        {/* Packages Cards Grid matching competitor */}
+        {/* Packages Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {templePackagesData.map((pkg) => (
             <div
@@ -42,7 +42,7 @@ export default function TempleToursSection({ onOpenBooking }) {
               className="comp-package-card flex flex-col justify-between group"
             >
               <div>
-                {/* Temple Image Box matching competitor package-img-box */}
+                {/* Temple Image Box */}
                 <div className="relative h-52 w-full overflow-hidden bg-slate-900">
                   <img
                     src={pkg.image}
@@ -69,7 +69,7 @@ export default function TempleToursSection({ onOpenBooking }) {
                     {pkg.description}
                   </p>
 
-                  {/* Package Meta matching competitor package-meta */}
+                  {/* Package Meta Details */}
                   <ul className="mt-4 py-3 border-y border-slate-100 space-y-2 text-xs text-slate-600">
                     <li className="flex items-center gap-2">
                       <span className="text-amber-500 font-bold">📍</span>
@@ -83,7 +83,7 @@ export default function TempleToursSection({ onOpenBooking }) {
                 </div>
               </div>
 
-              {/* Package Actions matching competitor package-actions */}
+              {/* Package Actions */}
               <div className="p-6 pt-0 flex gap-2">
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${pkg.title} (${pkg.duration}).`)}

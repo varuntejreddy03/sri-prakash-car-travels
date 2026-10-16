@@ -20,7 +20,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
     <section id="fleet" className="py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
-        {/* Section Header matching competitor */}
+        {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <span className="ref-section-tag">Our Premium Vehicles</span>
@@ -62,7 +62,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
           </div>
         </div>
 
-        {/* Fleet Cards Grid matching competitor */}
+        {/* Fleet Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {filteredFleet.map((car) => (
             <div
@@ -104,7 +104,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                     {car.idealFor}
                   </p>
 
-                  {/* Specs List matching competitor format */}
+                  {/* Vehicle Specifications */}
                   <div className="grid grid-cols-2 gap-3 py-3.5 my-3 border-y border-slate-100 text-xs text-slate-600">
                     <div className="flex items-center gap-2">
                       <Users className="w-3.5 h-3.5 text-amber-500" />
@@ -122,7 +122,7 @@ export default function FleetSection({ onSelectVehicle, onOpenBooking }) {
                 </div>
               </div>
 
-              {/* Bottom Book Now Button matching competitor */}
+              {/* Bottom Book Now Button */}
               <div className="p-6 pt-0">
                 <a
                   href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${car.name} (${car.registration}). Please share rates.`)}

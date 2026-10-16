@@ -4,19 +4,19 @@ import { businessInfo, createWhatsAppUrl } from '../data/travelData';
 
 export default function AboutSection({ onOpenBooking }) {
   const aboutFeatures = [
-    "24/7 Instant Online Taxi Booking",
-    "Clean, Sanitized & AC Vehicles",
-    "Highly Experienced Local Drivers",
-    "Zero Hidden Costs & Fixed Fares",
-    "Airport Pickup & Drop Specialists",
-    "Custom Temple & Holiday Packages"
+    "Guaranteed 15-Min Early Doorstep Arrival",
+    "Spotless Sanitized Fleet with Powerful AC",
+    "Verified Chauffeurs with Polite Etiquette",
+    "100% Transparent Fixed Billing (No Hidden Surge)",
+    "Live Flight Radar Tracking for Airport Cabs",
+    "Custom Spiritual & Leisure Tour Itineraries"
   ];
 
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-16">
         
-        {/* Main Grid: Visual with 15+ Years Badge + Rich Keyword Content */}
+        {/* Main Grid: Visual with 15+ Years Badge + Rich Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Image with Experience Badge */}
@@ -47,16 +47,16 @@ export default function AboutSection({ onOpenBooking }) {
               Welcome to Sri Prakash Car Travels
             </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-slate-900 leading-tight">
-              The Most Trusted <span className="text-gradient-gold">Car Travels & Best Taxi Service</span> in Kakinada
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight">
+              15+ Years of Trust & <span className="text-gradient-gold">Excellence on Every Highway</span>
             </h2>
 
             <div className="space-y-4 text-sm sm:text-base text-slate-600 font-jakarta leading-relaxed">
               <p>
-                At <strong>Sri Prakash Car Travels</strong>, we take pride in being recognized as the <strong>Best Car Travels in Kakinada</strong> and <strong>Best Taxi Service in Kakinada</strong>. Whether you need an <strong>Affordable Taxi Service</strong>, <strong>Local Taxi Kakinada</strong>, <strong>Outstation Taxi Kakinada</strong>, <strong>Airport Taxi Kakinada</strong> (or <strong>Airport Cab Service Kakinada</strong>), <strong>Railway Station Taxi</strong> transfers, or a reliable <strong>Taxi Near Me</strong>, our <strong>Kakinada Cab Service</strong> is available 24/7.
+                Founded in the heart of Kakinada, <strong>Sri Prakash Car Travels</strong> was built on a simple conviction: every passenger deserves a journey marked by safety, punctuality, and complete peace of mind. Over the past fifteen years, we have grown into one of Kakinada's most dependable and highly rated travel services.
               </p>
               <p>
-                We specialize in <strong>Cab Booking Kakinada</strong> for <strong>Family Trip Taxi</strong> rides, <strong>Temple Tour Packages Kakinada</strong>, <strong>Corporate Cab Service</strong>, and <strong>Car Rental Kakinada</strong> with professional chauffeurs ensuring a safe, punctual, and smooth journey.
+                Unlike app aggregators that outsource rides to unvetted gig drivers, we manage our own fleet of pristine sedans, premium MPVs, and group coaches. Whether you require an early-morning airport drop to Rajahmundry or Vizag, an all-day city rental, or a multi-day family pilgrimage, our experienced chauffeurs guarantee exceptional comfort and transparent fixed pricing with zero surge.
               </p>
             </div>
 

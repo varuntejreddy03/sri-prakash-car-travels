@@ -19,7 +19,7 @@ export default function Footer() {
     <footer className="bg-[#040B17] text-slate-400 font-jakarta pt-16 pb-24 md:pb-12 border-t border-amber-400/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
         
-        {/* Main 4-Column Grid matching competitor footer */}
+        {/* Main 4-Column Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8">
           
           {/* Col 1: Logo & Info */}
@@ -37,7 +37,7 @@ export default function Footer() {
             </h4>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              Premier <strong>Taxi Service in Kakinada</strong> offering 24/7 Airport Taxi, Outstation Cabs, Local Cab Booking, and Temple Tour Packages with top-rated drivers and pristine vehicles.
+              Kakinada's premier car travels and cab service with 15+ years of customer trust. Dedicated to 24/7 punctual airport transfers, family pilgrimages, and transparent outstation highway travel.
             </p>
 
             <div className="pt-2 flex items-center gap-3">

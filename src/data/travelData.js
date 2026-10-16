@@ -143,91 +143,91 @@ export const servicesData = [
   {
     id: "local-city-taxi",
     icon: "MapPin",
-    title: "Local Taxi Service Kakinada",
+    title: "Local City Taxi & Hourly Rentals",
     image: "/images/dzire.jpg",
-    shortDesc: "Fast, comfortable, and affordable local cab booking in Kakinada for city commutes, shopping, business meetings, and railway station transfers.",
-    features: ["4hr/40km & 8hr/80km Packages", "Uniformed Local Drivers", "Quick 15-Min Arrival", "Clean Interiors"],
-    popularDestinations: ["Kakinada Town & Port", "Kakinada Railway Station", "Apollo / Local Hospitals", "Local Shopping"]
+    shortDesc: "Smooth, air-conditioned city rides in Kakinada for shopping, business appointments, hospital visits, and Kakinada Town railway station transfers. Available on flexible hourly packages.",
+    features: ["Flexible 4hr/40km & 8hr/80km options", "Punctual doorstep pickup in 15 mins", "Courteous local chauffeurs", "Clean sedans & SUVs"],
+    popularDestinations: ["Kakinada Town & Port Area", "Kakinada Railway Station (CCT)", "Apollo & Local Hospitals", "Local Shopping & Business Hubs"]
   },
   {
     id: "airport-taxi",
     icon: "Plane",
-    title: "Airport Taxi Kakinada",
+    title: "24/7 Dedicated Airport Transfers",
     image: "/images/service-airport-taxi.jpg",
-    shortDesc: "24/7 dedicated Airport Pickup & Drop cab service to Rajahmundry Airport (RJA), Vizag Airport (VTZ), Vijayawada (VGA), and Hyderabad (HYD).",
-    features: ["Flight Delay Tracking", "Fixed Transparent Rates", "Doorstep Luggage Help", "Guaranteed On-Time"],
+    shortDesc: "Round-the-clock direct airport taxi transfers to Rajahmundry (RJA), Visakhapatnam (VTZ), Vijayawada (VGA), and Hyderabad (HYD) with live flight monitoring and zero delay anxiety.",
+    features: ["Live flight delay tracking", "Fixed transparent all-inclusive fares", "Driver luggage handling assistance", "Doorstep pickup anytime 24/7"],
     popularDestinations: ["Rajahmundry Airport (1.5 Hrs)", "Vizag Airport (3.5 Hrs)", "Vijayawada Airport (4.5 Hrs)", "Hyderabad Airport"]
   },
   {
     id: "outstation-cabs",
     icon: "Compass",
-    title: "Outstation Cab Kakinada",
+    title: "Outstation Round Trips & Drops",
     image: "/images/innova-crysta.jpg",
-    shortDesc: "Hassle-free Outstation Taxi booking from Kakinada to Vizag, Vijayawada, Hyderabad, Chennai, Bangalore, Tirupati, and all major South India towns.",
-    features: ["One-Way & Round Trip", "Zero Night Surge", "Clean AC Cars", "Flexible Stops"],
+    shortDesc: "Comfortable highway travel across Andhra Pradesh, Telangana, Karnataka, and Tamil Nadu. Enjoy well-maintained vehicles, experienced highway drivers, and clear km-based tariffs.",
+    features: ["Round trips & multi-city journeys", "Transparent km rate with zero night hike", "Well-maintained highway cruisers", "Flexible scenic stopovers"],
     popularDestinations: ["Kakinada to Vijayawada", "Kakinada to Hyderabad", "Kakinada to Tirupati", "Kakinada to Bangalore"]
   },
   {
     id: "one-way-taxi",
     icon: "Route",
-    title: "One Way Taxi Service",
+    title: "Intercity One-Way Drop Cabs",
     image: "/images/etios.jpg",
-    shortDesc: "Pay only for one-way distance with our budget One Way Cab Kakinada packages to Vijayawada, Vizag, Hyderabad, and Tirupati.",
-    features: ["Pay Only For 1 Way", "No Return Toll Burden", "Instant Cab Confirmation", "Doorstep Pickup & Drop"],
+    shortDesc: "Travel smart between cities and pay only for the distance traveled. Ideal for one-way journeys from Kakinada to Vizag, Vijayawada, Rajahmundry, or Hyderabad without paying return fares.",
+    features: ["One-way fare calculation only", "No return toll burden on passenger", "Guaranteed car confirmation", "Direct door-to-door drop"],
     popularDestinations: ["Kakinada to Vizag One Way", "Kakinada to Vijayawada One Way", "Kakinada to Hyderabad Drop"]
   },
   {
     id: "temple-tours",
     icon: "Landmark",
-    title: "Temple Pilgrimage Packages",
+    title: "Custom Temple Pilgrimage Packages",
     image: "/images/service-temple-tours.jpg",
-    shortDesc: "Spiritual temple tour cabs to Annavaram, Draksharamam, Pithapuram, Samarlakota, Srisailam, Tirupati Balaji, & Sabarimala with custom timing.",
-    features: ["Temple Timings Expertise", "Custom Puja Itineraries", "Senior Citizen Friendly", "Same Day & Multi-Day"],
+    shortDesc: "Peaceful spiritual yatras to sacred shrines including Annavaram, Draksharamam, Pithapuram Pada Gaya, Pancharama Kshetras, Srisailam, and Tirupati with dedicated family-first chauffeurs.",
+    features: ["Temple timings & puja route expertise", "Senior citizen assistance & patience", "Custom same-day & multi-day circuits", "Comfortable air-conditioned vehicles"],
     popularDestinations: ["Annavaram Satyanarayana", "Draksharamam & Samarlakota", "Pithapuram Sripada Srivallabha", "Tirupati & Srisailam"]
   },
   {
     id: "holiday-packages",
     icon: "Palmtree",
-    title: "Holiday Tour Packages",
+    title: "Scenic Holiday & Nature Tours",
     image: "/images/service-holiday-packages.jpg",
-    shortDesc: "Scenic tourist taxi packages to Araku Valley, Lambasingi, Maredumilli, Papikondalu, Konaseema backwaters, and Vizag beaches.",
-    features: ["Hill-Station Expert Drivers", "Photo-Spot Guidance", "Family-Safe Journeys", "Resort Drop & Pickup"],
+    shortDesc: "Explore the misty heights of Lambasingi & Araku Valley, the pristine eco-jungles of Maredumilli, and tranquil Konaseema backwaters with chauffeurs skilled in hilly ghat terrain.",
+    features: ["Ghat-road certified skilled drivers", "Sightseeing & scenic photo stops", "Comfortable hill-climbing MPVs", "Resort drop & pickup coordination"],
     popularDestinations: ["Lambasingi & Vanajangi", "Maredumilli & Mothugudem", "Araku Valley & Borra Caves", "Konaseema Dindi"]
   },
   {
     id: "corporate-travel",
     icon: "Briefcase",
-    title: "Corporate Taxi Service",
+    title: "Corporate & Executive Conveyance",
     image: "/images/service-corporate-car.jpg",
-    shortDesc: "Professional executive car hiring and employee transportation in Kakinada for corporate clients, IT companies, & industrial visits.",
-    features: ["GST Invoice Billing", "Pristine Luxury Sedans/SUVs", "Professional Chauffeurs", "Monthly Rental Contracts"],
+    shortDesc: "Premium transportation for corporate executives, visiting delegates, port authorities, and industrial teams in Kakinada. Reliable corporate invoicing with GST compliance.",
+    features: ["Official GST tax invoices", "Executive sedans & premium MPVs", "Discreet, uniformed chauffeurs", "Flexible daily & monthly billing"],
     popularDestinations: ["Kakinada Deep Water Port", "Coromandel / NFCL Plants", "District Collectorate", "Industrial Corridors"]
   },
   {
     id: "wedding-events",
     icon: "Heart",
-    title: "Wedding Car Booking",
+    title: "Wedding Convoys & Event Fleet",
     image: "/images/service-wedding-car.jpg",
-    shortDesc: "Luxury wedding cars and marriage taxi services for bride/groom entries, guest transfers, and family event travel in Kakinada.",
-    features: ["Decorated Luxury Cars", "Coordinated Fleet Convoys", "Innova Crysta & Urbania Vans", "Large AC Buses for Guests"],
+    shortDesc: "Elegant bridal cars, decorated premium sedans, and coordinated vehicle convoys for marriage celebrations, receptions, and guest shuttles across East Godavari.",
+    features: ["Decorated luxury cars (Innova / Carens)", "Coordinated guest shuttle convoys", "Tempo Travellers & buses available", "Dedicated event fleet manager"],
     popularDestinations: ["Marriage Function Halls", "Convention Centres", "Door-to-door Guest Shuttles"]
   },
   {
     id: "daily-monthly-cabs",
     icon: "CalendarCheck",
-    title: "Daily & Monthly Cab Booking",
+    title: "Dedicated Daily & Monthly Rentals",
     image: "/images/dzire.jpg",
-    shortDesc: "Flexible long-term cab booking plans with dedicated drivers for business executives, doctors, and families residing in Kakinada.",
-    features: ["Dedicated Chauffeur", "Cost-Effective Monthly Packages", "Priority Fleet Backup", "Full Maintenance Included"],
+    shortDesc: "Long-term dedicated vehicle contracts with assigned chauffeurs for doctors, corporate executives, and business owners residing in Kakinada who desire dependable daily mobility.",
+    features: ["Dedicated vehicle & private chauffeur", "Cost-effective monthly contract rates", "Zero maintenance or insurance hassle", "Immediate backup vehicle assurance"],
     popularDestinations: ["Daily Office Commutes", "Medical & Hospital Runs", "Long-Term Project Support"]
   },
   {
     id: "group-travel",
     icon: "Users",
-    title: "Tempo Traveller & Luxury Bus Hire",
+    title: "Tempo Traveller & Luxury Coach Hire",
     image: "/images/tempo-traveller.jpg",
-    shortDesc: "Spacious 12 to 26 seater Tempo Travellers, Force Urbania, and 32-45 seater AC luxury buses for family gatherings and pilgrimages.",
-    features: ["Pushback Reclining Seats", "High-Back Air Suspension", "Dual Professional Drivers", "Audio-Video Systems"],
+    shortDesc: "Spacious Force Tempo Travellers (12-26 seats), Force Urbania, and 32-45 seater AC luxury buses for large family gatherings, college industrial tours, and pilgrim groups.",
+    features: ["Pushback reclining luxury seats", "Surround audio & LED entertainment", "Dual experienced highway pilots", "Massive luggage compartment"],
     popularDestinations: ["College Industrial Tours", "Tirupati Pilgrim Groups", "Family Destination Events"]
   }
 ];

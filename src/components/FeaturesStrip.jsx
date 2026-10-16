@@ -1,22 +1,22 @@
 import React from 'react';
-import { ShieldCheck, Percent, Headphones } from 'lucide-react';
+import { Clock, ShieldCheck, Headphones } from 'lucide-react';
 
 export default function FeaturesStrip() {
   const features = [
     {
-      icon: ShieldCheck,
-      title: "Safe and secure rentals",
-      desc: "Choose from the best, handpicked just for you: Premium vehicles, maximum reliability and clean sanitized interiors.",
+      icon: Clock,
+      title: "Guaranteed Doorstep Punctuality",
+      desc: "Your chauffeur arrives 15 minutes ahead of schedule. Never stress about early-morning flight departures or crucial appointments.",
     },
     {
-      icon: Percent,
-      title: "Competitive pricing",
-      desc: "Fair and well-balanced fixed pricing across a wide range of premium vehicles with zero hidden night surge.",
+      icon: ShieldCheck,
+      title: "100% Transparent Fixed Fares",
+      desc: "Upfront pricing with exact GPS-verified km calculations. Zero hidden midnight surcharges, peak-hour surges, or surprise fees.",
     },
     {
       icon: Headphones,
-      title: "24/7 support",
-      desc: "Need help? Our local Kakinada dispatch and support team is available round the clock at +91 9848903025.",
+      title: "24/7 Direct Local Dispatch",
+      desc: "Speak directly with our Kakinada operations desk at +91 9848903025 anytime. Real human support and instant ride dispatch.",
     }
   ];
 

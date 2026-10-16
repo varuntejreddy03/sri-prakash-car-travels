@@ -132,7 +132,7 @@ export default function ServicesPage({ onOpenBooking }) {
                         to={`/services/${svc.id}`}
                         className="py-2.5 px-4 rounded-full font-bold text-xs bg-[#0C2340] hover:bg-[#14335E] text-white transition-all flex items-center justify-center gap-1.5 shadow-sm border border-amber-400/30"
                       >
-                        <span>Explore Subpage</span>
+                        <span>View Service Details</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
 

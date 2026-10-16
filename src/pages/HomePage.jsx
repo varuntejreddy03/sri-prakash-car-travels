@@ -10,6 +10,7 @@ import AirportTransfersSection from '../components/AirportTransfersSection';
 import TempleToursSection from '../components/TempleToursSection';
 import HolidayPackagesSection from '../components/HolidayPackagesSection';
 import StatsCounterSection from '../components/StatsCounterSection';
+import LocalCoverageSection from '../components/LocalCoverageSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import PhotoGallerySection from '../components/PhotoGallerySection';
 import FAQSection from '../components/FAQSection';
@@ -55,16 +56,19 @@ export default function HomePage({ onOpenBooking }) {
       {/* 10. Live Statistics Counter Section */}
       <StatsCounterSection />
 
-      {/* 11. Customer Reviews & Testimonials */}
+      {/* 11. Doorstep Pickup Across All Kakinada Localities */}
+      <LocalCoverageSection onOpenBooking={onOpenBooking} />
+
+      {/* 12. Customer Reviews & Testimonials */}
       <TestimonialsSection />
 
-      {/* 12. Travels Photo Gallery */}
+      {/* 13. Travels Photo Gallery */}
       <PhotoGallerySection />
 
-      {/* 13. FAQ Accordion Section */}
+      {/* 14. FAQ Accordion Section */}
       <FAQSection onOpenBooking={onOpenBooking} />
 
-      {/* 14. Contact Section with Map & Office Address */}
+      {/* 15. Contact Section with Map & Office Address */}
       <ContactSection />
     </>
   );

@@ -53,10 +53,10 @@ Please share immediate fare quote and confirm cab availability.`;
 
             {/* Subtext */}
             <p className="text-sm sm:text-lg text-slate-300 font-jakarta max-w-xl leading-relaxed">
-              Enjoy premium, comfortable, and affordable travel with <strong>Sri Prakash Car Travels</strong>. We offer 24/7 Airport Taxi Service, Local Cab Bookings, One Way & Round Trip Outstation Cabs, Temple Packages, and Corporate Travel in Kakinada & across India.
+              Experience effortless road travel with <strong>Sri Prakash Car Travels</strong>. From guaranteed on-time airport transfers and daily city commutes to spiritual pilgrimages and outstation tours, our verified fleet and professional chauffeurs ensure safety and complete peace of mind.
             </p>
 
-            {/* Action Buttons matching competitor hero-cta-buttons */}
+            {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <a
                 href={`tel:+91${businessInfo.phone}`}
