@@ -171,7 +171,7 @@ export const servicesData = [
     id: "one-way-taxi",
     icon: "Route",
     title: "Intercity One-Way Drop Cabs",
-    image: "/images/etios.jpg",
+    image: "/images/service-one-way-taxi.jpg",
     shortDesc: "Travel smart between cities and pay only for the distance traveled. Ideal for one-way journeys from Kakinada to Vizag, Vijayawada, Rajahmundry, or Hyderabad without paying return fares.",
     features: ["One-way fare calculation only", "No return toll burden on passenger", "Guaranteed car confirmation", "Direct door-to-door drop"],
     popularDestinations: ["Kakinada to Vizag One Way", "Kakinada to Vijayawada One Way", "Kakinada to Hyderabad Drop"]
