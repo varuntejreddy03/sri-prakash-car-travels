@@ -2,19 +2,9 @@ import React from 'react';
 import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
 import FeaturesStrip from '../components/FeaturesStrip';
-import AboutSection from '../components/AboutSection';
-import UrgentTaxiBanner from '../components/UrgentTaxiBanner';
 import ServicesSection from '../components/ServicesSection';
-import FleetSection from '../components/FleetSection';
-import AirportTransfersSection from '../components/AirportTransfersSection';
-import TempleToursSection from '../components/TempleToursSection';
-import HolidayPackagesSection from '../components/HolidayPackagesSection';
-import StatsCounterSection from '../components/StatsCounterSection';
-import LocalCoverageSection from '../components/LocalCoverageSection';
 import TestimonialsSection from '../components/TestimonialsSection';
-import PhotoGallerySection from '../components/PhotoGallerySection';
 import FAQSection from '../components/FAQSection';
-import ContactSection from '../components/ContactSection';
 
 export default function HomePage({ onOpenBooking }) {
   return (
@@ -29,48 +19,17 @@ export default function HomePage({ onOpenBooking }) {
       {/* 1. Hero Section with 24/7 Booking Form & Live Stats */}
       <Hero onOpenBooking={onOpenBooking} />
 
-      {/* 2. Top Highlights Strip */}
+      {/* 2. 3-Pillar Trust Highlights Strip */}
       <FeaturesStrip />
 
-      {/* 3. About Us Section (15+ Years Excellence, Fleet Showcase) */}
-      <AboutSection onOpenBooking={onOpenBooking} />
-
-      {/* 4. Urgent Taxi / Mid-Page CTA Banner */}
-      <UrgentTaxiBanner onOpenBooking={onOpenBooking} />
-
-      {/* 5. Complete Services Gateway */}
+      {/* 3. Core Cab Services Gateway with Image Banners */}
       <ServicesSection onOpenBooking={onOpenBooking} />
 
-      {/* 6. Vehicle Fleet Showcase with Filter Tabs */}
-      <FleetSection onOpenBooking={onOpenBooking} />
-
-      {/* 7. 24/7 Airport Transfers (Rajahmundry, Vizag, Vijayawada, Hyderabad) */}
-      <AirportTransfersSection onOpenBooking={onOpenBooking} />
-
-      {/* 8. Famous Temple Tour Packages from Kakinada */}
-      <TempleToursSection onOpenBooking={onOpenBooking} />
-
-      {/* 9. Popular Holiday & Tourist Packages (Araku, Lambasingi, Maredumilli, Papikondalu) */}
-      <HolidayPackagesSection />
-
-      {/* 10. Live Statistics Counter Section */}
-      <StatsCounterSection />
-
-      {/* 11. Doorstep Pickup Across All Kakinada Localities */}
-      <LocalCoverageSection onOpenBooking={onOpenBooking} />
-
-      {/* 12. Customer Reviews & Testimonials */}
+      {/* 4. Verified Customer Testimonials & Reviews */}
       <TestimonialsSection />
 
-      {/* 13. Travels Photo Gallery */}
-      <PhotoGallerySection />
-
-      {/* 14. FAQ Accordion Section */}
+      {/* 5. Frequently Asked Questions (FAQ) & Direct Helpline */}
       <FAQSection onOpenBooking={onOpenBooking} />
-
-      {/* 15. Contact Section with Map & Office Address */}
-      <ContactSection />
     </>
   );
 }
-

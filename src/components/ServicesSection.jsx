@@ -58,54 +58,120 @@ export default function ServicesSection({ onOpenBooking }) {
           </Link>
         </div>
 
-        {/* Premium Services Grid */}
+        {/* 10 Services Grid with Image Banners matching 59f269f layout in current luxury colours */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicesData.map((item) => {
             const Icon = iconMap[item.icon] || MapPin;
+            const isHighlighted = item.id === 'airport-taxi';
+
+            if (isHighlighted) {
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-3xl overflow-hidden bg-gradient-to-br from-[#040B17] via-[#08172C] to-[#0C2340] text-white border border-amber-400/40 shadow-2xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-200 group relative"
+                >
+                  {/* Card Image Banner */}
+                  <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+                    <img
+                      src={item.image}
+                      alt={`${item.title} in Kakinada`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#08172C] via-[#08172C]/50 to-transparent"></div>
+                    <div className="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-gold-gradient text-navy-950 flex items-center justify-center shadow-gold-glow">
+                      <Icon className="w-5 h-5 text-navy-950" />
+                    </div>
+                    <span className="absolute top-4 right-4 px-3 py-1 rounded-full text-[10px] font-extrabold bg-gold-gradient text-navy-950 uppercase shadow-gold-glow tracking-wider">
+                      24/7 Flight Pickup
+                    </span>
+                  </div>
+
+                  <div className="p-7 pt-4 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-outfit font-extrabold text-2xl text-white leading-snug mb-2 group-hover:text-amber-300 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs text-slate-300 font-jakarta leading-relaxed">
+                        {item.shortDesc}
+                      </p>
+                    </div>
+
+                    <div className="pt-6 flex items-center justify-between border-t border-white/15 mt-5">
+                      <Link
+                        to={`/services/${item.id}`}
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-white transition-colors"
+                      >
+                        <span>Explore Rates & Details</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                      <a
+                        href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${item.title}.`)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-9 h-9 rounded-full bg-amber-400/20 hover:bg-gold-gradient text-amber-400 hover:text-navy-950 flex items-center justify-center transition-all shadow-sm"
+                        title="WhatsApp Quote"
+                      >
+                        <MessageCircle className="w-4 h-4 fill-current" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
 
             return (
               <div
                 key={item.id}
-                className="comp-service-card group"
+                className="bg-[#FAF9F6] rounded-3xl overflow-hidden border border-slate-200 hover:border-amber-400 hover:bg-white hover:shadow-xl transition-all duration-200 flex flex-col justify-between group"
               >
-                {/* Service Header: Icon & Title */}
-                <div className="p-7 pb-4 flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-amber-400/10 text-amber-500 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-gold-gradient group-hover:text-navy-950 transition-all shadow-sm">
-                    <Icon className="w-7 h-7" />
+                {/* Card Image Banner */}
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100">
+                  <img
+                    src={item.image}
+                    alt={`${item.title} Kakinada`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute top-4 left-4 w-11 h-11 rounded-2xl bg-white/90 backdrop-blur-md flex items-center justify-center text-[#0C2340] border border-white/50 shadow-md group-hover:bg-gold-gradient group-hover:text-navy-950 transition-all">
+                    <Icon className="w-5 h-5" />
                   </div>
+                  <span className="absolute bottom-3 left-4 text-[11px] font-bold text-white bg-[#040B17]/70 backdrop-blur-sm px-2.5 py-0.5 rounded-full border border-white/20">
+                    Kakinada Travel
+                  </span>
+                </div>
+
+                <div className="p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-outfit font-extrabold text-xl text-[#0C2340] group-hover:text-amber-600 transition-colors leading-snug">
+                    <h3 className="font-outfit font-extrabold text-xl text-[#0C2340] group-hover:text-amber-600 transition-colors mb-2 leading-snug">
                       {item.title}
                     </h3>
+                    <p className="text-xs text-slate-600 font-jakarta leading-relaxed">
+                      {item.shortDesc}
+                    </p>
                   </div>
-                </div>
 
-                {/* Service Description */}
-                <div className="px-7 py-2 flex-1">
-                  <p className="text-sm text-slate-600 font-jakarta leading-relaxed">
-                    {item.shortDesc}
-                  </p>
-                </div>
-
-                {/* Service Footer: Action Links */}
-                <div className="p-7 pt-4 mt-4 border-t border-dashed border-slate-200 flex items-center justify-between">
-                  <Link
-                    to={`/services/${item.id}`}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0C2340] hover:text-amber-500 transition-colors"
-                  >
-                    <span>Explore & Book</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
-                  </Link>
-
-                  <a
-                    href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${item.title}.`)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-full bg-slate-100 hover:bg-emerald-500 text-slate-500 hover:text-white flex items-center justify-center transition-all shadow-sm"
-                    title="WhatsApp Quote"
-                  >
-                    <MessageCircle className="w-4 h-4 fill-current" />
-                  </a>
+                  <div className="pt-6 flex items-center justify-between border-t border-slate-200 mt-5">
+                    <Link
+                      to={`/services/${item.id}`}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0C2340] group-hover:text-amber-500 transition-colors"
+                    >
+                      <span>View Rates & Details</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
+                    </Link>
+                    <a
+                      href={createWhatsAppUrl(`Hi Sri Prakash Car Travels, I want to book ${item.title}.`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 rounded-full bg-slate-100 hover:bg-emerald-500 text-slate-500 hover:text-white flex items-center justify-center transition-all shadow-sm"
+                      title="WhatsApp Quote"
+                    >
+                      <MessageCircle className="w-4 h-4 fill-current" />
+                    </a>
+                  </div>
                 </div>
               </div>
             );
