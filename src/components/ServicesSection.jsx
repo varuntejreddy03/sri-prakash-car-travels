@@ -32,11 +32,11 @@ const iconMap = {
 
 export default function ServicesSection({ onOpenBooking }) {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="pt-8 pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
             <span className="ref-section-tag">Our Premium Services</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-outfit text-[#0C2340] leading-tight mt-2">
@@ -58,8 +58,8 @@ export default function ServicesSection({ onOpenBooking }) {
           </Link>
         </div>
 
-        {/* 10 Services Grid with Image Banners matching 59f269f layout in current luxury colours */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 10 Services Grid with 4 in a row on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {servicesData.map((item) => {
             const Icon = iconMap[item.icon] || MapPin;
             const isHighlighted = item.id === 'airport-taxi';

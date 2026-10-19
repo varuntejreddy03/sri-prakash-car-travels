@@ -3,6 +3,7 @@ import SEOHead from '../components/SEOHead';
 import Hero from '../components/Hero';
 import FeaturesStrip from '../components/FeaturesStrip';
 import ServicesSection from '../components/ServicesSection';
+import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import FAQSection from '../components/FAQSection';
 
@@ -19,16 +20,19 @@ export default function HomePage({ onOpenBooking }) {
       {/* 1. Hero Section with 24/7 Booking Form & Live Stats */}
       <Hero onOpenBooking={onOpenBooking} />
 
-      {/* 2. 3-Pillar Trust Highlights Strip */}
+      {/* 2. 3-Pillar Trust Highlights Strip (Tightened spacing) */}
       <FeaturesStrip />
 
-      {/* 3. Core Cab Services Gateway with Image Banners */}
+      {/* 3. Core Cab Services Gateway (4 Cards In A Row on Desktop) */}
       <ServicesSection onOpenBooking={onOpenBooking} />
 
-      {/* 4. Verified Customer Testimonials & Reviews */}
+      {/* 4. Why Choose Sri Prakash Car Travels Section */}
+      <WhyChooseUsSection onOpenBooking={onOpenBooking} />
+
+      {/* 5. Verified Customer Testimonials & Reviews (Desktop-Friendly Balanced Header) */}
       <TestimonialsSection />
 
-      {/* 5. Frequently Asked Questions (FAQ) & Direct Helpline */}
+      {/* 6. Frequently Asked Questions (Minimum 3 in a Row Grid) */}
       <FAQSection onOpenBooking={onOpenBooking} />
     </>
   );

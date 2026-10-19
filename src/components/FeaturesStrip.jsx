@@ -21,7 +21,7 @@ export default function FeaturesStrip() {
   ];
 
   return (
-    <section className="py-8 bg-[#FAF9F6] border-b border-slate-200">
+    <section className="py-5 bg-[#FAF9F6] border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {features.map((feat, index) => {

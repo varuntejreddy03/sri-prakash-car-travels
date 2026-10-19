@@ -515,6 +515,10 @@ export const faqData = [
   {
     q: "How does Sri Prakash Car Travels compare to online app aggregators in Kakinada?",
     a: "Unlike app aggregators who outsource rides to unverified drivers with high surge rates and frequent cancellations, Sri Prakash Car Travels operates our own verified fleet with AP commercial registrations, fixed transparent tariffs, 15-minute early arrival guarantee, and 24/7 direct phone support at +91 9848903025."
+  },
+  {
+    q: "Can I book a Tempo Traveller or Luxury Bus for large family events?",
+    a: "Yes! We operate 12 to 26 seater Force Tempo Travellers, Force Urbania luxury vans, and 32 to 45 seater AC luxury coaches with pushback recliners and surround audio, ideal for wedding guest transport, pilgrim groups, and family functions."
   }
 ];
 
